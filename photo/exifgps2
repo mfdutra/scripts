@@ -1,0 +1,63 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+# $Id: exifgps2 3423 2010-05-29 20:18:38Z marlon $
+
+import sys
+import os
+import re
+
+def usage():
+	print >> sys.stderr, sys.argv[0] + ' latitude longitute file1 file2 fileN...\n'
+	print >> sys.stderr, 'latitude/longitute format: [-]D.xxxx'
+	sys.exit(1)
+
+if len(sys.argv) < 4:
+	usage()
+
+latlonre = re.compile('^[+-]?(\d+\.\d+)(°)?$')
+
+lat = sys.argv[1]
+lon = sys.argv[2]
+
+latx = latlonre.search(lat)
+lonx = latlonre.search(lon)
+
+if not latx or not lonx:
+	print >> sys.stderr, 'Error in lat/lon format'
+	usage()
+
+latref = ''
+lonref = ''
+
+if lat[0] == '-':
+	latref = 'set Exif.GPSInfo.GPSLatitudeRef S'
+else:
+	latref = 'set Exif.GPSInfo.GPSLatitudeRef N'
+
+if lon[0] == '-':
+	lonref = 'set Exif.GPSInfo.GPSLongitudeRef W'
+else:
+	lonref = 'set Exif.GPSInfo.GPSLongitudeRef E'
+
+latdeg = float(latx.groups()[0])
+latdeg, latdecimal = divmod(latdeg, 1)
+latsec = latdecimal * 3600
+latmin, latsec = divmod(latsec, 60)
+
+londeg = float(lonx.groups()[0])
+londeg, londecimal = divmod(londeg, 1)
+lonsec = londecimal * 3600
+lonmin, lonsec = divmod(lonsec, 60)
+
+latstr = 'set Exif.GPSInfo.GPSLatitude %d/1 %d/1 %d/100' % (latdeg, latmin, latsec * 100)
+lonstr = 'set Exif.GPSInfo.GPSLongitude %d/1 %d/1 %d/100' % (londeg, lonmin, lonsec * 100)
+
+# print latstr
+# print latref
+# print lonstr
+# print lonref
+
+for file in sys.argv[3:]:
+	print file
+	os.system('exiv2 -M"%s" -M"%s" -M"%s" -M"%s" %s' % (latstr, latref, lonstr, lonref, file))

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# $Id: exifmarlon 3093 2010-02-24 02:12:17Z marlon $
+
+YEAR=`date '+%Y'`
+
+for I in "$@"
+do
+	echo "$I"
+	exiv2 -M"set Exif.Image.Artist Marlon Dutra" \
+	-M "set Exif.Image.Copyright Copyright, Marlon Dutra, $YEAR. Some rights reserved." "$I"
+done

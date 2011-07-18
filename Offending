@@ -1,0 +1,70 @@
+#!/usr/bin/python
+
+# $Id: Offending 4081 2011-03-01 19:25:21Z marlon $
+
+# Whenever SSH complains about changed keys and you are aware that the key has
+# in fact been changed, copy and paste the "Offending..." line in the shell.
+# Since this is script is called "Offending" on purpose, it will regenerate
+# your known_hosts without the old key.
+
+# Copyright 2010 Marlon Dutra
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import sys
+import tempfile
+import os
+
+# Offending key for IP in /home/marlon/.ssh/known_hosts:293
+# Offending key in /home/marlon/.ssh/known_hosts:261
+
+args = ' '.join(sys.argv)
+
+if args.find('Offending key in') != -1:
+	fileName, lineNr = sys.argv[3].split(':')
+
+elif args.find('Offending key for IP in') != -1:
+	fileName, lineNr = sys.argv[5].split(':')
+
+else:
+	print >> sys.stderr, 'Error: Unrecognizable line'
+	sys.exit(1)
+
+lineNr = int(lineNr)
+
+print 'Removing line %d from file %s' % (lineNr, fileName)
+
+curHosts = open(fileName)
+newHosts = tempfile.SpooledTemporaryFile(max_size=1048576) # max 1 MB in ram
+
+# Write curHosts to newHosts skipping line 'lineNr'
+i = 1
+for line in curHosts:
+	if i != lineNr:
+		newHosts.write(line)
+	i += 1
+
+newHosts.seek(0) # move the pointer up to read it
+
+# Reopen known_hosts for writing now
+curHosts.close()
+curHosts = open(fileName, 'w')
+
+while True:
+	data = newHosts.read(4096)
+	if not data: break
+	curHosts.write(data)
+
+curHosts.close()
+newHosts.close()

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z "$2" ]
+then
+	echo "Usage: $0 input output"
+	exit 1
+fi
+
+mencoder "$1" -o "$2" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=8000 -oac mp3lame -lameopts cbr:br=128

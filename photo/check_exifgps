@@ -1,0 +1,21 @@
+#!/bin/bash
+
+NOGPS=0
+
+for I in "$@"
+do
+	echo "** $I"
+	exif "$I" | egrep '^(Latitude|Longitude)'
+
+	RET=$?
+
+	if [ $RET -gt 0 ]
+	then
+		echo "[1;31mNo GPS tag[0m"
+
+		NOGPS=$[ $NOGPS + 1 ]
+	fi
+done
+
+echo
+echo "$NOGPS photos with no GPS tag"

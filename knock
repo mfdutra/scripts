@@ -1,0 +1,20 @@
+#!/usr/bin/python
+
+# $Id: knock 2492 2009-09-01 13:10:55Z marlon $
+
+import socket
+import sys
+
+if len(sys.argv) < 3:
+	print >> sys.stderr, 'Usage: %s IP port1 port2 portN...' % sys.argv[0]
+	sys.exit(1)
+
+host = sys.argv[1]
+ports = map(int, sys.argv[2:])
+
+print 'Knocking %s at ports %s' % (host, ', '.join(map(str, ports)))
+
+for port in ports:
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	s.setblocking(0)
+	s.connect_ex((host, port))
