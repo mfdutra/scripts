@@ -1,7 +1,5 @@
 #!/usr/bin/python
 
-# $Id: asterisk_mon_start.py 3565 2010-06-29 18:57:42Z marlon $
-
 # Watch an Asterisk's module via inotify to determite when it's starting up and
 # then load res_config_pgsql.so afterwards.
 #
@@ -9,6 +7,21 @@
 # res_config_pgsql.so is loaded with Asterisk, it segfaults 90% of the times.
 #
 # Marlon Dutra -- Fri, 16 Apr 2010 14:42:45 -0300
+
+# Copyright 2011 Marlon Dutra
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ASTERISK = '/usr/sbin/asterisk'
 MONITOR = '/usr/lib/asterisk/modules/chan_sip.so'

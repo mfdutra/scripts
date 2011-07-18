@@ -1,7 +1,5 @@
 #!/usr/bin/python
 
-# $Id: timestamp.py 3222 2010-03-19 00:40:41Z marlon $
-
 # Convert a timestamp to a human-reading date/time in the current timezone
 
 # Copyright 2010 Marlon Dutra

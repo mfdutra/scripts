@@ -5,10 +5,23 @@
 # Marlon Dutra
 # January 12th, 2009
 #
-# $Id: gen_hex_dns.py 4070 2011-02-26 13:43:44Z marlon $
-#
 # Dependencies:
 #   apt-get install python-ipy
+
+# Copyright 2011 Marlon Dutra
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from ip_to_hex import ip_to_hex
 import sys

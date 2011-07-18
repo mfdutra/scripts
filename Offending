@@ -1,7 +1,5 @@
 #!/usr/bin/python
 
-# $Id: Offending 4081 2011-03-01 19:25:21Z marlon $
-
 # Whenever SSH complains about changed keys and you are aware that the key has
 # in fact been changed, copy and paste the "Offending..." line in the shell.
 # Since this is script is called "Offending" on purpose, it will regenerate
