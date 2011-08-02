@@ -81,3 +81,5 @@ for iid in iids:
 	print 'LegendI[%s_%s_iops]: read' % (sysName, devices[iid])
 	print 'LegendO[%s_%s_iops]: write' % (sysName, devices[iid])
 	print
+
+print >> sys.stderr, 'Do not forget to mkdir /var/www/mrtg/%s-io' % (sysName)
