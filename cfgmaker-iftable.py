@@ -26,6 +26,7 @@ import datetime
 parser = OptionParser()
 
 parser.add_option('-c', '--community', default='public')
+parser.add_option('-i', '--ignore', action='store_true', help='Ignore null and loopback interfaces', default=False)
 
 (options, args) = parser.parse_args()
 
@@ -56,10 +57,21 @@ print 'WorkDir: /var/www/mrtg/%s-ifTable' % (sysName)
 print 'EnableIPv6: no'
 print
 
+# Sort interfaces by ifIndex number
 iids = sorted(ifData['ifIndex'].keys(), key=lambda x: int(x))
-print >> sys.stderr, iids
 for iid in iids:
 	ifName = ifData['ifDescr'][iid]
+
+	# Treat --ignore option
+	if options.ignore:
+		if ifName.startswith('NULL'): continue # Huawei
+		if ifName.startswith('Null'): continue # Cisco
+		if ifName.startswith('InLoopBack'): continue # Huawei
+		if ifName.startswith('LoopBack'): continue # Huawei
+		if ifName.startswith('Loopback'): continue # Cisco
+		if ifName == 'lo': continue # Linux
+
+	# Translate unwanted chars
 	ifName = ifName.replace('/', '_')
 	ifName = ifName.replace('.', '_')
 
