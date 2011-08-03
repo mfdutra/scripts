@@ -56,7 +56,8 @@ print 'WorkDir: /var/www/mrtg/%s-ifTable' % (sysName)
 print 'EnableIPv6: no'
 print
 
-iids = sorted(ifData['ifIndex'].keys())
+iids = sorted(ifData['ifIndex'].keys(), key=lambda x: int(x))
+print >> sys.stderr, iids
 for iid in iids:
 	ifName = ifData['ifDescr'][iid]
 	ifName = ifName.replace('/', '_')
