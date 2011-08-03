@@ -93,7 +93,7 @@ for iid in iids:
 	print 'MaxBytes[%s_%s_ifPkts]: 4294967296' % (sysName, ifName)
 	print 'Title[%s_%s_ifPkts]: %s -- %s -- ifPkts' % (sysName, ifName, sysName, ifData['ifDescr'][iid])
 	print 'PageTop[%s_%s_ifPkts]: <h1>%s -- %s -- ifPkts</h1>' % (sysName, ifName, sysName, ifData['ifDescr'][iid])
-	print 'Options[%s_%s_ifPkts]: growright, nolegend' % (sysName, ifName)
+	print 'Options[%s_%s_ifPkts]: growright, nolegend, nopercent' % (sysName, ifName)
 	print 'YLegend[%s_%s_ifPkts]: pkt/sec' % (sysName, ifName)
 	print 'ShortLegend[%s_%s_ifPkts]: pkt/sec' % (sysName, ifName)
 	print
@@ -104,7 +104,7 @@ for iid in iids:
 	print 'MaxBytes[%s_%s_ifDiscards]: 4294967296' % (sysName, ifName)
 	print 'Title[%s_%s_ifDiscards]: %s -- %s -- ifDiscards' % (sysName, ifName, sysName, ifData['ifDescr'][iid])
 	print 'PageTop[%s_%s_ifDiscards]: <h1>%s -- %s -- ifDiscards</h1>' % (sysName, ifName, sysName, ifData['ifDescr'][iid])
-	print 'Options[%s_%s_ifDiscards]: growright, nolegend' % (sysName, ifName)
+	print 'Options[%s_%s_ifDiscards]: growright, nolegend, nopercent' % (sysName, ifName)
 	print 'YLegend[%s_%s_ifDiscards]: discards/sec' % (sysName, ifName)
 	print 'ShortLegend[%s_%s_ifDiscards]: discards/sec' % (sysName, ifName)
 	print
@@ -115,7 +115,7 @@ for iid in iids:
 	print 'MaxBytes[%s_%s_ifErrors]: 4294967296' % (sysName, ifName)
 	print 'Title[%s_%s_ifErrors]: %s -- %s -- ifErrors' % (sysName, ifName, sysName, ifData['ifDescr'][iid])
 	print 'PageTop[%s_%s_ifErrors]: <h1>%s -- %s -- ifErrors</h1>' % (sysName, ifName, sysName, ifData['ifDescr'][iid])
-	print 'Options[%s_%s_ifErrors]: growright, nolegend' % (sysName, ifName)
+	print 'Options[%s_%s_ifErrors]: growright, nolegend, nopercent' % (sysName, ifName)
 	print 'YLegend[%s_%s_ifErrors]: errors/sec' % (sysName, ifName)
 	print 'ShortLegend[%s_%s_ifErrors]: errors/sec' % (sysName, ifName)
 	print
