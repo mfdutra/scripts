@@ -85,7 +85,10 @@ function bandwidthMeter(p)
 			if (this.p.callbackPercent)
 				this.p.callbackPercent(this.percentIn, this.percentOut);
 
-			setTimeout(function(){this.fetchIfData()}, this.p.interval * 1000);
+			var self = this;
+			setTimeout(function(){
+				self.fetchIfData();
+			}, this.p.interval * 1000);
 		}
 		catch(err)
 		{
