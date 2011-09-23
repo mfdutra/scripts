@@ -4,6 +4,29 @@ function defined(obj)
 		throw('assertion error');
 }
 
+/*
+Possible calls:
+
+bandwidthMeter({
+	host: 'router.domain',
+	ifIndex: 3,
+	interval: 60,
+	maxIn: 1000000,
+	maxOut: 1000000,
+	callbackPercent: function(a,b){speedGauge.setMarkerAB(a,b)},
+	callbackError: function(reason) {speedGauge.setInvalid(true);},
+});
+
+bandwidthMeter({
+	host: 'router.domain',
+	ifDescr: 'eth0',
+	interval: 60,
+	maxIn: 1000000,
+	maxOut: 1000000,
+	callbackPercent: function(a,b){speedGauge.setMarkerAB(a,b)},
+	callbackError: function(reason) {speedGauge.setInvalid(true);},
+});
+ */
 function bandwidthMeter(p)
 {
 	try { jQuery } catch(err)
@@ -15,7 +38,6 @@ function bandwidthMeter(p)
 	try
 	{
 		defined(p.host);
-		defined(p.ifIndex);
 		defined(p.interval);
 		defined(p.maxIn);
 		defined(p.maxOut);
@@ -23,6 +45,11 @@ function bandwidthMeter(p)
 	catch(err)
 	{
 		alert('bandwidthMeter: check required parameters');
+	}
+
+	if ((!p.ifIndex) && (!p.ifDescr))
+	{
+		alert('bandwidthMeter: either ifIndex or ifDescr must be provided');
 	}
 
 	// attributes
@@ -41,11 +68,17 @@ function bandwidthMeter(p)
 
 	this.fetchIfData = function()
 	{
+		var data;
+		if (this.p.ifIndex)
+			data = {ifIndex: this.p.ifIndex, host: this.p.host};
+		else
+			data = {ifDescr: this.p.ifDescr, host: this.p.host};
+
 		try
 		{
 			$.ajax({
 				url: 'snmpget-if.cgi',
-				data: {ifIndex: this.p.ifIndex, host: this.p.host},
+				data: data,
 				dataType: 'json',
 				context: this,
 				success: this.processIfData,
