@@ -3,7 +3,9 @@
 # A CGI script to query a device via snmp about if/outOctets of a network
 # interface
 #
-# Expected call: snmpget-if.cgi?ifIndex=1&host=router.domain
+# Possible calls:
+# snmpget-if.cgi?ifIndex=1&host=router.domain
+# snmpget-if.cgi?ifDescr=eth0&host=router.domain
 
 # Copyright 2011 Marlon Dutra
 #
@@ -27,12 +29,28 @@ import sys
 
 form = cgi.FieldStorage()
 
-ifIndex = form.getvalue('ifIndex')
+print 'Content-type: application/json\n'
+
+# if ifDescr is provided, look up ifIndex automatically
+if form.getvalue('ifDescr'):
+	interfaces = netsnmp.VarList('.1.3.6.1.2.1.2.2.1.2')
+	netsnmp.snmpwalk(interfaces, Version=1, DestHost=form.getvalue('host'), Community=form.getvalue('community', 'public'))
+
+	ifIndex = None
+	for iface in interfaces:
+		if iface.val == form.getvalue('ifDescr'):
+			ifIndex = iface.iid
+
+	if ifIndex is None:
+		print json.dumps({'error': 'No ifIndex found for interface %s' % (form.getvalue('ifDescr'))})
+		sys.exit()
+
+else: # no automatic ifIndex look up
+	ifIndex = form.getvalue('ifIndex')
+
 inOctets = netsnmp.Varbind('.1.3.6.1.2.1.2.2.1.10.%s' % ifIndex)
 outOctets = netsnmp.Varbind('.1.3.6.1.2.1.2.2.1.16.%s' % ifIndex)
 netsnmp.snmpget(inOctets, outOctets, Version=1, DestHost=form.getvalue('host'), Community=form.getvalue('community', 'public'))
-
-print 'Content-type: application/json\n'
 
 if inOctets.val:
 	print json.dumps({'inOctets': inOctets.val, 'outOctets': outOctets.val})
