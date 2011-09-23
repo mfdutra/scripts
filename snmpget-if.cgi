@@ -39,7 +39,12 @@ if form.getvalue('ifDescr'):
 	ifIndex = None
 	for iface in interfaces:
 		if iface.val == form.getvalue('ifDescr'):
-			ifIndex = iface.iid
+
+			# Bug workaround in python / net-snmp
+			if iface.iid:
+				ifIndex = iface.iid
+			else:
+				ifIndex = iface.tag.split('.')[-1]
 
 	if ifIndex is None:
 		print json.dumps({'error': 'No ifIndex found for interface %s' % (form.getvalue('ifDescr'))})
