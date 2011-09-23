@@ -64,6 +64,15 @@ function bandwidthMeter(p)
 	this.processIfData = function(data, textStatus, jqXHR)
 	{
 		try {
+			// check for errors
+			if (data.error)
+			{
+				if (this.p.callbackError)
+					this.p.callbackError(data.error);
+
+				return false;
+			}
+
 			// do not calculate delta in the 1st read
 			if ((this.currentIn > 0) || (this.currentOut > 0))
 			{
