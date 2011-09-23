@@ -6,6 +6,9 @@
 # Possible calls:
 # snmpget-if.cgi?ifIndex=1&host=router.domain
 # snmpget-if.cgi?ifDescr=eth0&host=router.domain
+#
+# Note: prefer always the ifIndex approach if your router has fixed ifIndex.
+# It's faster than looking up the interface table for the ifIndex.
 
 # Copyright 2011 Marlon Dutra
 #
