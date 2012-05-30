@@ -30,7 +30,7 @@ inoremap ,d <div class=""><CR><TAB><CR><BS></div><ESC>kA
 
 inoremap ,em <i></i><ESC>hhhi
 
-inoremap ,fr <form method="POST" action="" id="form1"><CR></form>
+inoremap ,fr <form method="POST" action="" id="form1" name="form1"><CR></form>
 
 inoremap ,h1 <h1></h1><ESC>hhhhi
 inoremap ,h2 <h2></h2><ESC>hhhhi
