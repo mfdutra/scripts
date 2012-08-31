@@ -67,6 +67,9 @@ inoremap ,tt {t}{/t}<ESC>bba
 
 inoremap ,{ {ldelim}<CR><TAB><CR><BS>{rdelim}<ESC>kA
 
+inoremap ,ul <ul><CR></ul><ESC>ko<TAB>
+inoremap ,li <li><CR></li><ESC>ko<TAB>
+
 vmap ,a "zdi<a href=""><C-R>z</a><ESC>
 vmap ,b "zdi<b><C-R>z</b><ESC>
 vmap ,em "zdi<i><C-R>z</i><ESC>
