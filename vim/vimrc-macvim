@@ -1,0 +1,9 @@
+colorscheme torte
+syntax on
+set guifont=Menlo\ Regular:h13
+nmap <F4> :set spl=pt spell<CR>
+nmap <F5> :set spl=en spell<CR>
+filetype plugin on
+set ai
+set bg=dark
+set ic

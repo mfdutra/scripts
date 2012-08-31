@@ -1,4 +1,8 @@
-# Copyright 2012 Marlon Dutra
+#!/bin/bash
+
+# Convert whatever mplayer can read to a XViD
+
+# Copyright 2011 Marlon Dutra
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -12,3 +16,5 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+mencoder "$1" -o "$2" -ovc xvid -oac mp3lame -xvidencopts bitrate=800 -lameopts cbr:br=128
