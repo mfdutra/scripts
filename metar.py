@@ -23,16 +23,21 @@
 import httplib
 import sys
 
-station = sys.argv[1].upper()
+for station in sys.argv[1:]:
+	station = station.upper()
 
-conn = httplib.HTTPConnection("weather.noaa.gov")
-conn.request('GET', '/pub/data/observations/metar/stations/%s.TXT' % station)
-r1 = conn.getresponse()
+	# K = USA
+	if len(station) == 3:
+		station = 'K' + station
 
-if r1.status != 200:
-	print >> sys.stderr, 'Could not get METAR information: %d %s' % (r1.status, r1.reason)
-	sys.exit(1)
+	conn = httplib.HTTPConnection("weather.noaa.gov")
+	conn.request('GET', '/pub/data/observations/metar/stations/%s.TXT' % station)
+	r1 = conn.getresponse()
 
-data = r1.read()
+	if r1.status != 200:
+		print >> sys.stderr, 'Could not get METAR for %s: %d %s' % (station, r1.status, r1.reason)
+		sys.exit(1)
 
-print data.strip()
+	data = r1.read()
+
+	print data.strip()
