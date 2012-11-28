@@ -7,3 +7,5 @@ filetype plugin on
 set ai
 set bg=dark
 set ic
+au InsertEnter * match ErrorMsg /\s\+\%#\@<!$/
+au InsertLeave * match ErrorMsg /\s\+$/
