@@ -22,6 +22,10 @@
 
 import httplib
 import sys
+import re
+
+tempRe = re.compile(r' (M?\d\d/M?\d\d) ')
+windRe = re.compile(r'([\dG]+KT)')
 
 for station in sys.argv[1:]:
 	station = station.upper()
@@ -39,5 +43,7 @@ for station in sys.argv[1:]:
 		sys.exit(1)
 
 	data = r1.read()
+	data = tempRe.sub(r' [1;32m\1[0m ', data)
+	data = windRe.sub(r'[1;33m\1[0m', data)
 
 	print data.strip()
