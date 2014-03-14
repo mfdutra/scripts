@@ -2,4 +2,6 @@ openssl req -new -newkey rsa:2048 -keyout ca.key -out ca.req
 
 openssl ca -create_serial -out ca.crt -days 9125 -keyfile ca.key -selfsign -extensions v3_ca -in ca.req
 
+openssl req -new -newkey rsa:2048 -keyout $1.key -out $1.req -nodes
+
 openssl x509 -req -in $1.req -CA ca.crt -CAkey ca.key -out $1.crt -days 1825 -CAcreateserial
