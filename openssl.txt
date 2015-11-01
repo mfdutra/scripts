@@ -4,4 +4,8 @@ openssl ca -create_serial -out ca.crt -days 9125 -keyfile ca.key -selfsign -exte
 
 openssl req -new -newkey rsa:2048 -keyout $1.key -out $1.req -nodes
 
+# You may need to create a special openssl.cnf to fit your purpose
+openssl ca -in $1.req -out $1.crt -days 1825 -keyfile ca.key -cert ca.crt -config openssl.cnf
+
+# Simpler signing version, without full CA features
 openssl x509 -req -in $1.req -CA ca.crt -CAkey ca.key -out $1.crt -days 1825 -CAcreateserial
