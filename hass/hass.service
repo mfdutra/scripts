@@ -1,0 +1,17 @@
+[Unit]
+Description=Home Assistant
+After=network.target
+
+[Service]
+Type=simple
+User=hass
+PermissionsStartOnly=true
+ExecStartPre=/bin/chgrp hass /dev/ttyACM0
+ExecStart=/usr/local/bin/hass
+ExecReload=/bin/kill -s HUP $MAINPID
+Restart=always
+RestartSec=5
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,34 @@
+# Automation example for Remotec ZRC-90 using zwave-events.py
+
+# Node002_1_0
+# Node002: a Z-Wave device
+# 1: button number
+# 0: variation with the button
+#    0: single click
+#    1: long click
+#    3: double click
+
+# Turn off master bedroom immediately
+- alias: "Node002_1_0"
+  trigger:
+    platform: event
+    event_type: custom_scene
+    event_data:
+      button: Node002_1_0
+  action:
+    service: light.turn_off
+    data:
+      entity_id: light.master_bedroom
+
+# Turn off master bedroom with a 30-second transition
+- alias: "Node002_1_3"
+  trigger:
+    platform: event
+    event_type: custom_scene
+    event_data:
+      button: Node002_1_3
+  action:
+    service: light.turn_off
+    data:
+      entity_id: light.master_bedroom
+      transition: 30

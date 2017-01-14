@@ -1,0 +1,14 @@
+[Unit]
+Description=Home Assistant Zwave Custom Events
+After=hass.service
+
+[Service]
+Type=simple
+User=hass
+ExecStart=/home/hass/bin/zwave-events.py
+Restart=always
+RestartSec=5
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target
