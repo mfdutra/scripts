@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alarm</title>
+  <style>
+
+  html {
+    // background-color: black;
+  }
+
+  input {
+    font-size: x-large;
+    font-weight: bold;
+    border: 3px solid black;
+  }
+
+  p#error {
+    color: red;
+  }
+
+  </style>
+
+  <script>
+  var currentTimeout = 0;
+
+  function changeBgColor() {
+    document.body.style.backgroundColor = document.body.style.backgroundColor == 'white' ? 'black' : 'white';
+  }
+
+  function setAlarm() {
+    setInterval(changeBgColor, 1000);
+  }
+
+  function checkInput() {
+    var time = document.getElementById('time');
+    var error = document.getElementById('error');
+
+    if (! time.value.match(/^\d{4}$/)) {
+      time.style.borderColor = "red";
+      error.innerText = 'Wrong format';
+      return;
+    }
+
+    var now = new Date();
+    var alarmTime = new Date();
+    alarmTime.setHours(parseInt(time.value.substring(0, 2)));
+    alarmTime.setMinutes(parseInt(time.value.substring(2, 4)));
+    alarmTime.setSeconds(0);
+
+    var diff = alarmTime - now;
+    if (diff < 0) {
+      time.style.borderColor = "red";
+      error.innerText = 'Time is in the past';
+      return;
+    }
+
+    clearTimeout(currentTimeout);
+    currentTimeout = setTimeout(setAlarm, diff)
+    error.innerText = '';
+    time.style.borderColor = "green";
+  }
+
+  </script>
+</head>
+
+<body>
+<p>
+<input id="time" type="text" name="time" size="10" maxlength="4" onchange="checkInput()" />
+</p>
+
+<p id="error"></p>
+
+</body>
+
+</html>
