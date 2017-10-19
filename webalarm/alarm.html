@@ -38,6 +38,10 @@
     var info = document.getElementById('info');
     info.innerText = '';
 
+    if (time.value.match(/^\d{3}$/)) {
+        time.value = '0' + time.value;
+    }
+
     if (! time.value.match(/^\d{4}$/)) {
       time.style.borderColor = "red";
       error.innerText = 'Wrong format';
