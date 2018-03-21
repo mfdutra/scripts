@@ -36,7 +36,13 @@
     var time = document.getElementById('time');
     var error = document.getElementById('error');
     var info = document.getElementById('info');
+    var now = new Date();
+    var alarmTime = new Date();
     info.innerText = '';
+
+    if (time.value.match(/^\d{2}$/)) {
+        time.value = now.getHours().toString() + time.value;
+    }
 
     if (time.value.match(/^\d{3}$/)) {
         time.value = '0' + time.value;
@@ -48,8 +54,6 @@
       return;
     }
 
-    var now = new Date();
-    var alarmTime = new Date();
     alarmTime.setHours(parseInt(time.value.substring(0, 2)));
     alarmTime.setMinutes(parseInt(time.value.substring(2, 4)));
     alarmTime.setSeconds(0);
