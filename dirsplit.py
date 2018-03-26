@@ -73,6 +73,8 @@ for f in fileList:
 		chunks.append(currentChunk)
 		currentChunk = []
 		leftSpace = size
+		leftSpace -= f.size
+		currentChunk.append(f)
 
 if currentChunk: # append last chunk
 	print 'Chunk: %d files - %d bytes' % (len(currentChunk), (size-leftSpace))
