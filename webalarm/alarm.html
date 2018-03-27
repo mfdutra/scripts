@@ -38,10 +38,13 @@
     var info = document.getElementById('info');
     var now = new Date();
     var alarmTime = new Date();
+    var hours = 0;
     info.innerText = '';
 
     if (time.value.match(/^\d{2}$/)) {
-        time.value = now.getHours().toString() + time.value;
+        hours = now.getHours();
+        if (parseInt(time.value) <= now.getMinutes()) hours++;
+        time.value = hours.toString() + time.value;
     }
 
     if (time.value.match(/^\d{3}$/)) {
