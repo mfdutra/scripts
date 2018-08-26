@@ -1,34 +1,32 @@
-# Automation example for Remotec ZRC-90 using zwave-events.py
+# scene_id refers to the button number
+# Possible scene_data values:
+#   0: single press
+#   1: holding button (event will repeat multiple times)
+#   2: hold release (event fires when button is released if holding)
+#   3: quick double press
 
-# Node002_1_0
-# Node002: a Z-Wave device
-# 1: button number
-# 0: variation with the button
-#    0: single click
-#    1: long click
-#    3: double click
-
-# Turn off master bedroom immediately
-- alias: "Node002_1_0"
+- alias: Remotec button 1 single press
   trigger:
     platform: event
-    event_type: custom_scene
+    event_type: zwave.scene_activated
     event_data:
-      button: Node002_1_0
+      entity_id: zwave.remotec_1
+      scene_id: 1
+      scene_data: 0
   action:
-    service: light.turn_off
+    service: light.turn_on
     data:
-      entity_id: light.master_bedroom
+      entity_id: light.some_light
 
-# Turn off master bedroom with a 30-second transition
-- alias: "Node002_1_3"
+- alias: Remotec button 2 double press
   trigger:
     platform: event
-    event_type: custom_scene
+    event_type: zwave.scene_activated
     event_data:
-      button: Node002_1_3
+      entity_id: zwave.remotec_1
+      scene_id: 2
+      scene_data: 3  # double press
   action:
-    service: light.turn_off
+    service: light.turn_on
     data:
-      entity_id: light.master_bedroom
-      transition: 30
+      entity_id: light.some_light
