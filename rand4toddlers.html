@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Random numbers and letters for toddlers</title>
+    <style>
+    p {
+        text-align: center;
+        font-size: 1000%;
+        font-weight: bold;
+    }
+    </style>
+
+    <script>
+
+    var ar = [];
+    var current = 0;
+
+    function shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex;
+
+      while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+
+      return array;
+    }
+
+    function next() {
+        document.getElementById('letter').innerText = ar[current];
+        current = (current == ar.length - 1) ? 0 : current + 1;
+    }
+
+    </script>
+
+</head>
+
+<body>
+
+<p id='letter' onclick='next()'>XXX</p>
+
+<script>
+
+for (var i=65; i<=90; i++) {
+    ar.push(String.fromCharCode(i) + String.fromCharCode(i+32));
+}
+
+for (var i=0; i<=20; i++) {
+    ar.push(i.toString());
+}
+
+ar = shuffle(ar);
+next();
+
+</script>
+
+</body>
+</html>
