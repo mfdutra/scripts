@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3.6
 
 # Generate a random password
 
@@ -17,14 +17,16 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import random
+import base64
+import crypt
+import getpass
+import os
 
-CHARS=16
+CHARS=32
 
-data = ('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9')
+rand = os.urandom(CHARS * 2)
+passwd = base64.b64encode(rand)[:CHARS].decode('ascii')
+sha512 = crypt.crypt(passwd, crypt.mksalt(crypt.METHOD_SHA512))
 
-result = ''
-for i in range(CHARS):
-	result += random.choice(data)
-
-print result
+print(passwd)
+print(sha512)
