@@ -1,0 +1,19 @@
+#!/bin/bash
+
+T=$(mktemp)
+OUT="${OUT:=$(mktemp)}"
+
+function cleanup {
+    rm -f "$T" "$OUT"
+}
+trap cleanup EXIT
+
+for F in "$@"
+do
+    echo "file '$PWD/$F'" >> "$T"
+done
+
+ffmpeg -f concat -safe 0 -i "$T" -c copy  "$OUT.mp4"
+
+echo
+echo "OUT: $OUT.mp4"
