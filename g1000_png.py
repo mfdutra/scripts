@@ -6,6 +6,7 @@ import sys
 
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
+from multiprocessing import Pool, cpu_count
 
 args = None
 keys = [
@@ -90,10 +91,10 @@ keys = [
     'HPLfd',
     'VPLwas',
 ]
-count = 1
-flightTime = 0
+queue = []
 
 def readCSV(name):
+    log(f'Parsing {name}')
     with open(name, 'r', encoding='ascii') as f:
         for line in f:
             parse(line.strip())
@@ -112,18 +113,25 @@ def parse(line):
     except IndexError:
         return
 
-    process(data)
+    queue.append(data)
+
+def preProcess():
+    # Pre-process the sequence to compute flight time
+    # Add sequence number for image generation
+
+    log('Pre-processing data')
+
+    flightTime = 0
+    for i in range(len(queue)):
+        queue[i]['i'] = i
+        ias = intOrZero(queue[i]['IAS'])
+        if ias > 60:
+            flightTime += 1
+        queue[i]['X-FlightTime'] = getTimeStr(flightTime)
 
 def process(data):
-    global count
-    global flightTime
-
     gps = getLatLon(data['Latitude'], data['Longitude'])
     power = int(float(data['E1 %Pwr']) * 100)
-    ias = intOrZero(data['IAS'])
-    if ias > 60:
-        flightTime += 1
-    flightTimeStr = getTimeStr(flightTime)
 
     text = f'''{data['Lcl Date']} {data['Lcl Time']}
 IAS / TAS / GS: {intOrZero(data['IAS'])} / {intOrZero(data['TAS'])} / {intOrZero(data['GndSpd'])}
@@ -133,7 +141,7 @@ GPS: {gps}
 HDG / TRK: {intOrZero(data['HDG'])} / {intOrZero(data['TRK'])}
 OAT: {data['OAT']}C
 PWR / MAP / RPM: {power}% / {data['E1 MAP']} / {intOrZero(data['E1 RPM'])}
-FLT TIME: {flightTimeStr}
+FLT TIME: {data['X-FlightTime']}
 '''
 
     img = Image.new('RGB', (args.width, args.height))
@@ -142,10 +150,12 @@ FLT TIME: {flightTimeStr}
     d = ImageDraw.Draw(img)
     d.text((10, 10), text, fill=(0, 255, 0), font=fnt)
 
-    img.save(args.outdir + f'/{count:06d}.png')
-    count += 1
+    img.save(args.outdir + f'/{data["i"]:06d}.png')
 
-    print(data['Lcl Date'] + ' ' + data['Lcl Time'])
+    log(data['Lcl Date'] + ' ' + data['Lcl Time'])
+
+def log(msg):
+    print(msg)
     sys.stdout.flush()
 
 def err(msg):
@@ -198,8 +208,11 @@ def main():
     args = parser.parse_args()
 
     readCSV(args.log)
-
-    print(f'Data points missing: {misses}\n')
+    preProcess()
+    cpus = cpu_count()
+    log(f'Using {cpus} CPUs')
+    with Pool(cpus) as p:
+        p.map(process, queue)
 
     print('Create the mp4 sequence with:')
     print(f"ffmpeg -r 1 -f image2 -i '%06d.png' -s {args.width}x{args.height} -pix_fmt yuv420p -r 29.97 g1000.mp4")
