@@ -91,15 +91,14 @@ keys = [
     'VPLwas',
 ]
 count = 1
-sequence = {}
+flightTime = 0
 
 def readCSV(name):
-    log(f'Parsing {name}')
     with open(name, 'r', encoding='ascii') as f:
         for line in f:
-            parseLine(line.strip())
+            parse(line.strip())
 
-def parseLine(line):
+def parse(line):
     if not line.startswith('2'):
         return
 
@@ -113,46 +112,19 @@ def parseLine(line):
     except IndexError:
         return
 
-    time = datetime.strptime(f"{data['Lcl Date']} {data['Lcl Time']}",
-        '%Y-%m-%d %H:%M:%S')
-    key = int(time.strftime('%s'))
-    if key in sequence:
-        err(f'Duplicate {time}')
-    sequence[key] = data
+    process(data)
 
-def checkMissing():
-    log('Checking for missing data points')
-
-    misses = 0
-    keys = sorted(sequence.keys())
-    previous = keys[0]
-    for k in keys:
-        if (k - previous) > 1:
-            misses += 1
-            err(f'Missing {previous}')
-
-        previous = k
-
-def genPng(data):
+def process(data):
     global count
-
-    # Make sure there is no data points missing
-    # The log should provide one data point per second
-    time = datetime.strptime(f"{data['Lcl Date']} {data['Lcl Time']}",
-        '%Y-%m-%d %H:%M:%S', )
-    global prevTime
-    global misses
-    if prevTime is None:
-        prevTime = time
-
-    diff = time - prevTime
-    if diff.seconds > 1:
-        err(f'Missing data point after {prevTime}')
-        misses += 1
-    prevTime = time
+    global flightTime
 
     gps = getLatLon(data['Latitude'], data['Longitude'])
     power = int(float(data['E1 %Pwr']) * 100)
+    ias = intOrZero(data['IAS'])
+    if ias > 60:
+        flightTime += 1
+    flightTimeStr = getTimeStr(flightTime)
+
     text = f'''{data['Lcl Date']} {data['Lcl Time']}
 IAS / TAS / GS: {intOrZero(data['IAS'])} / {intOrZero(data['TAS'])} / {intOrZero(data['GndSpd'])}
 ALT / BARO: {intOrZero(data['AltInd'])} / {data['BaroA']}
@@ -161,9 +133,8 @@ GPS: {gps}
 HDG / TRK: {intOrZero(data['HDG'])} / {intOrZero(data['TRK'])}
 OAT: {data['OAT']}C
 PWR / MAP / RPM: {power}% / {data['E1 MAP']} / {intOrZero(data['E1 RPM'])}
-WIND: {intOrZero(data['WndDr'])}° {intOrZero(data['WndSpd'])}
+FLT TIME: {flightTimeStr}
 '''
-
 
     img = Image.new('RGB', (args.width, args.height))
 
@@ -175,13 +146,10 @@ WIND: {intOrZero(data['WndDr'])}° {intOrZero(data['WndSpd'])}
     count += 1
 
     print(data['Lcl Date'] + ' ' + data['Lcl Time'])
+    sys.stdout.flush()
 
 def err(msg):
     print(f'[1;31m{msg}[0m', file=sys.stderr)
-
-def log(msg):
-    print(msg)
-    sys.stdout.flush()
 
 def getLatLon(lat, lon):
     if not lat or not lon:
@@ -201,6 +169,13 @@ def getLatLon(lat, lon):
     lonstr = f'{abs(int(lon))}°{int(lonmin)}\'{int(lonsec)}"{lonhem}'
 
     return f'{latstr} {lonstr}'
+
+def getTimeStr(sec):
+    hour = sec // 3600
+    sec = sec % 3600
+    minute = sec // 60
+    sec = sec % 60
+    return f'{hour:02d}:{minute:02d}:{sec:02d}'
 
 def intOrZero(n):
     try:
@@ -223,7 +198,6 @@ def main():
     args = parser.parse_args()
 
     readCSV(args.log)
-    checkMissing()
 
     print(f'Data points missing: {misses}\n')
 
