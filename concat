@@ -6,7 +6,7 @@ T=$(mktemp)
 OUT="${OUT:=$(mktemp)}"
 
 function cleanup {
-    rm -f "$T" "$OUT"
+    rm -f "$T"
 }
 trap cleanup EXIT
 
@@ -18,4 +18,5 @@ done
 ffmpeg -f concat -safe 0 -i "$T" -c copy  "$OUT.mp4"
 
 echo
+echo "IN:  $@"
 echo "OUT: $OUT.mp4"
