@@ -2,7 +2,7 @@
 
 import argparse
 import time
-from subprocess import check_output, run
+from subprocess import check_output, run, CalledProcessError, DEVNULL
 
 def main():
     parser = argparse.ArgumentParser(description='Notify when interface changes status.')
@@ -14,7 +14,11 @@ def main():
     while True:
         ipv4 = False
         ipv6 = False
-        out = check_output(("/sbin/ifconfig", args.iface), encoding="utf-8")
+        try:
+            out = check_output(("/sbin/ifconfig", args.iface), encoding="utf-8", stderr=DEVNULL)
+        except CalledProcessError:
+            out = ""
+
         for line in out.splitlines():
             line = line.strip()
 
