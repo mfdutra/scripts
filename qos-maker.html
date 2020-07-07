@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt_BR">
+<!DOCTYPE html>
+<html>
+
 <!--
-# Copyright 2011 Marlon Dutra
+# Copyright 2011-2020 Marlon Dutra
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -63,7 +63,7 @@
 
 <h1>QoS Maker for Linux</h1>
 
-<h2>DiffServ Model</h2>
+<h2>DiffServ Model - Dual stack (IPv4/IPv6)</h2>
 
 <hr/>
 
@@ -135,6 +135,7 @@ tc qdisc del dev "$DEV" root 2&gt; /dev/null &gt; /dev/null
 # DSCP shift
 tc qdisc add dev "$DEV" handle 1:0 root dsmark indices 64 set_tc_index
 tc filter add dev "$DEV" parent 1:0 protocol ip prio 1 tcindex mask 0xfc shift 2
+tc filter add dev "$DEV" parent 1:0 protocol ipv6 prio 2 tcindex mask 0xfc shift 2
 
 # Root
 tc qdisc add dev "$DEV" parent 1:0 handle 2:0 htb default 5
@@ -144,6 +145,7 @@ tc class add dev "$DEV" parent 2:0 classid 2:1 htb rate ${LINK}Kbit ceil ${LINK}
 tc class add dev "$DEV" parent 2:1 classid 2:50 htb rate $[ $EFCIR * $LINK / 100 ]Kbit ceil $[ $EFMIR * $LINK / 100 ]Kbit prio 0
 tc qdisc add dev "$DEV" parent 2:50 pfifo limit 5
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 1 handle 0x2e tcindex classid 2:50 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 2 handle 0x2e tcindex classid 2:50 pass_on
 
 # AF4x
 tc class add dev "$DEV" parent 2:1 classid 2:40 htb rate $[ $AF4CIR * $LINK / 100 ]Kbit ceil $[ $AF4MIR * $LINK / 100 ]Kbit prio 5
@@ -156,6 +158,9 @@ tc qdisc change dev "$DEV" parent 2:40 gred limit 60KB min 15KB max 45KB burst 2
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 11 handle 34 tcindex classid 2:40 pass_on
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 12 handle 36 tcindex classid 2:40 pass_on
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 13 handle 38 tcindex classid 2:40 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 14 handle 34 tcindex classid 2:40 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 15 handle 36 tcindex classid 2:40 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 16 handle 38 tcindex classid 2:40 pass_on
 
 # AF3x
 tc class add dev "$DEV" parent 2:1 classid 2:30 htb rate $[ $AF3CIR * $LINK / 100 ]Kbit ceil $[ $AF3MIR * $LINK / 100 ]Kbit prio 5
@@ -168,6 +173,9 @@ tc qdisc change dev "$DEV" parent 2:30 gred limit 60KB min 15KB max 45KB burst 2
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 11 handle 26 tcindex classid 2:30 pass_on
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 12 handle 28 tcindex classid 2:30 pass_on
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 13 handle 30 tcindex classid 2:30 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 14 handle 26 tcindex classid 2:30 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 15 handle 28 tcindex classid 2:30 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 16 handle 30 tcindex classid 2:30 pass_on
 
 # AF2x
 tc class add dev "$DEV" parent 2:1 classid 2:20 htb rate $[ $AF2CIR * $LINK / 100 ]Kbit ceil $[ $AF2MIR * $LINK / 100 ]Kbit prio 5
@@ -180,6 +188,9 @@ tc qdisc change dev "$DEV" parent 2:20 gred limit 60KB min 15KB max 45KB burst 2
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 11 handle 18 tcindex classid 2:20 pass_on
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 12 handle 20 tcindex classid 2:20 pass_on
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 13 handle 22 tcindex classid 2:20 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 14 handle 18 tcindex classid 2:20 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 15 handle 20 tcindex classid 2:20 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 16 handle 22 tcindex classid 2:20 pass_on
 
 # AF1x
 tc class add dev "$DEV" parent 2:1 classid 2:10 htb rate $[ $AF1CIR * $LINK / 100 ]Kbit ceil $[ $AF1MIR * $LINK / 100 ]Kbit prio 5
@@ -192,6 +203,9 @@ tc qdisc change dev "$DEV" parent 2:10 gred limit 60KB min 15KB max 45KB burst 2
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 11 handle 10 tcindex classid 2:10 pass_on
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 12 handle 12 tcindex classid 2:10 pass_on
 tc filter add dev "$DEV" parent 2:0 protocol ip prio 13 handle 14 tcindex classid 2:10 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 14 handle 10 tcindex classid 2:10 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 15 handle 12 tcindex classid 2:10 pass_on
+tc filter add dev "$DEV" parent 2:0 protocol ipv6 prio 16 handle 14 tcindex classid 2:10 pass_on
 
 # BE
 tc class add dev "$DEV" parent 2:1 classid 2:5 htb rate $[ $BECIR * $LINK / 100 ]Kbit ceil $[ $BEMIR * $LINK / 100 ]Kbit prio 7
@@ -203,8 +217,7 @@ tc qdisc add dev "$DEV" parent 2:5 red limit 60KB min 15KB max 45KB burst 20 avp
 <hr/>
 
 <div class='copyleft'>
-SVN $Revision: 4302 $<br/>
-Copyleft 2011 <a href='http://hackers.propus.com.br/~marlon/blog/' target='_blank'>Marlon Dutra - Propus</a>
+Copyleft 2011-2020 <a href='https://mfdutra.com/' target='_blank'>Marlon Dutra</a>
 </div>
 
 </body>
@@ -217,7 +230,7 @@ function createScript()
 
 	var s = document.form1.tcScript;
 	var f = document.form1;
-	s.value = '#!/bin/bash\n\n';
+	s.value = '#!/bin/bash\n\nset -euo pipefail\n\n';
 
 	s.value += '# Copyleft 2011 Marlon Dutra - Propus\n\n';
 
