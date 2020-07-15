@@ -1,0 +1,1397 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<kml>
+  <Document>
+    <name>Service Centers</name>
+    <Placemark>
+      <name>EPPO</name>
+      <description>Aero Poznan</description>
+      <Point>
+        <coordinates>16.82629967,52.42100143</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KDTN</name>
+      <description>Tubreaux Aviation Maintenance,
+      LLC.</description>
+      <Point>
+        <coordinates>-93.7450225,32.5402189</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KAPA</name>
+      <description>Arapahoe Aero</description>
+      <Point>
+        <coordinates>-104.8493056,39.57011111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KGNV</name>
+      <description>University Air Center</description>
+      <Point>
+        <coordinates>-82.27177778,29.69005556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSMO</name>
+      <description>Kim Davidson Aviation Incorporated</description>
+      <Point>
+        <coordinates>-118.4513056,34.01583333</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LKPM</name>
+      <description>OK Aviation Service, s.r.o.</description>
+      <Point>
+        <coordinates>14.10060024,49.7201004</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KHIO</name>
+      <description>Hillsboro Aviation, Inc.</description>
+      <Point>
+        <coordinates>-122.9501667,45.54077778</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SADF</name>
+      <description>Cielo S.A.</description>
+      <Point>
+        <coordinates>-58.5896,-34.4532</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSGU</name>
+      <description>Above View Jet Center Inc.</description>
+      <Point>
+        <coordinates>-113.5103056,37.03638889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMHR</name>
+      <description>Mather Aviation LLC - Sacramento</description>
+      <Point>
+        <coordinates>-121.2971944,38.55530556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KGEU</name>
+      <description>Glendale Aero Services</description>
+      <Point>
+        <coordinates>-112.2951389,33.52691667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LFSB</name>
+      <description>Air Service Basel GmbH</description>
+      <Point>
+        <coordinates>7.6,47.5667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSMD</name>
+      <description>Sweet Aviation LLC</description>
+      <Point>
+        <coordinates>-85.15277778,41.14336111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KGVQ</name>
+      <description>Boshart Enterprises &amp; Aircraft
+      Services</description>
+      <Point>
+        <coordinates>-78.16966667,43.03175</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMKG</name>
+      <description>Executive Air Transport</description>
+      <Point>
+        <coordinates>-86.23543872,43.16767172</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KEVV</name>
+      <description>Tri-State Aero, Inc.</description>
+      <Point>
+        <coordinates>-87.53086111,38.03841667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KDNL</name>
+      <description>Augusta Aviation, Inc.</description>
+      <Point>
+        <coordinates>-82.03938889,33.46658333</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KLNS</name>
+      <description>Advanced Lancaster, LP</description>
+      <Point>
+        <coordinates>-76.29436111,40.12236111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KFBL</name>
+      <description>Quality Aviation Incorporated</description>
+      <Point>
+        <coordinates>-93.31307364,44.32896939</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LKHK</name>
+      <description>Hradecka Letecka Servisni s.r.o.</description>
+      <Point>
+        <coordinates>15.84519958,50.25320053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KPIA</name>
+      <description>Byerly Aviation Inc</description>
+      <Point>
+        <coordinates>-89.69325,40.66419444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KTMB</name>
+      <description>Advanced Aircraft Center Inc.</description>
+      <Point>
+        <coordinates>-80.43322461,25.64756372</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SDCO</name>
+      <description>America Do Sul Services</description>
+      <Point>
+        <coordinates>-47.49000168,-23.47800064</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KHPN</name>
+      <description>Performance Flight</description>
+      <Point>
+        <coordinates>-73.70755556,41.06694444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KABR</name>
+      <description>Quest Aviation, Inc.</description>
+      <Point>
+        <coordinates>-98.42244444,45.44830556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KLOM</name>
+      <description>flyADVANCED (Advanced Wings, LP)</description>
+      <Point>
+        <coordinates>-75.26513889,40.13755556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KPTK</name>
+      <description>Waterford Aviation</description>
+      <Point>
+        <coordinates>-83.42050564,42.66563619</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EHGG</name>
+      <description>General Enterprises b.v.</description>
+      <Point>
+        <coordinates>6.57944444,53.11944444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KTPF</name>
+      <description>Sarasota Avionics &amp; Maintenance (Tampa
+      ASC)</description>
+      <Point>
+        <coordinates>-82.44938889,27.91544444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBTV</name>
+      <description>Heritage Aviation</description>
+      <Point>
+        <coordinates>-73.15327831,44.47195556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CYQB</name>
+      <description>Waas Avionics</description>
+      <Point>
+        <coordinates>-71.39330292,46.79109955</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMCE</name>
+      <description>TDL Aero Enterprises</description>
+      <Point>
+        <coordinates>-120.5139167,37.28475</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KHUT</name>
+      <description>Wells Aircraft Inc</description>
+      <Point>
+        <coordinates>-97.8605,38.0661667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBIS</name>
+      <description>Executive Air Taxi Corporation</description>
+      <Point>
+        <coordinates>-100.74575,46.77272222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KTTA</name>
+      <description>Elite Aircraft Maintenance, LLC</description>
+      <Point>
+        <coordinates>-79.10133333,35.58244444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>YSBK</name>
+      <description>Regalair Pty Ltd</description>
+      <Point>
+        <coordinates>150.9880066,-33.92440033</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KDWA</name>
+      <description>Woodland Aviation Incorporated</description>
+      <Point>
+        <coordinates>-121.8569444,38.57938889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSGR</name>
+      <description>Houston Aviation Center, LLC</description>
+      <Point>
+        <coordinates>-95.65833,29.625</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EGJB</name>
+      <description>Aircraft Servicing Guernsey Ltd</description>
+      <Point>
+        <coordinates>-2.601969957,49.43500137</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EPBY</name>
+      <description>Wojskowe Zaklady Lotnicze Nr 2
+      S.A.</description>
+      <Point>
+        <coordinates>17.97769928,53.09680176</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KEIK</name>
+      <description>Vector Air</description>
+      <Point>
+        <coordinates>-105.0480833,40.01025</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KGGG</name>
+      <description>Aerosmith Aviation, Inc</description>
+      <Point>
+        <coordinates>-94.71148667,32.38401444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KCAE</name>
+      <description>Eagle Aviation, Inc.</description>
+      <Point>
+        <coordinates>-81.11952778,33.93883333</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KHEF</name>
+      <description>Delta Fox Aviation, LLC</description>
+      <Point>
+        <coordinates>-77.51510119,38.72102308</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KANE</name>
+      <description>Twin Cities Aviation</description>
+      <Point>
+        <coordinates>-93.21019444,45.14488889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KGRB</name>
+      <description>Jet Air Group</description>
+      <Point>
+        <coordinates>-88.12972222,44.48463889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOWD</name>
+      <description>FlightLevel Aviation</description>
+      <Point>
+        <coordinates>-71.17294444,42.19052778</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CYKZ</name>
+      <description>Air Partners</description>
+      <Point>
+        <coordinates>-79.37000275,43.86220169</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KFDK</name>
+      <description>Signature TechnicAir - FDK</description>
+      <Point>
+        <coordinates>-77.37430556,39.41755556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KDLH</name>
+      <description>Monaco Air Duluth</description>
+      <Point>
+        <coordinates>-92.19363889,46.84208333</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSUS</name>
+      <description>Mistwood Aviation Services, LLC</description>
+      <Point>
+        <coordinates>-90.65205556,38.66211111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSAT</name>
+      <description>Cutter Aviation San Antonio Inc.</description>
+      <Point>
+        <coordinates>-98.46905706,29.533958</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KPGD</name>
+      <description>APG Aviation</description>
+      <Point>
+        <coordinates>-81.99092581,26.91893767</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KDXR</name>
+      <description>US Flight Aircraft Maintenance</description>
+      <Point>
+        <coordinates>-73.48219444,41.37152778</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KVNY</name>
+      <description>Mather Aviation LLC - Van Nuys</description>
+      <Point>
+        <coordinates>-118.4899722,34.20980556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KCMA</name>
+      <description>Channel Islands Aviation</description>
+      <Point>
+        <coordinates>-119.0943611,34.21375</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KFRG</name>
+      <description>Nassau Flyers</description>
+      <Point>
+        <coordinates>-73.41341667,40.72877778</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I68</name>
+      <description>Lone Mountain Aircraft Maintenance</description>
+      <Point>
+        <coordinates>-84.2518471,39.4621731</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KPEA</name>
+      <description>Classic Aviation, Inc.</description>
+      <Point>
+        <coordinates>-92.94586111,41.40122222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KDVO</name>
+      <description>Scanlon Aviation</description>
+      <Point>
+        <coordinates>-122.5561,38.14361111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMQY</name>
+      <description>Corporate Flight Management
+      Incorporated</description>
+      <Point>
+        <coordinates>-86.52008333,36.00897222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBVS</name>
+      <description>Corporate Air Center</description>
+      <Point>
+        <coordinates>-122.4216944,48.47052778</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>YBCG</name>
+      <description>Air Gold Coast</description>
+      <Point>
+        <coordinates>153.5050049,-28.1644001</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KTRK</name>
+      <description>Sierra Aero</description>
+      <Point>
+        <coordinates>-120.1395628,39.32004222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KFCM</name>
+      <description>Premier Jet Center</description>
+      <Point>
+        <coordinates>-93.45856944,44.82750556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KFCI</name>
+      <description>Dominion Aviation Services, Inc</description>
+      <Point>
+        <coordinates>-77.52483333,37.40644444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBTP</name>
+      <description>Airquest Aviation</description>
+      <Point>
+        <coordinates>-79.95108333,40.77658333</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KGPI</name>
+      <description>Rocky Mountain Aircraft Services</description>
+      <Point>
+        <coordinates>-114.256,48.31047222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KFAR</name>
+      <description>Fargo Jet Center, Inc.</description>
+      <Point>
+        <coordinates>-96.81576389,46.92065</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBZN</name>
+      <description>Signature TechnicAir - BZN</description>
+      <Point>
+        <coordinates>-111.1520216,45.77757167</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRNT</name>
+      <description>Ace Aviation, Inc.</description>
+      <Point>
+        <coordinates>-122.21575,47.49313889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KTYS</name>
+      <description>Horizon Avionics Inc.</description>
+      <Point>
+        <coordinates>-83.99402778,35.81097222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMKL</name>
+      <description>Tennessee Aircraft Services</description>
+      <Point>
+        <coordinates>-88.91561111,35.59988889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRYV</name>
+      <description>Wisconsin Aviation Incorporated -
+      Watertown</description>
+      <Point>
+        <coordinates>-88.72322222,43.16963889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KLEX</name>
+      <description>Thoroughbred Aviation Maintenance
+      Inc.</description>
+      <Point>
+        <coordinates>-84.6086389,38.03675</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FALA</name>
+      <description>CDC Aviation Ltd.</description>
+      <Point>
+        <coordinates>27.924757,-25.940062</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>U42</name>
+      <description>Advantage Aviation LLC</description>
+      <Point>
+        <coordinates>-111.9928889,40.6195556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SNDH</name>
+      <description>ABA Manutencao de Aeronaves Ltd.</description>
+      <Point>
+        <coordinates>-45.02249908,-12.16027832</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KCPR</name>
+      <description>Soaring Aviation, LLC</description>
+      <Point>
+        <coordinates>-106.4644167,42.908</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CYKF</name>
+      <description>Tri-City Aero Maintenance, Inc.</description>
+      <Point>
+        <coordinates>-80.37861111,43.46083333</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBJC</name>
+      <description>Legacy Air, Inc.</description>
+      <Point>
+        <coordinates>-105.1171944,39.90880556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRFD</name>
+      <description>Chronos Aviation, LLC</description>
+      <Point>
+        <coordinates>-89.09722222,42.19536111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MMAN</name>
+      <description>Transpais Aereo Company</description>
+      <Point>
+        <coordinates>-100.2369995,25.86560059</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSMX</name>
+      <description>Coastal Valley Aviation</description>
+      <Point>
+        <coordinates>-120.4580833,34.89994444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBOI</name>
+      <description>Jackson Jet Center</description>
+      <Point>
+        <coordinates>-116.2228611,43.56436111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KCCR</name>
+      <description>Sterling Aviation</description>
+      <Point>
+        <coordinates>-122.0568889,37.98966667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KCPS</name>
+      <description>Ideal Aviation</description>
+      <Point>
+        <coordinates>-90.15508333,38.57036111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PHNL</name>
+      <description>Hawaii Aero MX LLC.</description>
+      <Point>
+        <coordinates>-157.9224072,21.318691</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSNA</name>
+      <description>American Aircraft Maintenance,
+      Inc.</description>
+      <Point>
+        <coordinates>-117.8682222,33.67566667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OMAD</name>
+      <description>Warter Aviation Mena</description>
+      <Point>
+        <coordinates>54.45809937,24.42830086</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LGMG</name>
+      <description>G.A. Aviation Services S.A.</description>
+      <Point>
+        <coordinates>23.365422,37.981114</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LOAN</name>
+      <description>Urbe Aero GmbH</description>
+      <Point>
+        <coordinates>16.26009941,47.84329987</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBRD</name>
+      <description>NorthPoint Aviation</description>
+      <Point>
+        <coordinates>-94.1381,46.3983</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LFPN</name>
+      <description>Farman Aero Maintenance</description>
+      <Point>
+        <coordinates>2.106189966,48.75189972</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBIL</name>
+      <description>Edwards Jet Center</description>
+      <Point>
+        <coordinates>-108.5428889,45.80766667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NZFI</name>
+      <description>Avcraft Engineering NZ Ltd</description>
+      <Point>
+        <coordinates>175.6049957,-40.25579834</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KREG</name>
+      <description>Glencoe Aviation</description>
+      <Point>
+        <coordinates>-90.9403861,30.1713667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RJOY</name>
+      <description>HIRATAGAKUEN - Academic Corporate
+      Body</description>
+      <Point>
+        <coordinates>135.600556,34.596667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SSVI</name>
+      <description>Aeroplace Manutencao De Aeronaves
+      Ltda</description>
+      <Point>
+        <coordinates>-51.14189911,-26.99970055</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EGNM</name>
+      <description>Multiflight Ltd</description>
+      <Point>
+        <coordinates>-1.660570025,53.86589813</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMGY</name>
+      <description>First Flight Aviation</description>
+      <Point>
+        <coordinates>-84.22486111,39.58897222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SBBI</name>
+      <description>Aeromecanica Ltda</description>
+      <Point>
+        <coordinates>-49.233611,-25.403333</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LFPP</name>
+      <description>Aerolithe Support</description>
+      <Point>
+        <coordinates>2.738056,49.11</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EKOD</name>
+      <description>Uni-Fly A/S</description>
+      <Point>
+        <coordinates>10.33090019,55.47669983</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KTLH</name>
+      <description>Flightline Group Incorporated</description>
+      <Point>
+        <coordinates>-84.35086111,30.39675</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KLIT</name>
+      <description>Central Flying Service</description>
+      <Point>
+        <coordinates>-92.22477778,34.72944444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>YPPF</name>
+      <description>Aero Service Pty Ltd</description>
+      <Point>
+        <coordinates>138.6329956,-34.79330063</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMNI</name>
+      <description>Precision Air</description>
+      <Point>
+        <coordinates>-80.20866667,33.58711111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SCEL</name>
+      <description>Aerocardal Limitada</description>
+      <Point>
+        <coordinates>-70.795833,-33.388889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CYHU</name>
+      <description>Handfield Aviation</description>
+      <Point>
+        <coordinates>-73.41690063,45.51750183</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KGMU</name>
+      <description>PF Flyers Inc.</description>
+      <Point>
+        <coordinates>-82.35,34.84794444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KLYH</name>
+      <description>Freedom Aviation, Inc.</description>
+      <Point>
+        <coordinates>-79.20122222,37.32538889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EGBJ</name>
+      <description>RGV Aviation Limited</description>
+      <Point>
+        <coordinates>-2.167220116,51.89419937</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RJFK</name>
+      <description>Japan General Aviation Service (JGAS) Kagoshima
+      Maintenance Center</description>
+      <Point>
+        <coordinates>130.7189941,31.80340004</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KABI</name>
+      <description>Abilene Aero Incorporated</description>
+      <Point>
+        <coordinates>-99.68188889,32.41133333</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSDL</name>
+      <description>Gemini Air Group</description>
+      <Point>
+        <coordinates>-111.9105278,33.62288889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KTYQ</name>
+      <description>First Wing Jet Center</description>
+      <Point>
+        <coordinates>-86.25144444,40.03066667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMFR</name>
+      <description>Jet Center</description>
+      <Point>
+        <coordinates>-122.8735,42.37422222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BIRK</name>
+      <description>Arctic Helicopters</description>
+      <Point>
+        <coordinates>-21.9405,64.13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSUX</name>
+      <description>Sponder Aviation Maintenance</description>
+      <Point>
+        <coordinates>-96.38436111,42.40261111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EDFE</name>
+      <description>Roeder Praezision GmbH</description>
+      <Point>
+        <coordinates>8.634722,49.951944</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KFXE</name>
+      <description>Millennial Technologies LLC</description>
+      <Point>
+        <coordinates>-80.17070628,26.19727936</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KDPA</name>
+      <description>Chicago Aviation Services, LLC</description>
+      <Point>
+        <coordinates>-88.248,41.90705556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORL</name>
+      <description>Orlando Aircraft Services</description>
+      <Point>
+        <coordinates>-81.33291667,28.54547222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>F70</name>
+      <description>Gryphon Aircraft Services</description>
+      <Point>
+        <coordinates>-117.130982,33.575829</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LFBU</name>
+      <description>Airbus Flight Academy Europe</description>
+      <Point>
+        <coordinates>0.221456006,45.72919846</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RKSS</name>
+      <description>Cirrus Korea</description>
+      <Point>
+        <coordinates>126.7975,37.556944</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSGJ</name>
+      <description>Southeast Aero Services Inc</description>
+      <Point>
+        <coordinates>-81.33972222,29.95925</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KTKI</name>
+      <description>Cirrus Factory Service Center KTKI</description>
+      <Point>
+        <coordinates>-96.58876667,33.17706528</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBHB</name>
+      <description>Columbia Air Services - BHB, LLC</description>
+      <Point>
+        <coordinates>-68.36156528,44.44976889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SBMT</name>
+      <description>Aristek Com&#233;rcio Aeron&#225;utico
+      Ltda.</description>
+      <Point>
+        <coordinates>-46.62529,-23.533773</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOSU</name>
+      <description>Ohio State University Airport</description>
+      <Point>
+        <coordinates>-83.07315169,40.07983089</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SNML</name>
+      <description>MANAL Manuten&#231;&#227;o Alagoana de Aeronaves
+      Ltda</description>
+      <Point>
+        <coordinates>-35.82944489,-9.544444084</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MMGL</name>
+      <description>Aerotron - Servicios Aereos Corporativos SA de
+      CV</description>
+      <Point>
+        <coordinates>-103.310997,20.52179909</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SDEN</name>
+      <description>Top Aviation Manuten&#231;&#227;o de Aeronaves
+      LTDA - ME</description>
+      <Point>
+        <coordinates>-48.62638889,-27.17722222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSUA</name>
+      <description>East Coast Aviation Services, Inc.</description>
+      <Point>
+        <coordinates>-80.22130556,27.18169444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMAF</name>
+      <description>Deer Horn Aviation</description>
+      <Point>
+        <coordinates>-102.2019167,31.94252778</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EDMA</name>
+      <description>Augsburg Air Service GmbH</description>
+      <Point>
+        <coordinates>10.93166733,48.42527771</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>YSTW</name>
+      <description>Sigma Aerospace</description>
+      <Point>
+        <coordinates>150.8466667,-31.08388889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBWI</name>
+      <description>Avdyne AeroServices LLC.</description>
+      <Point>
+        <coordinates>-76.66833333,39.17536111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBDN</name>
+      <description>Leading Edge Jet Center, LLC</description>
+      <Point>
+        <coordinates>-121.2002222,44.09455556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KVGT</name>
+      <description>Lone Mountain Aviation</description>
+      <Point>
+        <coordinates>-115.1944444,36.21069444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TJIG</name>
+      <description>Caribbean Aircraft Maintenance</description>
+      <Point>
+        <coordinates>-66.09809875,18.45680046</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSFF</name>
+      <description>Northwest Flight Service, LLC</description>
+      <Point>
+        <coordinates>-117.3224167,47.68294444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KCQF</name>
+      <description>Continental Motors Services</description>
+      <Point>
+        <coordinates>-87.87702778,30.4605</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KLPR</name>
+      <description>MRK Aviation, Inc</description>
+      <Point>
+        <coordinates>-82.17763889,41.34427778</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMSN</name>
+      <description>Wisconsin Aviation Incorporated -
+      Madison</description>
+      <Point>
+        <coordinates>-89.33750447,43.13987914</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KLNK</name>
+      <description>Silverhawk Aviation, Inc.</description>
+      <Point>
+        <coordinates>-96.75911111,40.85088889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EDAZ</name>
+      <description>CD Aircraft Maintenance GmbH</description>
+      <Point>
+        <coordinates>13.15638924,52.20360947</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRWI</name>
+      <description>AirCare Aviation, Inc.</description>
+      <Point>
+        <coordinates>-77.89193333,35.85625278</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KIOW</name>
+      <description>Jet Air, Inc.</description>
+      <Point>
+        <coordinates>-91.54813647,41.63976742</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KEST</name>
+      <description>Estherville Aviation, Inc.</description>
+      <Point>
+        <coordinates>-94.74644444,43.40744444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KBHM</name>
+      <description>Southern Sky Aviation</description>
+      <Point>
+        <coordinates>-86.75230556,33.56388889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LSZL</name>
+      <description>AeLo Maintenance SA</description>
+      <Point>
+        <coordinates>8.87861,46.160801</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>YPJT</name>
+      <description>Aero Jacks</description>
+      <Point>
+        <coordinates>115.8811111,-32.09722222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KARB</name>
+      <description>Aviation Center, Inc</description>
+      <Point>
+        <coordinates>-83.74560722,42.22298361</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KEDC</name>
+      <description>Chuck's Aircraft, LLC</description>
+      <Point>
+        <coordinates>-97.5663935,30.39749314</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Y14</name>
+      <description>Legacy Aviation, LLC</description>
+      <Point>
+        <coordinates>-96.801314,43.454904</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMCN</name>
+      <description>Lowe Aviation Company</description>
+      <Point>
+        <coordinates>-83.64921111,32.69285</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMYF</name>
+      <description>Coast Aviation Services, LLC</description>
+      <Point>
+        <coordinates>-117.1395833,32.81572222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRIC</name>
+      <description>Million Air - Richmond</description>
+      <Point>
+        <coordinates>-77.31966667,37.50516667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>YMMB</name>
+      <description>Blue Demon Aviation Pty Ltd</description>
+      <Point>
+        <coordinates>145.102005,-37.97579956</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KLGU</name>
+      <description>Leading Edge Aviation</description>
+      <Point>
+        <coordinates>-111.8516094,41.79128381</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LIKO</name>
+      <description>Professional Aviation Service SRL</description>
+      <Point>
+        <coordinates>11.5417,44.475</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMFE</name>
+      <description>McCreery Aviation Co., Inc.</description>
+      <Point>
+        <coordinates>-98.23861111,26.17583333</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MGGT</name>
+      <description>Aeromotores y Transportes, S.A.</description>
+      <Point>
+        <coordinates>-90.52749634,14.58329964</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KLUK</name>
+      <description>FlightLogix, LLC</description>
+      <Point>
+        <coordinates>-84.41861111,39.10333333</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KPDK</name>
+      <description>Epps Aviation</description>
+      <Point>
+        <coordinates>-84.30197222,33.87561111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KJVY</name>
+      <description>Aircraft Specialists, Inc.</description>
+      <Point>
+        <coordinates>-85.73819444,38.36541667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZGUH</name>
+      <description>AVIC GENERAL Service Co., Ltd</description>
+      <Point>
+        <coordinates>113.375999,22.006399</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSAF</name>
+      <description>Santa Fe Aero Services, LLC</description>
+      <Point>
+        <coordinates>-106.0894167,35.61711111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KCAK</name>
+      <description>G Force Aviation Incorporated</description>
+      <Point>
+        <coordinates>-81.44363889,40.91505556</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CYBW</name>
+      <description>Foster Aircraft Maintenance Ltd.</description>
+      <Point>
+        <coordinates>-114.3740005,51.10309982</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOWB</name>
+      <description>MidAmerica Aircraft Services, LLC</description>
+      <Point>
+        <coordinates>-87.16682856,37.73883417</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KAZO</name>
+      <description>Kalamazoo Aircraft</description>
+      <Point>
+        <coordinates>-85.55155556,42.23438889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LELL</name>
+      <description>Heliswiss Iberica, SA</description>
+      <Point>
+        <coordinates>2.105079889,41.52090073</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KFIT</name>
+      <description>Twin City Airmotive</description>
+      <Point>
+        <coordinates>-71.75897222,42.55411111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SVCS</name>
+      <description>Tecnicos Aereos Cimaut</description>
+      <Point>
+        <coordinates>-66.819006,10.287906</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KTYS</name>
+      <description>Cirrus Factory Service Center KTYS</description>
+      <Point>
+        <coordinates>-83.99402778,35.81097222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRST</name>
+      <description>Great Planes Aviation, LLC</description>
+      <Point>
+        <coordinates>-92.50002778,43.90827778</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LIRU</name>
+      <description>Diamond Aero SRL</description>
+      <Point>
+        <coordinates>12.49890041,41.95190048</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CZBB</name>
+      <description>Pro Aircraft Maintenance</description>
+      <Point>
+        <coordinates>-123.0122222,49.07416667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KPWM</name>
+      <description>Maine Aviation Aircraft Maintenance,
+      LLC</description>
+      <Point>
+        <coordinates>-70.30861636,43.6456435</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMLU</name>
+      <description>JPS Aviation, LLC</description>
+      <Point>
+        <coordinates>-92.03766667,32.51086111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KCHS</name>
+      <description>Interstate Turbine</description>
+      <Point>
+        <coordinates>-80.04052778,32.89863889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KCCB</name>
+      <description>Foothill Aviation Sales &amp; Service
+      Inc.</description>
+      <Point>
+        <coordinates>-117.6873889,34.11161111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KELP</name>
+      <description>El Paso Aero Incorporated</description>
+      <Point>
+        <coordinates>-106.3763611,31.80719444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KASH</name>
+      <description>Infinity Aviation Services, LLC</description>
+      <Point>
+        <coordinates>-71.51409444,42.78241389</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KSYR</name>
+      <description>Signature TechnicAir - SYR</description>
+      <Point>
+        <coordinates>-76.10630556,43.11119444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KGOO</name>
+      <description>Sierra Mountain Aviation, Inc.</description>
+      <Point>
+        <coordinates>-121.0030833,39.22402778</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KCDW</name>
+      <description>Paragon Aircraft Service, Inc.</description>
+      <Point>
+        <coordinates>-74.28136111,40.87522222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRYY</name>
+      <description>DLK Aviation Incorporated</description>
+      <Point>
+        <coordinates>-84.59702778,34.01316667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KLBB</name>
+      <description>Lubbock Aero</description>
+      <Point>
+        <coordinates>-101.8205556,33.66366667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMEM</name>
+      <description>Total Air Group, LLC</description>
+      <Point>
+        <coordinates>-89.97666667,35.04241667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KCOD</name>
+      <description>Choice Aviation LLC</description>
+      <Point>
+        <coordinates>-109.0238056,44.52019444</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KTUL</name>
+      <description>Autopilots Central / Sparks
+      Aviation</description>
+      <Point>
+        <coordinates>-95.88811111,36.19838889</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
