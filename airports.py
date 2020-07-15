@@ -33,11 +33,40 @@ def log(msg):
     print(msg, file=sys.stderr)
     sys.stderr.flush()
 
+def load_foreflight(fname):
+    airports = set()
+    begin = False
+    with open(fname, 'r', encoding='utf-8') as fd:
+        for line in fd:
+            if line.startswith('Date,AircraftID'):
+                begin = True
+                continue
+
+            # Skip aircraft information on the top of the file
+            if not begin:
+                continue
+
+            # Skip simulator flights
+            fields = line.split(',')
+            if fields[1] == 'SIM':
+                continue
+
+            # Get all airports from FROM and TO, separated by spaces
+            for apt in (fields[2].split() + fields[3].split()):
+                airports.add(apt)
+
+    return airports
+
 def main(args):
     # Desired airports
     log('Loading desired airports...')
-    airports = open(args.airports, 'r', encoding='utf-8').readlines()
-    airports = [a.strip() for a in airports]
+
+    if args.foreflight:
+        airports = load_foreflight(args.airports)
+
+    else:
+        airports = open(args.airports, 'r', encoding='utf-8').readlines()
+        airports = set([a.strip() for a in airports])
 
     # FAA Database
     log('Loading airport database (may take a while)...')
@@ -68,6 +97,7 @@ def main(args):
                 continue
 
             pos = m.findall(f'.//{AIXM}ARP/{AIXM}ElevatedPoint/{GML}pos')[0].text
+            log(loc)
 
         except IndexError:
             continue
@@ -87,5 +117,7 @@ if __name__ == '__main__':
     parser.add_argument('database', help='FAA APT_AIXM.xml file')
     parser.add_argument('airports', help='List of desired airports')
     parser.add_argument('output', help='KML output file')
+    parser.add_argument('--foreflight', action='store_true',
+        help='Parse desired airports from a Foreflight logbook')
 
     main(parser.parse_args())
