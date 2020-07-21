@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 # METAR
 
@@ -20,30 +20,22 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import httplib
-import sys
 import re
+import sys
+from urllib.request import urlopen
 
-tempRe = re.compile(r' (M?\d\d/M?\d\d) ')
-windRe = re.compile(r'([\dG]+KT)')
+metar_re = re.compile(r'<code>(.*)</code>')
 
 for station in sys.argv[1:]:
-	station = station.upper()
+    station = station.upper()
 
-	# K = USA
-	if len(station) == 3:
-		station = 'K' + station
+    r1 = urlopen(f'https://www.aviationweather.gov/metar/data?ids={station}&format=raw&hours=0&taf=off&layout=off')
 
-	conn = httplib.HTTPConnection("weather.noaa.gov")
-	conn.request('GET', '/pub/data/observations/metar/stations/%s.TXT' % station)
-	r1 = conn.getresponse()
+    data = r1.read().decode('utf-8')
+    match = metar_re.search(data, re.M)
 
-	if r1.status != 200:
-		print >> sys.stderr, 'Could not get METAR for %s: %d %s' % (station, r1.status, r1.reason)
-		sys.exit(1)
+    try:
+        print(match.group(1).strip())
 
-	data = r1.read()
-	data = tempRe.sub(r' [1;32m\1[0m ', data)
-	data = windRe.sub(r'[1;33m\1[0m', data)
-
-	print data.strip()
+    except AttributeError:
+        print(f'Could not find METAR for {station}', file=sys.stderr)
