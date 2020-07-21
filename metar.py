@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
-# METAR
+# Metar retriever
 
-# Marlon Dutra
-# Fri Jul  6 16:38:34 BRT 2012
+# Formats supported:
+# ./metar KHWD KSFO KJFK
+# ./metar @CA  # all airports in California
+# ./metar '~BR'  # all airports in Brazil
 
-# Copyright 2012 Marlon Dutra
+# Copyright 2012-2020 Marlon Dutra
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -20,22 +22,14 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import re
 import sys
+import xml.etree.ElementTree as ET
 from urllib.request import urlopen
 
-metar_re = re.compile(r'<code>(.*)</code>')
+station = ','.join(sys.argv[1:]).upper()
 
-for station in sys.argv[1:]:
-    station = station.upper()
+r1 = urlopen(f'https://www.aviationweather.gov/adds/dataserver_current/httpparam?dataSource=metars&requestType=retrieve&format=xml&hoursBeforeNow=1&stationString={station}')
+root = ET.fromstring(r1.read())
 
-    r1 = urlopen(f'https://www.aviationweather.gov/metar/data?ids={station}&format=raw&hours=0&taf=off&layout=off')
-
-    data = r1.read().decode('utf-8')
-    match = metar_re.search(data, re.M)
-
-    try:
-        print(match.group(1).strip())
-
-    except AttributeError:
-        print(f'Could not find METAR for {station}', file=sys.stderr)
+for m in root.findall('./data/METAR'):
+    print(m.find('./raw_text').text)
