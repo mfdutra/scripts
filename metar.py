@@ -25,10 +25,20 @@
 import sys
 import xml.etree.ElementTree as ET
 from urllib.request import urlopen
+from urllib.parse import urlencode
 
 station = ','.join(sys.argv[1:]).upper()
 
-r1 = urlopen(f'https://www.aviationweather.gov/adds/dataserver_current/httpparam?dataSource=metars&requestType=retrieve&format=xml&hoursBeforeNow=1&stationString={station}')
+params = {
+    'dataSource': 'metars',
+    'format': 'xml',
+    'hoursBeforeNow': '2',
+    'mostRecentForEachStation': 'constraint',
+    'requestType': 'retrieve',
+    'stationString': station,
+}
+
+r1 = urlopen('https://www.aviationweather.gov/adds/dataserver_current/httpparam?' + urlencode(params))
 root = ET.fromstring(r1.read())
 
 for m in root.findall('./data/METAR'):
