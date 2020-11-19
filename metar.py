@@ -24,7 +24,7 @@
 
 import sys
 import xml.etree.ElementTree as ET
-from urllib.request import urlopen
+from urllib.request import urlopen, Request
 from urllib.parse import urlencode
 
 station = ','.join(sys.argv[1:]).upper()
@@ -38,7 +38,15 @@ params = {
     'stationString': station,
 }
 
-r1 = urlopen('https://www.aviationweather.gov/adds/dataserver_current/httpparam?' + urlencode(params))
+url = 'https://www.aviationweather.gov/adds/dataserver_current/httpparam?' + urlencode(params)
+req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+
+try:
+    r1 = urlopen(req)
+except Exception as e:
+    print(f'Error fetching {url}', file=sys.stderr)
+    raise
+
 root = ET.fromstring(r1.read())
 
 for m in root.findall('./data/METAR'):
