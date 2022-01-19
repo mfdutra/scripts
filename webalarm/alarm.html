@@ -14,14 +14,28 @@
     border: 3px solid black;
   }
 
+  p#clock {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: monospace;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  p#utc_clock {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    margin-top: 5px;
+    text-align: center;
+  }
+
   p#error {
     color: red;
   }
 
   </style>
 
-  <script type="text/javascript" src='raphael-min.js'></script>
-  <script type="text/javascript" src='gauges.js'></script>
   <script>
   var currentTimeout = 0;
 
@@ -77,6 +91,19 @@
     time.style.borderColor = "green";
   }
 
+  function setClock() {
+    let d = new Date();
+    let sao_paulo = new Date(d.toLocaleString('en-US', {timeZone: "America/Sao_Paulo"}));
+    let london = new Date(d.toLocaleString('en-US', {timeZone: "Europe/London"}));
+    document.getElementById('clock').innerText = d.toTimeString().substring(0, 8);
+    document.getElementById('utc_clock').innerText = d.toUTCString().substring(17,22) + " UTC\n" +
+      "🇧🇷" + sao_paulo.toTimeString().substring(0, 5) +
+      "   🇬🇧" + london.toTimeString().substring(0, 5);
+
+	setTimeout(function(){setClock()}, 250);
+  }
+
+
   </script>
 </head>
 
@@ -88,10 +115,11 @@
 <p id="error"></p>
 <p id="info"></p>
 
+<p id="clock">00:00:00</p>
+<p id="utc_clock">00:00:00</p>
+
 <script type="text/javascript">
-
-var clock = new svgClock(10, 120);
-
+setClock();
 </script>
 
 </body>
