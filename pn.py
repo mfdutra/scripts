@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/python3.7
+#!/usr/bin/env python3
 
 # Output an 8-digit PRNG number
 
