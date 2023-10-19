@@ -2,12 +2,7 @@
 
 # Metar retriever
 
-# Formats supported:
-# ./metar KHWD KSFO KJFK
-# ./metar @CA  # all airports in California
-# ./metar '~BR'  # all airports in Brazil
-
-# Copyright 2012-2020 Marlon Dutra
+# Copyright 2012-2023 Marlon Dutra
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -23,31 +18,26 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import sys
-import xml.etree.ElementTree as ET
 from urllib.request import urlopen, Request
 from urllib.parse import urlencode
 
-station = ','.join(sys.argv[1:]).upper()
-
 params = {
-    'dataSource': 'metars',
-    'format': 'xml',
-    'hoursBeforeNow': '2',
-    'mostRecentForEachStation': 'constraint',
-    'requestType': 'retrieve',
-    'stationString': station,
+    'ids': '',
+    'hours': '0',
+    'order': 'id,-obs',
+    'sep': 'true',
 }
 
-url = 'https://www.aviationweather.gov/adds/dataserver_current/httpparam?' + urlencode(params)
-req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+for station in sys.argv[1:]:
+    params['ids'] = station
+    url = 'https://aviationweather.gov/cgi-bin/data/metar.php?' + urlencode(params)
 
-try:
-    r1 = urlopen(req)
-except Exception as e:
-    print(f'Error fetching {url}', file=sys.stderr)
-    raise
+    req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 
-root = ET.fromstring(r1.read())
+    try:
+        r1 = urlopen(req)
+    except Exception as e:
+        print(f'Error fetching {url}', file=sys.stderr)
+        raise
 
-for m in root.findall('./data/METAR'):
-    print(m.find('./raw_text').text)
+    print(r1.read().decode('ascii').strip())
