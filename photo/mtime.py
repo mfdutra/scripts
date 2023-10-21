@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Set filesystem modification time according to EXIF's time of creation
 
@@ -32,12 +32,12 @@ for file in sys.argv[1:]:
 		for line in exif:
 			if line.find('0x9003|') == 0:
 				datetime = line.split('|')[1].strip()
-	
+
 		if not datetime:
-			print "Unable to read capture date from " + file
+			print("Unable to read capture date from " + file)
 			continue
 
 		mtime = time.strptime(datetime, '%Y:%m:%d %H:%M:%S')
 
-		print file + ": " + datetime
+		print(file + ": " + datetime)
 		os.utime(file, (-1, int(time.mktime(mtime))))
