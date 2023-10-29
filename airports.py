@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/python3.7
+#!/usr/bin/env python3
 
 # Creates a KML with the desired airports
 
