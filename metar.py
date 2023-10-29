@@ -21,23 +21,23 @@ import sys
 from urllib.request import urlopen, Request
 from urllib.parse import urlencode
 
+if len(sys.argv) < 2:
+    print("Usage: metar AIRPORT1 [AIRPORT2...]", file=sys.stderr)
+    sys.exit(1)
+
 params = {
-    'ids': '',
-    'hours': '0',
-    'order': 'id,-obs',
-    'sep': 'true',
+    'ids': ','.join(sys.argv[1:]),
+    'format': 'raw',
 }
 
-for station in sys.argv[1:]:
-    params['ids'] = station
-    url = 'https://aviationweather.gov/cgi-bin/data/metar.php?' + urlencode(params)
+url = 'https://aviationweather.gov/api/data/metar?' + urlencode(params)
 
-    req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 
-    try:
-        r1 = urlopen(req)
-    except Exception as e:
-        print(f'Error fetching {url}', file=sys.stderr)
-        raise
+try:
+    r1 = urlopen(req)
+except Exception as e:
+    print(f'Error fetching {url}', file=sys.stderr)
+    raise
 
-    print(r1.read().decode('ascii').strip())
+print(r1.read().decode('ascii').strip())
