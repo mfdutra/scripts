@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # TCP knock ports
 
@@ -21,13 +21,13 @@ import socket
 import sys
 
 if len(sys.argv) < 3:
-	print >> sys.stderr, 'Usage: %s IP port1 port2 portN...' % sys.argv[0]
+	print('Usage: %s IP port1 port2 portN...' % sys.argv[0], file=sys.stderr)
 	sys.exit(1)
 
 host = sys.argv[1]
 ports = map(int, sys.argv[2:])
 
-print 'Knocking %s at ports %s' % (host, ', '.join(map(str, ports)))
+print('Knocking %s at ports %s' % (host, ', '.join(map(str, ports))))
 
 for port in ports:
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
