@@ -4,6 +4,7 @@
 import argparse
 import os
 import sys
+import time
 import requests
 import urllib3
 
@@ -52,6 +53,11 @@ def parse_args():
         action="store_true",
         help="Disable SSL certificate verification",
     )
+    parser.add_argument(
+        "--block",
+        action="store_true",
+        help="Block the client for 60 seconds, then unblock (instead of just kicking)",
+    )
     return parser.parse_args()
 
 
@@ -67,6 +73,19 @@ def build_base_url(host: str, port: int) -> str:
     return host
 
 
+def stamgr_cmd(session: requests.Session, cmd_url: str, cmd: str, mac: str) -> dict:
+    resp = session.post(cmd_url, json={"cmd": cmd, "mac": mac})
+    resp.raise_for_status()
+    return resp.json()
+
+
+def check_rc(data: dict, action: str) -> bool:
+    if data.get("meta", {}).get("rc") == "ok":
+        return True
+    print(f"Unexpected response for {action}: {data}", file=sys.stderr)
+    return False
+
+
 def reconnect_client(
     base_url: str,
     username: str,
@@ -75,6 +94,7 @@ def reconnect_client(
     mac: str,
     unifi_os: bool,
     verify: bool,
+    block: bool,
 ) -> None:
     session = requests.Session()
     session.verify = verify
@@ -97,25 +117,31 @@ def reconnect_client(
 
     print(f"Logged in as '{username}'")
 
-    # --- Kick (force reconnect) ---
     mac = mac.lower()
     if unifi_os:
         cmd_url = f"{base_url}/proxy/network/api/s/{site}/cmd/stamgr"
     else:
         cmd_url = f"{base_url}/api/s/{site}/cmd/stamgr"
 
-    payload = {"cmd": "kick-sta", "mac": mac}
-    resp = session.post(cmd_url, json=payload)
-    resp.raise_for_status()
+    if block:
+        # --- Block ---
+        data = stamgr_cmd(session, cmd_url, "block-sta", mac)
+        if not check_rc(data, "block"):
+            sys.exit(1)
+        print(f"Client {mac} blocked. Waiting 60 seconds...")
+        time.sleep(60)
 
-    data = resp.json()
-    if data.get("meta", {}).get("rc") == "ok" or (
-        isinstance(data.get("data"), list) and data["meta"].get("rc") == "ok"
-    ):
-        print(f"Client {mac} has been kicked — it will reconnect automatically.")
+        # --- Unblock ---
+        data = stamgr_cmd(session, cmd_url, "unblock-sta", mac)
+        if not check_rc(data, "unblock"):
+            sys.exit(1)
+        print(f"Client {mac} unblocked — it will reconnect automatically.")
     else:
-        print(f"Unexpected response: {data}", file=sys.stderr)
-        sys.exit(1)
+        # --- Kick (force reconnect) ---
+        data = stamgr_cmd(session, cmd_url, "kick-sta", mac)
+        if not check_rc(data, "kick"):
+            sys.exit(1)
+        print(f"Client {mac} has been kicked — it will reconnect automatically.")
 
     # --- Logout ---
     if unifi_os:
@@ -145,6 +171,7 @@ def main():
             mac=args.mac,
             unifi_os=args.unifi_os,
             verify=verify,
+            block=args.block,
         )
     except requests.HTTPError as e:
         print(f"HTTP error: {e.response.status_code} — {e.response.text}", file=sys.stderr)
