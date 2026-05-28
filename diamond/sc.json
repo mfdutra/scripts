@@ -1,0 +1,1260 @@
+{
+  "addresses": [
+    {
+      "uid": 579,
+      "name": "Diamond Aircraft Factory Maintenance",
+      "lat": 47.842478,
+      "lng": 16.255528,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center exclusive\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Diamond Aircraft Factory Maintenance</p> </div> <div class=\"address small\"> <p> Ferdinand Graf von Zeppelin Straße 5 <br /> 2700 Wiener Neustadt<br /> Austria </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:maintenance@diamondaircraft.com\">maintenance@diamondaircraft.com</a><br /> <strong>Phone</strong> +432622267001827<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 433,
+      "name": "Diamond Deutschland",
+      "lat": 49.963446,
+      "lng": 8.646945,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center exclusive\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Diamond Aircraft Germany</p> </div> <div class=\"address small\"> <p> Hans-Fleißner-Straße 54<br /> 63329 Egelsbach<br /> Germany </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:maintenance@diamondair.de\">maintenance@diamondair.de</a><br /> <strong>Phone</strong> +49 0 6103 37852100<br /> <strong>Web</strong> <a href=\"http://www.diamondair.de\" target=\"_blank\" rel=\"noreferrer\">http://www.diamondair.de</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7; +49 (0) 6103 3785 2154</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 687,
+      "name": "Diamond Service - Canada",
+      "lat": 43.01898551,
+      "lng": -81.14907264,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center exclusive\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Diamond Service - Canada</p> </div> <div class=\"address small\"> <p> 1560 Crumlin Sideroad <br /> N5V1S2 London<br /> Canada </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:service-canada@diamondaircraft.com\">service-canada@diamondaircraft.com</a><br /> <strong>Phone</strong> 519-457-4071<br /> <strong>Web</strong> <a href=\"https://www.diamondaircraft.com\" target=\"_blank\">https://www.diamondaircraft.com</a><br /> </p> </div> <div class=\"description\"> <p><p>CYXU</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 633,
+      "name": "Air Baltic",
+      "lat": 56.520229,
+      "lng": 21.098104,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p></p> </div> <div class=\"address small\"> <p> Air Baltic Technics General Aviation Services Lidostas iela 11/13<br /> LV-3430 Cimdenieki<br /> Latvia </p> </div> </div> <div class=\"contact small\"> <p><strong>Contact</strong></p> <div class=\"name\"> <p> Air Baltic </p> </div> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@genavservices.com\">info@genavservices.com</a><br /> <strong>Phone</strong> +371 66904844<br /> <strong>Web</strong> <a href=\"http://www.airbaltictraining.com\" target=\"_blank\" rel=\"noreferrer\">http://www.airbaltictraining.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 721,
+      "name": "3M HAVACILIK LİMİTED ŞİRKETİ",
+      "lat": 40.23071421,
+      "lng": 29.01137322,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>3M HAVACILIK LİMİTED ŞİRKETİ</p> </div> <div class=\"address small\"> <p> Adalet Mah. Yunuseli Bulvari. Yunuseli Havaalani No:57/4 <br /> Osmangazi/BURSA<br /> Turkey <br>LTBE </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@3mhavacilik.com\">info@3mhavacilik.com</a><br /> <strong>Phone</strong> +90 505 114 88 22<br /> <strong>Web</strong> <a href=\"http://www.3mhavacilik.com\" target=\"_blank\" rel=\"noreferrer\">http://www.3mhavacilik.com</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7: +90 505 114 88 22</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 4,
+      "name": "info.voeslau@aac.at",
+      "lat": 47.965299,
+      "lng": 16.251911,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>AAC Austrian Aircraft Corporation</p> </div> <div class=\"address small\"> <p> Flugplatz Bad Vöslau<br /> 2540 Bad Vöslau<br /> Austria </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info.voeslau@aac.at\">info.voeslau@aac.at</a><br /> <strong>Phone</strong> +43 2252 7908 94<br /> <strong>Web</strong> <a href=\"http://www.aac.at\" target=\"_blank\" rel=\"noreferrer\">http://www.aac.at</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 5,
+      "name": "info.linz@aac.at",
+      "lat": 48.239964,
+      "lng": 14.186523,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>AAC Austrian Aircraft Corporation</p> </div> <div class=\"address small\"> <p> Flughafenstrasse 1<br /> 4063 Hörsching<br /> Austria </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info.linz@aac.at\">info.linz@aac.at</a><br /> <strong>Phone</strong> +43 7221 64 5 32-13<br /> <strong>Web</strong> <a href=\"http://www.aac.at\" target=\"_blank\" rel=\"noreferrer\">http://www.aac.at</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 6,
+      "name": "info.graz@aac.at",
+      "lat": 46.990477,
+      "lng": 15.445581,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>AAC Austrian Aircraft Corporation</p> </div> <div class=\"address small\"> <p> Flughafen Graz<br /> 8073 Feldkirchen<br /> Austria </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info.graz@aac.at\">info.graz@aac.at</a><br /> <strong>Phone</strong> +43 31629 6149<br /> <strong>Web</strong> <a href=\"http://www.aac.at\" target=\"_blank\" rel=\"noreferrer\">http://www.aac.at</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 502,
+      "name": "Absolute Aero Maintenance",
+      "lat": 37.660061,
+      "lng": -122.116628,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Absolute Aero Maintenance</p> </div> <div class=\"address small\"> <p> 21889 Skywest Dr<br /> 94541 Hayward<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 510-782-6591<br /> <strong>Web</strong> <a href=\"http://www.absolute-aero.com/\" target=\"_blank\" rel=\"noreferrer\">http://www.absolute-aero.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 647,
+      "name": "Carver Aviation",
+      "lat": 18.224554,
+      "lng": 74.592133,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Academy of Carver Aviation</p> </div> <div class=\"address small\"> <p> Plot-P50 MIDC Industrial Area<br /> 413133 Pune<br /> India </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@carveraviation.com\">info@carveraviation.com</a><br /> <strong>Phone</strong> +91 9881253747<br /> <strong>Web</strong> <a href=\"http://www.carveraviation.com\" target=\"_blank\" rel=\"noreferrer\">http://www.carveraviation.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 493,
+      "name": "Craig McDonald",
+      "lat": 56.435605,
+      "lng": -3.374683,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>ACS Aviation Ltd</p> </div> <div class=\"address small\"> <p> Hangar 3<br /> PH2 6PL Perth<br /> United Kingdom </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@acsengineering.co.uk\">info@acsengineering.co.uk</a><br /> <strong>Phone</strong> +440 1738 550 003<br /> <strong>Web</strong> <a href=\"http://www.acsengineering.co.uk\" target=\"_blank\" rel=\"noreferrer\">http://www.acsengineering.co.uk</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 504,
+      "name": "Advanced Aircraft Services",
+      "lat": 40.1161311,
+      "lng": -76.2937032,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Advanced Aircraft Services</p> </div> <div class=\"address small\"> <p> 530 Airport Road <br /> 17543 Lancaster<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 717-735-5179<br /> <strong>Web</strong> <a href=\"http://www.flyadvanced.com\" target=\"_blank\" rel=\"noreferrer\">http://www.flyadvanced.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 623,
+      "name": "Aelo Maintenance",
+      "lat": 46.162823,
+      "lng": 8.880872,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>AeLo Maintenance Ltd.</p> </div> <div class=\"address small\"> <p> via Aeroporto 21<br /> 6596 Gordola<br /> Switzerland </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@aelo.ch\">info@aelo.ch</a><br /> <strong>Phone</strong> +41 91 745 33 88<br /> <strong>Web</strong> <a href=\"http://www.aelo.ch\" target=\"_blank\" rel=\"noreferrer\">http://www.aelo.ch</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 541,
+      "name": "MX Aero Global",
+      "lat": 33.8120081,
+      "lng": -118.1568724,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aero City Maintenance</p> </div> <div class=\"address small\"> <p> 2901 E. Spring St., Suite A <br /> 90806 Long Beach<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 562-912-4263<br /> <strong>Web</strong> <a href=\"https://aerocitygroup.com/maintenance/\" target=\"_blank\" rel=\"noreferrer\">https://aerocitygroup.com/maintenance/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 142,
+      "name": "Jan Borowski",
+      "lat": 52.074666,
+      "lng": 21.183722,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aero Club Sp z.o.o.</p> </div> <div class=\"address small\"> <p> Obory 100<br /> 05-510 Konstancin Jeziorna<br /> Poland </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:diamond@jbi.com.pl\">diamond@jbi.com.pl</a><br /> <strong>Phone</strong> +48 601 304 300<br /> <strong>Web</strong> <a href=\"http://www.jbi.com.pl\" target=\"_blank\" rel=\"noreferrer\">http://www.jbi.com.pl</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7; +38 607 406 556</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 231,
+      "name": "Dominique AUBRY",
+      "lat": 50.626002,
+      "lng": 2.648915,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aéro Flandre Maintenance</p> </div> <div class=\"address small\"> <p> Z.I du Petits, Rue de l'Aérodrome<br /> 55660 Merville<br /> France </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:aubry.afm@orange.fr\">aubry.afm@orange.fr</a><br /> <strong>Phone</strong> +33 3 28 49 55 52<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 673,
+      "name": "Jack Moshovis",
+      "lat": -32.08590087,
+      "lng": 115.88422629,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aero Jacks</p> </div> <div class=\"address small\"> <p> 3 Mustang Rd <br /> WA 6164 Jandakot<br /> Australia </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:Jack@aerojacks.com\">Jack@aerojacks.com</a><br /> <strong>Phone</strong> 61 894 1477 70<br /> <strong>Web</strong> <a href=\"https://www.aerojacks.com.au/i\" target=\"_blank\" rel=\"noreferrer\">https://www.aerojacks.com.au/i</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 459,
+      "name": "Carles Grau",
+      "lat": 41.519526,
+      "lng": 2.103155,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aero Link Air Services sl</p> </div> <div class=\"address small\"> <p> Sabadell Airport, Edificio Aero Link<br /> 08205 Sabadell, Barcelona<br /> Spain </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@aerolink.es\">info@aerolink.es</a><br /> <strong>Phone</strong> +34 937464006<br /> <strong>Web</strong> <a href=\"http://www.aerolink.es\" target=\"_blank\" rel=\"noreferrer\">http://www.aerolink.es</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 674,
+      "name": "Mark Wiseby",
+      "lat": -34.78937639,
+      "lng": 138.6369847,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aero Service</p> </div> <div class=\"address small\"> <p> Hangar 58, Anderson Dr, Parafield Airport <br /> SA 5106 Adelaide<br /> Australia </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:aero_service@bigpond.com\">aero_service@bigpond.com</a><br /> <strong>Phone</strong> 88 2502000<br /> <strong>Web</strong> <a href=\"https://www.aeroserviceparafield.com.au/\" target=\"_blank\" rel=\"noreferrer\">https://www.aeroserviceparafield.com.au/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 443,
+      "name": "",
+      "lat": 49.794781,
+      "lng": 16.681075,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>AEROENGINE (EEA Tech spol.s.r.o.)</p> </div> <div class=\"address small\"> <p> Staré Mesto 310<br /> 569 32 Staré Mesto<br /> Czech Republic </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@aeroengine.cz\">info@aeroengine.cz</a><br /> <strong>Phone</strong> +420 603478819<br /> <strong>Web</strong> <a href=\"http://www.aeroengine.cz\" target=\"_blank\" rel=\"noreferrer\">http://www.aeroengine.cz</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 757,
+      "name": "Aeromaan S.A. de C.V.",
+      "lat": 19.33366106,
+      "lng": -99.56898096,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aeromaan S.A. de C.V.</p> </div> <div class=\"address small\"> <p> Calle 2, Lote 19 San Pedro Totoltepec <br /> 50226 Toluca<br /> Mexico <br>TLC </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@aeromaan.mx\">info@aeromaan.mx</a><br /> <strong>Phone</strong> +52 1 722 415 7906<br /> <strong>Mobile</strong> +52 1 722 826 2561<br /> <strong>Web</strong> <a href=\"https://www.aeromaan.mx/\" target=\"_blank\" rel=\"noreferrer\">https://www.aeromaan.mx/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 452,
+      "name": "Aeromot",
+      "lat": -30.002436,
+      "lng": -51.184739,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aeromot</p> </div> <div class=\"address small\"> <p> Aeronaves e Motores S/A, Avenida Sertório<br /> 1988 Porto Alegre<br /> Brazil </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:andre.cateb@aeromot.com.br\">andre.cateb@aeromot.com.br</a><br /> <strong>Phone</strong> +55 51 3357-8500<br /> <strong>Web</strong> <a href=\"http://www.aeromot.com.br/\" target=\"_blank\" rel=\"noreferrer\">http://www.aeromot.com.br/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 695,
+      "name": "Aeromot",
+      "lat": -19.84453764,
+      "lng": -43.962031,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aeromot</p> </div> <div class=\"address small\"> <p> Rua dos Hangares, 04, Setor Norte, Bairro Itapoã CEP 31710-410 – Belo Horizonte/MG <br /> 31710-410 Belo Horizonte<br /> Brazil </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:andre.cateb@aeromot.com.br\">andre.cateb@aeromot.com.br</a><br /> <strong>Phone</strong> 5531999594050<br /> <strong>Web</strong> <a href=\"https://www.aeromot.com.br/\" target=\"_blank\" rel=\"noreferrer\">https://www.aeromot.com.br/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 491,
+      "name": "Mikko RIEPULA",
+      "lat": 61.1492382,
+      "lng": 25.69608812,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aeropole Aircraft Maintenance Oy</p> </div> <div class=\"address small\"> <p> Lentotie 170<br /> 17130 Vesivehmaa<br /> Finland </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@aeropole.fi\">info@aeropole.fi</a><br /> <strong>Phone</strong> +358 9 5627 4600<br /> <strong>Web</strong> <a href=\"http://www.aeropole.fi\" target=\"_blank\" rel=\"noreferrer\">http://www.aeropole.fi</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 157,
+      "name": "aeroservice",
+      "lat": 46.359581,
+      "lng": 14.170583,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aeroservice Lesce-Bled</p> </div> <div class=\"address small\"> <p> Lancovo 10E <br /> 4240 Radovljica<br /> Slovenia </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@aeroservice-lesce.si\">info@aeroservice-lesce.si</a><br /> <strong>Phone</strong> +386 41 703 800<br /> <strong>Web</strong> <a href=\"http://www.aeroservice.si/maintenance\" target=\"_blank\" rel=\"noreferrer\">http://www.aeroservice.si/maintenance</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 498,
+      "name": null,
+      "lat": 42.733689,
+      "lng": 2.87224,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aerosmith 66</p> </div> <div class=\"address small\"> <p> Avenue Maurice Bellonte<br /> 66000 Perpignan<br /> France </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@aerosmith66.com\">info@aerosmith66.com</a><br /> <strong>Phone</strong> ++33 4 68 63 27 60<br /> <strong>Web</strong> <a href=\"http://www.aerosmith66.com\" target=\"_blank\" rel=\"noreferrer\">http://www.aerosmith66.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 671,
+      "name": "Aerotours Technik GmbH",
+      "lat": 52.58597275,
+      "lng": 13.91408134,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aerotours Technik GmbH</p> </div> <div class=\"address small\"> <p> Lilienthalstrasse 4<br /> 15344 Strausberg<br /> Germany </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:office@aerotours-technik.de\">office@aerotours-technik.de</a><br /> <strong>Phone</strong> +49 3341250008<br /> <strong>Web</strong> <a href=\"http://www.aerotours-technik.de\" target=\"_blank\" rel=\"noreferrer\">http://www.aerotours-technik.de</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 698,
+      "name": "Ferhat Tepe",
+      "lat": 39.54859604,
+      "lng": 27.011776,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>AFA - Atlantic Flight Academy</p> </div> <div class=\"address small\"> <p> Koca Seyit Airport <br /> 10300 Balikesir<br /> Turkey </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@afa.aero\">info@afa.aero</a><br /> <strong>Phone</strong> +905323377131<br /> <strong>Web</strong> <a href=\"http://www.afa.aero\" target=\"_blank\" rel=\"noreferrer\">http://www.afa.aero</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 463,
+      "name": "Kenan Aslan",
+      "lat": 41.128039,
+      "lng": 27.910037,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>AFA- Atlantic Flight Academy</p> </div> <div class=\"address small\"> <p> Corlu Airport <br /> 59850 Tekirdag<br /> Turkey </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@afa.aero\">info@afa.aero</a><br /> <strong>Phone</strong> +90 212 662 2013<br /> <strong>Web</strong> <a href=\"http://www.afa.aero\" target=\"_blank\" rel=\"noreferrer\">http://www.afa.aero</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7; +90 549 842 77 52</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 685,
+      "name": "AFT Limited",
+      "lat": 51.84929388,
+      "lng": -8.47854839,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>AFT Limited</p> </div> <div class=\"address small\"> <p> Building 4500, Cork Airport Business Park<br /> T12 NX7D Cork<br /> Ireland </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:enquiries@afta.ie\">enquiries@afta.ie</a><br /> <strong>Phone</strong> +353 21 4888737<br /> <strong>Web</strong> <a href=\"http://www.afta.ie\" target=\"_blank\" rel=\"noreferrer\">http://www.afta.ie</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 235,
+      "name": "Air Jihlava-Service s.r.o.",
+      "lat": 49.422518,
+      "lng": 15.633416,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Air Jihlava – Service s.r.o.</p> </div> <div class=\"address small\"> <p> Hencov 61 <br /> 586 04 Jihlava<br /> Czech Republic </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@airjihlava.cz\">info@airjihlava.cz</a><br /> <strong>Phone</strong> +420 567 221 922<br /> <strong>Web</strong> <a href=\"http://www.airjihlava.cz\" target=\"_blank\" rel=\"noreferrer\">http://www.airjihlava.cz</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 753,
+      "name": "Air Lloyd Aeroechnics GmbH",
+      "lat": 53.03571774,
+      "lng": 8.50934784,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Air Lloyd Aerotechnics GmbH</p> </div> <div class=\"address small\"> <p> Otto-Lilienthal-Str. 23B<br /> 27777 Ganderkesee<br /> Germany </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:station.ganderkesee@airlloyd.de\">station.ganderkesee@airlloyd.de</a><br /> <strong>Phone</strong> +49 4222 9476-280<br /> <strong>Web</strong> <a href=\"http://www.airlloyd.de\" target=\"_blank\" rel=\"noreferrer\">http://www.airlloyd.de</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 754,
+      "name": "Air Lloyd Aeroechnics GmbH",
+      "lat": 51.54838415,
+      "lng": 12.06123711,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Air Lloyd Aerotechnics GmbH</p> </div> <div class=\"address small\"> <p> Flugplatz 10<br /> 06188 Landsberg OT Oppin<br /> Germany </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:station.oppin@airlloyd.de\">station.oppin@airlloyd.de</a><br /> <strong>Phone</strong> +49 34604 20190<br /> <strong>Web</strong> <a href=\"http://www.airlloyd.de\" target=\"_blank\" rel=\"noreferrer\">http://www.airlloyd.de</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 755,
+      "name": "Air Lloyd Aerotechnics GmbH",
+      "lat": 51.41959938,
+      "lng": 9.39256061,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Air Lloyd Aerotechnics GmbH</p> </div> <div class=\"address small\"> <p> Raabstr. 16 <br /> 34379 Calden<br /> Germany </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:mail@airlloyd.de\">mail@airlloyd.de</a><br /> <strong>Phone</strong> +49 5674 7007-11<br /> <strong>Web</strong> <a href=\"http://www.airlloyd.de\" target=\"_blank\" rel=\"noreferrer\">http://www.airlloyd.de</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 151,
+      "name": "Torbjörn Winsell",
+      "lat": 57.659632,
+      "lng": 12.144428,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Air Service Göteborg AB</p> </div> <div class=\"address small\"> <p> Skogsvägen 61<br /> 43538 Mölnlycke<br /> Sweden </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@airservice.se\">info@airservice.se</a><br /> <strong>Phone</strong> +4631-55 55 36<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 531,
+      "name": "Aircraft Service Center (Formerly Gibbs)",
+      "lat": 32.8105981,
+      "lng": -117.1395079,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aircraft Service Center</p> </div> <div class=\"address small\"> <p> 8912 Aero Drive<br /> 92123 San Diego<br /> United States <br>KMYF </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 858-277-3311<br /> <strong>Web</strong> <a href=\"https://aircraftservicesd.com/\" target=\"_blank\" rel=\"noreferrer\">https://aircraftservicesd.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 759,
+      "name": "Aircraft Servicing Guernsey Ltd",
+      "lat": 49.43184036,
+      "lng": -2.59900845,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aircraft Servicing Guernsey Ltd</p> </div> <div class=\"address small\"> <p> West Grass Hangar, La Planque Lane<br /> GY8 0DS Forest Guernsey, Channel Islands<br /> United Kingdom </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@flyasg.co.uk\">info@flyasg.co.uk</a><br /> <strong>Phone</strong> +44 0 1481 265750<br /> <strong>Web</strong> <a href=\"http://www.flyasg.co.uk\" target=\"_blank\" rel=\"noreferrer\">http://www.flyasg.co.uk</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 756,
+      "name": "AIRFLYTECH IKE",
+      "lat": 35.33969047,
+      "lng": 25.17654729,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>AIRFLYTECH IKE</p> </div> <div class=\"address small\"> <p> International Airport Heraklion Crete <br /> 71601 Heraklion Crete<br /> Greece </p> </div> </div> <div class=\"contact small\"> <p><strong>Contact</strong></p> <div class=\"name\"> <p> Mr. George Papadakis </p> </div> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:gpap@airflytech.gr\">gpap@airflytech.gr</a><br /> <strong>Phone</strong> +30 6944 718153<br /> <strong>Web</strong> <a href=\"http://www.airflytech.gr\" target=\"_blank\" rel=\"noreferrer\">http://www.airflytech.gr</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7; +306937317166</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 201,
+      "name": "Airmatec AG",
+      "lat": 46.911593,
+      "lng": 7.503564,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Airmatec AG</p> </div> <div class=\"address small\"> <p> Flughafen Bern-Belp, Flugplatzstrasse 19, Bern-Belp, Schweiz<br /> 3123 Belp<br /> Switzerland </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@airmatec.ch\">info@airmatec.ch</a><br /> <strong>Phone</strong> +41 31 961 07 07<br /> <strong>Web</strong> <a href=\"http://www.airmatec.ch/\" target=\"_blank\" rel=\"noreferrer\">http://www.airmatec.ch/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 718,
+      "name": "Airways Aviation Academy",
+      "lat": 43.57903328,
+      "lng": 3.94986192,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Airways Aviation Academy</p> </div> <div class=\"address small\"> <p> Aeroport de Montpellier CS 10005 <br /> 34137 Mauguio Cedex<br /> France </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:mtx.fr@airwaysaviation.com\">mtx.fr@airwaysaviation.com</a><br /> <strong>Phone</strong> +33467137500<br /> <strong>Web</strong> <a href=\"http://www.airwaysaviation.com\" target=\"_blank\" rel=\"noreferrer\">http://www.airwaysaviation.com</a><br /> </p> </div> <div class=\"description\"> <p><p><a href=\"http://www.esma.fr\">www.esma.fr</a></p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 725,
+      "name": "",
+      "lat": -28.1603934,
+      "lng": 153.50924749,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Airways Aviation Education Pty Ltd</p> </div> <div class=\"address small\"> <p> 51 Lores Bonney Circuit <br /> 4225 Bilinga<br /> Australia <br>YBCG </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:t.morris@airwaysaviation.com\">t.morris@airwaysaviation.com</a><br /> <strong>Phone</strong> +61 7 5599 3445<br /> <strong>Web</strong> <a href=\"http://www.airwaysaviation.com\" target=\"_blank\" rel=\"noreferrer\">http://www.airwaysaviation.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 121,
+      "name": "Alpha Aviation Co. Ltd.",
+      "lat": 35.64516,
+      "lng": 139.743638,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Alpha Aviation Co. Ltd.</p> </div> <div class=\"address small\"> <p> 3-5-21 Mita<br /> 108-0073 Minato-Ku;Tokyo<br /> Japan </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:ksaito@alphaaviation.jp\">ksaito@alphaaviation.jp</a><br /> <strong>Phone</strong> +81 3 3452 8420<br /> <strong>Web</strong> <a href=\"https://alphaaviation.aero/\" target=\"_blank\" rel=\"noreferrer\">https://alphaaviation.aero/</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7; +81 9031 3578 51</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 505,
+      "name": "Alpine Aviation",
+      "lat": 39.2226985,
+      "lng": -121.0090159,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Alpine Aviation</p> </div> <div class=\"address small\"> <p> 13310 Nevada City Ave<br /> 95945 Grass Valley<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 530-477-7701<br /> <strong>Web</strong> <a href=\"http://www.flyalpine.com\" target=\"_blank\" rel=\"noreferrer\">http://www.flyalpine.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 717,
+      "name": "AMT AVIATION PVT LTD",
+      "lat": 17.45056302,
+      "lng": 78.47100994,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>AMT AVIATION PVT LTD</p> </div> <div class=\"address small\"> <p> B-75, 1st Floor Sahasra, Indian Airline Colony, Prakash Nagar AOG Hotline: +91-8374133311<br /> 500016 Hyderabad, TS<br /> India </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:amt@amtaviationservices.com\">amt@amtaviationservices.com</a><br /> <strong>Phone</strong> +91-8374133311<br /> <strong>Web</strong> <a href=\"http://www.amtaviation.in\" target=\"_blank\" rel=\"noreferrer\">http://www.amtaviation.in</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 506,
+      "name": "Arapahoe Aero",
+      "lat": 39.574954,
+      "lng": -104.840055,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Arapahoe Aero</p> </div> <div class=\"address small\"> <p> 12760 E. Control Tower Rd<br /> 80112 Englewood<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:parts@arapahoeaero.com\">parts@arapahoeaero.com</a><br /> <strong>Phone</strong> 303-799-8386<br /> <strong>Web</strong> <a href=\"https://www.arapahoeaero.com\" target=\"_blank\" rel=\"noreferrer\">https://www.arapahoeaero.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 53,
+      "name": "Ardex Aviation Maintenance GmbH",
+      "lat": 52.917771,
+      "lng": 12.431531,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Ardex Aviation Maintenance</p> </div> <div class=\"address small\"> <p> Flugplatz 4<br /> 16866 Kyritz<br /> Germany </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@ardex-maintenance.de\">info@ardex-maintenance.de</a><br /> <strong>Phone</strong> +49 33 971 48990<br /> <strong>Web</strong> <a href=\"http://www.ardex-maintenance.de\" target=\"_blank\" rel=\"noreferrer\">http://www.ardex-maintenance.de</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 460,
+      "name": "Asia Pacific Flight Training Academy LTD.",
+      "lat": 17.238692,
+      "lng": 78.433558,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Asia Pacific Flight Training Academy LTD.</p> </div> <div class=\"address small\"> <p> 1stFloor, Block-B, GMR Old Site Office, RGIA<br /> 500108 Shamshabad<br /> India </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:maintenance.manager@apft.edu.in\">maintenance.manager@apft.edu.in</a><br /> <strong>Phone</strong> +91 40 6676 4247<br /> <strong>Web</strong> <a href=\"http://www.apft.edu.in/Home.aspx\" target=\"_blank\" rel=\"noreferrer\">http://www.apft.edu.in/Home.aspx</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 163,
+      "name": "Asian Aerospace Services Ltd.",
+      "lat": 13.756622,
+      "lng": 100.568641,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Asian Aerospace Services Ltd.</p> </div> <div class=\"address small\"> <p> 23rd Floor, Chamnan Phenjati Business Center Building 65/198 Rama 9 Road, Huaykwang Bangkok, Thailand<br /> 10320 Bangkong<br /> Thailand </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:sales@asianaerospaceservices.com\">sales@asianaerospaceservices.com</a><br /> <strong>Phone</strong> +66 26 43 07 41-3<br /> <strong>Web</strong> <a href=\"http://www.asianaerospaceservices.com/\" target=\"_blank\" rel=\"noreferrer\">http://www.asianaerospaceservices.com/</a><br /> </p> </div> <div class=\"description\"> <p>AOG Hotline 24/7; +66 816622449</p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 662,
+      "name": "Astontec",
+      "lat": 48.74762421,
+      "lng": 2.1009171,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Astontec</p> </div> <div class=\"address small\"> <p> Aérodrome de Toussus-Le-Noble – Bat 313<br /> 78117 Toussus Le Noble<br /> France </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:lfpn@astontec.com\">lfpn@astontec.com</a><br /> <strong>Phone</strong> +33 1 85 43 16 50<br /> <strong>Web</strong> <a href=\"https://www.clair-group.com/fr/astontec/\" target=\"_blank\" rel=\"noreferrer\">https://www.clair-group.com/fr/astontec/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 78,
+      "name": "ATA Distribution",
+      "lat": 43.90273746,
+      "lng": 4.89791698,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>ATA Maintenance</p> </div> <div class=\"address small\"> <p> Hangar H2 - Aéroport d'Avignon Provence Impasse Elise DEROCHE<br /> 84140 Montfavet<br /> France </p> </div> </div> <div class=\"contact small\"> <p><strong>Contact</strong></p> <div class=\"name\"> <p> Mr. Pierre Pelletier </p> </div> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:contact@ata-by-pelletier.aero\">contact@ata-by-pelletier.aero</a><br /> <strong>Phone</strong> +33 4 90 800700<br /> <strong>Web</strong> <a href=\"http://www.ata-by-pelletier.aero\" target=\"_blank\" rel=\"noreferrer\">http://www.ata-by-pelletier.aero</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 762,
+      "name": "Auric Avionics & Instruments",
+      "lat": 30.03591781,
+      "lng": -90.02334681,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Auric Avionics &amp; Instruments</p> </div> <div class=\"address small\"> <p> 6109 G. Bellanca Street, Lakefront Airport, Bastian-Mitchell Hangar<br /> 70126 New Orleans<br /> United States <br>KNEW </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@auricavionics.com\">info@auricavionics.com</a><br /> <strong>Phone</strong> +1 504-254-0072<br /> <strong>Web</strong> <a href=\"https://www.auricavionics.com/\" target=\"_blank\" rel=\"noreferrer\">https://www.auricavionics.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 720,
+      "name": "Aviation Technic ApS",
+      "lat": 55.73602159,
+      "lng": 9.14952636,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aviation Technic ApS</p> </div> <div class=\"address small\"> <p> Stratusvej 15<br /> Dk-7190 Billund<br /> Denmark <br>EKBI </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@aviationtechnic.com\">info@aviationtechnic.com</a><br /> <strong>Phone</strong> +4573709093<br /> <strong>Web</strong> <a href=\"http://www.aviationtechnic.com\" target=\"_blank\" rel=\"noreferrer\">http://www.aviationtechnic.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 510,
+      "name": "Isaac Capua",
+      "lat": 43.8641746,
+      "lng": -79.3711947,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Aviation Unlimited</p> </div> <div class=\"address small\"> <p> 2833 126th Ave, Bob 101<br /> L3R 0P8 Markham<br /> Canada </p> </div> </div> <div class=\"contact small\"> <p><strong>Contact</strong></p> <div class=\"name\"> <p> Isaac Capua </p> </div> <div class=\"details\"> <p> <strong>Phone</strong> 905-477-0107<br /> <strong>Web</strong> <a href=\"http://www.aviationunlimited.com\" target=\"_blank\" rel=\"noreferrer\">http://www.aviationunlimited.com</a><br /> </p> </div> <div class=\"description\"> <p><p>YOO</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 660,
+      "name": "Ayjet",
+      "lat": 40.99224174,
+      "lng": 28.83382311,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Ayjet</p> </div> <div class=\"address small\"> <p> Ataköy 7-8-9-10. Kisim Mahallesi Cobancesme E-5 Yanyol Caddesi,Sel.Retro Plaza 18/1<br /> 34156 Istanbul<br /> Turkey </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@ayjet.aero\">info@ayjet.aero</a><br /> <strong>Phone</strong> +90 2126396300<br /> <strong>Web</strong> <a href=\"http://www.ayjet.aero\" target=\"_blank\" rel=\"noreferrer\">http://www.ayjet.aero</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 675,
+      "name": "Blue Demon Aviation",
+      "lat": -37.97412521,
+      "lng": 145.09131602,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Blue Demon Aviation</p> </div> <div class=\"address small\"> <p> 1 Second St, Moorabbin Airport<br /> VIC 3194 Moorabbin<br /> Australia </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:mhowe@bluedemon.com.au\">mhowe@bluedemon.com.au</a><br /> <strong>Phone</strong> 61 3 958 1502<br /> <strong>Web</strong> <a href=\"https://www.bluedemon.com.au\" target=\"_blank\" rel=\"noreferrer\">https://www.bluedemon.com.au</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 734,
+      "name": "Blue Team Flight School S.L.U.",
+      "lat": 28.04698472,
+      "lng": -16.57220843,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Blue Team Flight School S.L.U.</p> </div> <div class=\"address small\"> <p> Tenerife South Airport Hangar S-H2<br /> Tenerife<br /> Spain <br>GCTS </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@blueteam.es\">info@blueteam.es</a><br /> <strong>Phone</strong> +34 922 400 010<br /> <strong>Web</strong> <a href=\"http://www.blueteam.es\" target=\"_blank\" rel=\"noreferrer\">http://www.blueteam.es</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 575,
+      "name": "CETC Wuhu",
+      "lat": 31.098885,
+      "lng": 118.652469,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>CETC Wuhu</p> </div> <div class=\"address small\"> <p> Wuhu Aviation Industrial Park Xinwu Economic Development Zone Wuhu City <br /> 241000 Wuhu<br /> China </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:service@cetcd.com\">service@cetcd.com</a><br /> <strong>Phone</strong> +86 553 5699235<br /> <strong>Mobile</strong> +86 19855309192<br /> <strong>Web</strong> <a href=\"http://www.cetcd.com\" target=\"_blank\" rel=\"noreferrer\">http://www.cetcd.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 699,
+      "name": "Joe Chennault",
+      "lat": 36.20959958,
+      "lng": -115.20341956,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Chennault Flying Services</p> </div> <div class=\"address small\"> <p> 2722 Perimeter Rd, Suite 110<br /> 89032 North Las Vegas<br /> United States <br>KVGT </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:admin@cfsflightschool.com\">admin@cfsflightschool.com</a><br /> <strong>Phone</strong> 702-835-1222<br /> <strong>Web</strong> <a href=\"https://www.chennaultflyingservice.com/\" target=\"_blank\" rel=\"noreferrer\">https://www.chennaultflyingservice.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 517,
+      "name": "Command Aviation",
+      "lat": 48.7896681,
+      "lng": -122.5024777,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Command Aviation</p> </div> <div class=\"address small\"> <p> Bellingham International Airport, 2010 W. Bakwerview Rd.<br /> 98225 Bellingham<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 360-733-3174<br /> <strong>Web</strong> <a href=\"http://www.commandaviation.net\" target=\"_blank\" rel=\"noreferrer\">http://www.commandaviation.net</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 519,
+      "name": "Continental Motors",
+      "lat": 30.4724379,
+      "lng": -87.8756445,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Continental Motors</p> </div> <div class=\"address small\"> <p> 8600 County Road 32<br /> 36532 Fairhope<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 251-990-5080<br /> <strong>Web</strong> <a href=\"http://continentalmotors.aero\" target=\"_blank\" rel=\"noreferrer\">http://continentalmotors.aero</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 521,
+      "name": "Daytona Aircraft Services",
+      "lat": 29.1867671,
+      "lng": -81.057047,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Daytona Aircraft Services</p> </div> <div class=\"address small\"> <p> 561 Pearl Harbor Drive<br /> 32114 Daytona Beach<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 386 255-2049<br /> <strong>Web</strong> <a href=\"http://www.daytonaaircraft.com\" target=\"_blank\" rel=\"noreferrer\">http://www.daytonaaircraft.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 705,
+      "name": "Daniel Castleberry",
+      "lat": 34.59011511,
+      "lng": -92.48394172,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>DC Aviation Maintenance Inc.</p> </div> <div class=\"address small\"> <p> 1100 Hill Farm Rd<br /> 72022 Bryant<br /> United States <br>KSUZ </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:service@dcaviation.aero\">service@dcaviation.aero</a><br /> <strong>Phone</strong> +1 870-818-8044<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 215,
+      "name": "Ed Grindrod",
+      "lat": 53.277776,
+      "lng": -0.952231,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>DEA Aviation Ltd</p> </div> <div class=\"address small\"> <p> Gamston Retford Airport<br /> DN22 0QL Retford<br /> United Kingdom </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:airworthiness@dea.aero\">airworthiness@dea.aero</a><br /> <strong>Phone</strong> +44 1777 838731<br /> <strong>Web</strong> <a href=\"http://www.dea.aero\" target=\"_blank\" rel=\"noreferrer\">http://www.dea.aero</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7; +44 (0) 1777 838 731</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 616,
+      "name": "Dedalo Aviacion",
+      "lat": 39.474313,
+      "lng": -1.038133,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Dedalo Aviacion</p> </div> <div class=\"address small\"> <p> Aeródromo de Requena - Hangar 2, Autovía A-3, Km. 297<br /> 46391 Requena<br /> Spain </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:ingeniero@dedaloaviacion.com\">ingeniero@dedaloaviacion.com</a><br /> <strong>Phone</strong> +34 960260924<br /> <strong>Web</strong> <a href=\"http://www.dedaloaviacion.com/\" target=\"_blank\" rel=\"noreferrer\">http://www.dedaloaviacion.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 100,
+      "name": "Antonios Ziakas",
+      "lat": 40.520419,
+      "lng": 22.97166,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>DEDALUS AVIATION SERVICES</p> </div> <div class=\"address small\"> <p> Thessaloniki Intern. Airport \"Makedonia\"<br /> 55103 Thessaloniki<br /> Greece </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@dedalus-aviation.com\">info@dedalus-aviation.com</a><br /> <strong>Phone</strong> +302310474369<br /> <strong>Web</strong> <a href=\"http://www.dedalus-aviation.com\" target=\"_blank\" rel=\"noreferrer\">http://www.dedalus-aviation.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 738,
+      "name": "",
+      "lat": 40.85678055,
+      "lng": 25.94499406,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>DEDALUS AVIATION SERVICES</p> </div> <div class=\"address small\"> <p> International Civil Airport of Alexandroupolis “Dimokritos” Alexandroupolis <br /> 68100 Evros<br /> Greece <br>LGAL </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:maintenance@dedalus-aviation.com\">maintenance@dedalus-aviation.com</a><br /> <strong>Phone</strong> +306944410192<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 111,
+      "name": "Domenico Calia",
+      "lat": 41.954396,
+      "lng": 12.505636,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Diamond Aero Srl</p> </div> <div class=\"address small\"> <p> Via Salaria 825; Aeroporto Roma Urbe (LIRU)<br /> 00138 Roma<br /> Italy </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:parts.it@urbe.aero\">parts.it@urbe.aero</a><br /> <strong>Phone</strong> +390688644990<br /> <strong>Fax</strong> +390660513441<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 523,
+      "name": "Dillons Aviation",
+      "lat": 35.6311707,
+      "lng": -77.3794109,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Dillons Aviation</p> </div> <div class=\"address small\"> <p> 1105 N. Memorial Drive<br /> 27834 Greenville<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 252 757-1841<br /> <strong>Web</strong> <a href=\"http://www.dillonsaviation.com\" target=\"_blank\" rel=\"noreferrer\">http://www.dillonsaviation.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 524,
+      "name": "Dominion Aviation Services",
+      "lat": 37.407767,
+      "lng": -77.520261,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Dominion Aviation Services</p> </div> <div class=\"address small\"> <p> 7511 Airfield Drive<br /> 23237 Richmond<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 804-271-7793<br /> <strong>Web</strong> <a href=\"http://www.dominionaviation.com\" target=\"_blank\" rel=\"noreferrer\">http://www.dominionaviation.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 525,
+      "name": "Don Davis Aviation",
+      "lat": 37.807777,
+      "lng": -87.684448,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Don Davis Aviation</p> </div> <div class=\"address small\"> <p> Henderson City County Airport, 2154 Kentucky 136<br /> 42420 Henderson<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 270 826-6000<br /> <strong>Web</strong> <a href=\"http://www.dondavisaviation.com\" target=\"_blank\" rel=\"noreferrer\">http://www.dondavisaviation.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 48,
+      "name": "Do-Tec GmbH",
+      "lat": 47.989692,
+      "lng": 10.232363,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>DOTEC GmbH</p> </div> <div class=\"address small\"> <p> Am Flughafen 26, via Gate 1 Allgäu Airport<br /> 87766 Memmingerberg<br /> Germany </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:maintenance@do-tec-gmbh.de\">maintenance@do-tec-gmbh.de</a><br /> <strong>Phone</strong> +49-8331-75030-0<br /> <strong>Web</strong> <a href=\"http://www.do-tec-gmbh.de\" target=\"_blank\" rel=\"noreferrer\">http://www.do-tec-gmbh.de</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 731,
+      "name": "Egmont Aviation d.o.o.",
+      "lat": 46.4788962,
+      "lng": 15.68153309,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Egmont Aviation d.o.o.</p> </div> <div class=\"address small\"> <p> Letališka cesta 10<br /> 2312 Orehova vas<br /> Slovenia <br>LJMB </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@egmont.group\">info@egmont.group</a><br /> <strong>Phone</strong> +38640893650<br /> <strong>Web</strong> <a href=\"http://www.egmont.group\" target=\"_blank\" rel=\"noreferrer\">http://www.egmont.group</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 101,
+      "name": "Stephanos Mylonakis",
+      "lat": 40.913454,
+      "lng": 24.61895,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>EGNATIA AVIATION Ltd.</p> </div> <div class=\"address small\"> <p> Kavala International Airport \"Megas Alexandros\"<br /> 64200 Chrysopoulis -Kavala<br /> Greece </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:maintenance@egnatia-aviation.com\">maintenance@egnatia-aviation.com</a><br /> <strong>Phone</strong> +30 25910 53390<br /> <strong>Web</strong> <a href=\"http://www.egnatia-aviation.com\" target=\"_blank\" rel=\"noreferrer\">http://www.egnatia-aviation.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 529,
+      "name": "Epix Aviation",
+      "lat": 36.665961,
+      "lng": -76.330362,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Epix Aviation</p> </div> <div class=\"address small\"> <p> 2802 Airport Road, Suite 1<br /> 23323 Chesapeake<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 757-421-4973<br /> <strong>Web</strong> <a href=\"http://www.epixaviation.com\" target=\"_blank\" rel=\"noreferrer\">http://www.epixaviation.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 741,
+      "name": "Euro Flight Maintenance",
+      "lat": 50.81606984,
+      "lng": -1.19800761,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Euro Flight Maintenance</p> </div> <div class=\"address small\"> <p> Hangar 5, Spitfire Way<br /> PO15 9GA Lee on Solent<br /> United Kingdom <br>EGHF </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:dave@efm.ltd\">dave@efm.ltd</a><br /> <strong>Phone</strong> +44 1329 888091<br /> <strong>Web</strong> <a href=\"https://eft.aero/\" target=\"_blank\" rel=\"noreferrer\">https://eft.aero/</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7; Tel.:+44 1329 888091</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 742,
+      "name": "EVA Flight Training Academy",
+      "lat": 38.56512858,
+      "lng": -121.2966735,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>EVA Flight Training Academy</p> </div> <div class=\"address small\"> <p> 3745 Whitehead St. <br /> 95655 Mather<br /> United States <br>KMHR </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:mad@evafta.com\">mad@evafta.com</a><br /> <strong>Phone</strong> +1 916-822-3081<br /> <strong>Web</strong> <a href=\"https://www.evafta.com/diamondservicecenter/\" target=\"_blank\" rel=\"noreferrer\">https://www.evafta.com/diamondservicecenter/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 670,
+      "name": "F.N.Aviation Ltd",
+      "lat": 32.18132632,
+      "lng": 34.8281088,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>F.N.Aviation Ltd</p> </div> <div class=\"address small\"> <p> 121 Menachem Begin Ave, Herzeliya Airport<br /> 46910 Herzeliya<br /> Israel </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:Uria.fna@gmail.com\">Uria.fna@gmail.com</a><br /> <strong>Phone</strong> + 972-9-9577717<br /> <strong>Mobile</strong> + 972-50-2000075<br /> <strong>Web</strong> <a href=\"http://www.fnaviation.co.il\" target=\"_blank\" rel=\"noreferrer\">http://www.fnaviation.co.il</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 696,
+      "name": "Falcon Aviation Engineering",
+      "lat": 35.85977055,
+      "lng": 14.47868689,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Falcon Aviation Engineering</p> </div> <div class=\"address small\"> <p> Security Gate 1, Malta International Airport<br /> LQA 4000 Luqa<br /> Malta </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:matthew@falconalliance.com\">matthew@falconalliance.com</a><br /> <strong>Phone</strong> +356 21 257 127<br /> <strong>Web</strong> <a href=\"http://www.falconaviationengineering.com\" target=\"_blank\" rel=\"noreferrer\">http://www.falconaviationengineering.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 492,
+      "name": "FCSL",
+      "lat": 50.832665,
+      "lng": -0.2929785,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>FCSL Engineering Ltd</p> </div> <div class=\"address small\"> <p> Calibration House 17-19 Cecil Pashley Way Shoreham Airport<br /> BN43 5FF Shoreham<br /> United Kingdom </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:john.mayle@flight-cal.com\">john.mayle@flight-cal.com</a><br /> <strong>Phone</strong> +44 7718 975491<br /> <strong>Web</strong> <a href=\"http://www.flightcalibration.co.uk\" target=\"_blank\" rel=\"noreferrer\">http://www.flightcalibration.co.uk</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 700,
+      "name": "John Read (CEO)",
+      "lat": -40.32333204,
+      "lng": 175.62100526,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Fieldair Engineering Ltd</p> </div> <div class=\"address small\"> <p> Terminal Access Road<br /> 4414 Palmerston North<br /> New Zealand <br>NZPM </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> +64 6 357 1149<br /> <strong>Web</strong> <a href=\"http://www.fieldair.co.nz\" target=\"_blank\" rel=\"noreferrer\">http://www.fieldair.co.nz</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 530,
+      "name": "Fixed Wing Aviation Maintenance",
+      "lat": 27.994619,
+      "lng": -82.01655,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Fixed Wing Aviation Maintenance</p> </div> <div class=\"address small\"> <p> 3760 Airfield Dr W<br /> 33811 Lakeland<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 863-606-5757<br /> <strong>Web</strong> <a href=\"http://fixedwingaviation.com/\" target=\"_blank\" rel=\"noreferrer\">http://fixedwingaviation.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 461,
+      "name": "Paul Travers",
+      "lat": 47.443629,
+      "lng": 8.228164,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Fliegerschule Birrfeld</p> </div> <div class=\"address small\"> <p> Regionalflugplatz Birrfeld<br /> 5242 Lupfig<br /> Switzerland </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:werkstatt@birrfeld.ch\">werkstatt@birrfeld.ch</a><br /> <strong>Phone</strong> +41 56 464 20 70<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 676,
+      "name": "Lucas Tisdall",
+      "lat": -27.5700044,
+      "lng": 153.01417472,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Flight Maintenance Australia</p> </div> <div class=\"address small\"> <p> 4 Qantas Ave <br /> QLD 4108 Archerfield<br /> Australia </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:lucas.tisdall@fmaus.com.au\">lucas.tisdall@fmaus.com.au</a><br /> <strong>Phone</strong> +61 403 276 462<br /> <strong>Web</strong> <a href=\"https://www.fmaus.com.au/\" target=\"_blank\" rel=\"noreferrer\">https://www.fmaus.com.au/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 197,
+      "name": "Tino Casellini",
+      "lat": 47.45344,
+      "lng": 8.573756,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Flight Maintenance MFGZ AG</p> </div> <div class=\"address small\"> <p> General Aviation Center<br /> 8058 Zürich Airport<br /> Switzerland </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:flightmaintenance@mfgz.ch\">flightmaintenance@mfgz.ch</a><br /> <strong>Phone</strong> +41 44 881 22 22<br /> <strong>Web</strong> <a href=\"http://www.mfgz.ch/de/flight-maintenance-unterhalt-dubendorf/\" target=\"_blank\" rel=\"noreferrer\">http://www.mfgz.ch/de/flight-maintenance-unterhalt-dubendorf/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 634,
+      "name": "FlightLevel Aviation",
+      "lat": 42.187452,
+      "lng": -71.176515,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>FlightLevel Aviation</p> </div> <div class=\"address small\"> <p> 125 Access Road<br /> 2062 Norwood<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 781-769-7159<br /> <strong>Web</strong> <a href=\"https://www.flightlevelaviation.com/norwood-ma/\" target=\"_blank\" rel=\"noreferrer\">https://www.flightlevelaviation.com/norwood-ma/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 724,
+      "name": "Flugvélaverkstæði Íslands",
+      "lat": 64.13504626,
+      "lng": -21.94377568,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Flugvélaverkstæði Íslands</p> </div> <div class=\"address small\"> <p> Reykjavik Airport Fluggardar 35F<br /> 101 Reykjavik<br /> Iceland <br>BIRK </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:ronny@rfa.is\">ronny@rfa.is</a><br /> <strong>Phone</strong> +3547678094<br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7: +3547678094</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 51,
+      "name": "Feseck",
+      "lat": 52.488852,
+      "lng": 8.189564,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Flugzeugreparatur Damme GmbH</p> </div> <div class=\"address small\"> <p> Am Flugplatz 20<br /> 49401 Damme<br /> Germany </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@flugtechnik.de\">info@flugtechnik.de</a><br /> <strong>Phone</strong> +49 5491 1404<br /> <strong>Web</strong> <a href=\"http://www.flugtechnik.de\" target=\"_blank\" rel=\"noreferrer\">http://www.flugtechnik.de</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7; +49 5491 1404</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 733,
+      "name": "Fly-Coop Aviation Services Ltd.",
+      "lat": 46.24242076,
+      "lng": 17.60972545,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Fly-Coop Aviation Services Ltd.</p> </div> <div class=\"address small\"> <p> Repülőtér 0149/23<br /> 7530 Kadarkút<br /> Hungary <br>LHKT </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:camo@flycoop.hu\">camo@flycoop.hu</a><br /> <strong>Phone</strong> +3630175-66-53<br /> <strong>Web</strong> <a href=\"http://www.flycoop.hu\" target=\"_blank\" rel=\"noreferrer\">http://www.flycoop.hu</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 196,
+      "name": "Ronny Hansen",
+      "lat": 59.5652413,
+      "lng": 9.2183044,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Flyteknisk Notodden AS</p> </div> <div class=\"address small\"> <p> Merdeveien 18 B<br /> 3676 Notodden<br /> Norway </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:parts@flyteknisk.no\">parts@flyteknisk.no</a><br /> <strong>Phone</strong> +4735012177<br /> <strong>Web</strong> <a href=\"http://www.flyteknisk.no\" target=\"_blank\" rel=\"noreferrer\">http://www.flyteknisk.no</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7; +47 35012177</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 659,
+      "name": "Future Sky Oy",
+      "lat": 63.01065274,
+      "lng": 27.78685494,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Future Sky Oy</p> </div> <div class=\"address small\"> <p> Siltasalmentie 450<br /> 70900 Siilinjärvi<br /> Finland </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@futuresky.fi\">info@futuresky.fi</a><br /> <strong>Phone</strong> +358505692905<br /> <strong>Web</strong> <a href=\"http://www.futuresky.fi\" target=\"_blank\" rel=\"noreferrer\">http://www.futuresky.fi</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 104,
+      "name": "G.A. AVIATION SERVICES S.A.",
+      "lat": 37.87000085,
+      "lng": 23.87334413,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>G.A. AVIATION SERVICES S.A.</p> </div> <div class=\"address small\"> <p> 8, Efklidi Street<br /> 19441 Koropi - Attica<br /> Greece </p> </div> </div> <div class=\"contact small\"> <p><strong>Contact</strong></p> <div class=\"name\"> <p> Mr. Kostas Venetsanopoulos </p> </div> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@gaaviation.gr\">info@gaaviation.gr</a><br /> <strong>Phone</strong> +30 210 6020609<br /> <strong>Mobile</strong> +30 210 6020619<br /> <strong>Web</strong> <a href=\"http://www.gaaviation.gr\" target=\"_blank\" rel=\"noreferrer\">http://www.gaaviation.gr</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 672,
+      "name": "General Aviation Service Aps",
+      "lat": 55.59432785,
+      "lng": 12.12532986,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>General Aviation Service ApS</p> </div> <div class=\"address small\"> <p> Solhøjgaardsvej 6<br /> 4000 Roskilde<br /> Denmark </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@gaservice.dk\">info@gaservice.dk</a><br /> <strong>Phone</strong> +45 72170180<br /> <strong>Web</strong> <a href=\"http://www.gaservice.dk\" target=\"_blank\" rel=\"noreferrer\">http://www.gaservice.dk</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 20,
+      "name": "Bertrand Bril",
+      "lat": 50.821283,
+      "lng": 3.212833,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Gill Aviation Service bvba</p> </div> <div class=\"address small\"> <p> Vliegveld 60<br /> 8560 Wevelgem<br /> Belgium </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:bertrand.bril@gillaviation.be\">bertrand.bril@gillaviation.be</a><br /> <strong>Phone</strong> +32 56 41 56 48<br /> <strong>Web</strong> <a href=\"http://www.gillaviation.be\" target=\"_blank\" rel=\"noreferrer\">http://www.gillaviation.be</a><br /> </p> </div> <div class=\"description\"> <p>AOG Hotline 24/7; +32 56 41 56 48</p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 7,
+      "name": "Thomas Brditschka",
+      "lat": 48.139522,
+      "lng": 14.332776,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>HB-Flugtechnik</p> </div> <div class=\"address small\"> <p> Kiebach 2a<br /> 4491 Hofkirchen<br /> Austria </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@hb-flugtechnik.at\">info@hb-flugtechnik.at</a><br /> <strong>Phone</strong> +43 7225 20580<br /> <strong>Web</strong> <a href=\"http://www.hb-flugtechnik.at\" target=\"_blank\" rel=\"noreferrer\">http://www.hb-flugtechnik.at</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 534,
+      "name": "Infinity Aviation",
+      "lat": 42.7820053,
+      "lng": -71.5215726,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Infinity Aviation</p> </div> <div class=\"address small\"> <p> 117 Perimeter Road<br /> 03063 Nashua<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 603-598-4526<br /> <strong>Web</strong> <a href=\"http://www.infinityfbo.com/\" target=\"_blank\" rel=\"noreferrer\">http://www.infinityfbo.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 737,
+      "name": "Noah Matisoff",
+      "lat": 45.77192032,
+      "lng": -122.86397491,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Intercept Aviation</p> </div> <div class=\"address small\"> <p> 34070 Sky Way Dr. <br /> 97056 Scappoose<br /> United States <br>KSPB </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:maintenance@interceptaviation.com\">maintenance@interceptaviation.com</a><br /> <strong>Phone</strong> 951 667-5279<br /> <strong>Web</strong> <a href=\"https://interceptaviation.com/\" target=\"_blank\" rel=\"noreferrer\">https://interceptaviation.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 535,
+      "name": "J. A. Air Center",
+      "lat": 41.7651838,
+      "lng": -88.4636243,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>J. A. Air Center</p> </div> <div class=\"address small\"> <p> 43 W730 U.S. 30<br /> 60554 Sugar Grove<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 630-584-3200<br /> <strong>Web</strong> <a href=\"http://www.jaair.com\" target=\"_blank\" rel=\"noreferrer\">http://www.jaair.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 765,
+      "name": "James Spearman Aircraft LLC",
+      "lat": 35.85875787,
+      "lng": -83.52615665,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>James Spearman Aircraft LLC</p> </div> <div class=\"address small\"> <p> 1235 Airport Rd, Sevierville<br /> 37862 Sevierville<br /> United States <br>KGKT </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 865-383-0363<br /> <strong>Web</strong> <a href=\"https://www.spearmanaircraft.com/?utm_term=spearman aircraft&amp;utm_campaign=OC_Search_Avionics_Upgrade_US_09/12/24&amp;utm_source=adwords&amp;utm_medium=ppc&amp;hsa_acc=2202368368&amp;hsa_cam=22294896717&amp;hsa_grp=195005125427&amp;hsa_ad=793699569252&amp;hsa_src=g&amp;hsa_tgt=kwd-24749\" target=\"_blank\" rel=\"noreferrer\">https://www.spearmanaircraft.com/?utm_term=spearman aircraft&amp;utm_campaign=OC_Search_Avionics_Upgrade_US_09/12/24&amp;utm_source=adwords&amp;utm_medium=ppc&amp;hsa_acc=2202368368&amp;hsa_cam=22294896717&amp;hsa_grp=195005125427&amp;hsa_ad=793699569252&amp;hsa_src=g&amp;hsa_tgt=kwd-24749</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 442,
+      "name": "Japan General Aviation",
+      "lat": 31.802679,
+      "lng": 130.717347,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Japan General Aviation</p> </div> <div class=\"address small\"> <p> 270-1 Mizobechofumoto, Kagoshima<br /> 899-6404 Kirishima<br /> Japan </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:uehara.2kcg@jgas.com\">uehara.2kcg@jgas.com</a><br /> <strong>Phone</strong> +81 3 5643 1833<br /> <strong>Web</strong> <a href=\"http://www.jgas-aircraft.co.jp/english.html\" target=\"_blank\" rel=\"noreferrer\">http://www.jgas-aircraft.co.jp/english.html</a><br /> </p> </div> <div class=\"description\"> <p><p>Kagoshima Airport Phone: +81 995-58-5051</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 626,
+      "name": "JCA",
+      "lat": 36.594283,
+      "lng": 126.294149,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>JCA Autonomous Co., Ltd</p> </div> <div class=\"address small\"> <p> 236-49, Nam-myeon, Taean-gun, Chungcheongnam-do, <br /> 32158 Gomseom-ro<br /> South Korea </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:mro@jcaaero.kr\">mro@jcaaero.kr</a><br /> <strong>Phone</strong> +82 43 715 6829<br /> <strong>Web</strong> <a href=\"http://www.jcaaero.kr\" target=\"_blank\" rel=\"noreferrer\">http://www.jcaaero.kr</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 767,
+      "name": "JetNEXA",
+      "lat": 33.31426426,
+      "lng": -111.67816474,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>JetNEXA</p> </div> <div class=\"address small\"> <p> 5559 S Sossaman Rd #101<br /> 85212 Mesa<br /> United States <br>KIWA </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 855-538-6392<br /> <strong>Web</strong> <a href=\"https://jetnexa.com/\" target=\"_blank\" rel=\"noreferrer\">https://jetnexa.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 669,
+      "name": "Kasstech Aerospace Pvt Ltd.",
+      "lat": 28.07595191,
+      "lng": 76.20189127,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Kasstech Aerospace Pvt Ltd.</p> </div> <div class=\"address small\"> <p> Blue One Square, 246, Udyog Vihar, Phase-IV<br /> 122016 Gurugram<br /> India </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@kasstechaerospace.com\">info@kasstechaerospace.com</a><br /> <strong>Phone</strong> +919717135976<br /> <strong>Web</strong> <a href=\"http://www.kasstechaerospace.in\" target=\"_blank\" rel=\"noreferrer\">http://www.kasstechaerospace.in</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 539,
+      "name": "King Airways Ltd.",
+      "lat": 51.09831145,
+      "lng": -114.36657332,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>King Airways Ltd.</p> </div> <div class=\"address small\"> <p> 520 Hurricane Dr, #3<br /> T3Z 3S8 Calgary<br /> Canada <br>CYBW </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:sales@kingairways.com\">sales@kingairways.com</a><br /> <strong>Phone</strong> 403-274-5800<br /> <strong>Web</strong> <a href=\"https://kingairways.com/home/\" target=\"_blank\" rel=\"noreferrer\">https://kingairways.com/home/</a><br /> </p> </div> <div class=\"description\"> <p><p>YUL</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 681,
+      "name": "Lift Academy",
+      "lat": 39.91761042,
+      "lng": -86.21897073,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Lift Academy</p> </div> <div class=\"address small\"> <p> 8909 Purdue Road Suite 300 <br /> 46268 Indianapolis<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:LIFTMTX@flywithlift.com\">LIFTMTX@flywithlift.com</a><br /> <strong>Phone</strong> 317-471-2256<br /> <strong>Web</strong> <a href=\"https://liftmtx.com/\" target=\"_blank\" rel=\"noreferrer\">https://liftmtx.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 709,
+      "name": "Jim Boothe",
+      "lat": 29.26342858,
+      "lng": -94.85648179,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Lift Academy - Galveston</p> </div> <div class=\"address small\"> <p> 8700 Cessna Dr.<br /> 77554 Galveston<br /> United States <br>KGLS </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Web</strong> <a href=\"https://flywithlift.com/\" target=\"_blank\" rel=\"noreferrer\">https://flywithlift.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 708,
+      "name": "Jim Boothe",
+      "lat": 33.66799097,
+      "lng": -78.9318176,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Lift Academy - Myrtle Beach</p> </div> <div class=\"address small\"> <p> 3265 Victory Ln<br /> 29577 Myrtle Beach<br /> United States <br>KMYR </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Web</strong> <a href=\"https://flywithlift.com/\" target=\"_blank\" rel=\"noreferrer\">https://flywithlift.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 8,
+      "name": "",
+      "lat": 47.293104,
+      "lng": 12.78578,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Luftfahrzeugtechnik Zell am See</p> </div> <div class=\"address small\"> <p> Kaprunerstrasse 15 <br /> 5700 Zell Am See<br /> Austria </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:office@werftzell.com\">office@werftzell.com</a><br /> <strong>Phone</strong> +43 6542 201-11<br /> <strong>Web</strong> <a href=\"http://www.werftzell.com\" target=\"_blank\" rel=\"noreferrer\">http://www.werftzell.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 694,
+      "name": "M.R.O. Aviation Pte Ltd",
+      "lat": 1.41298304,
+      "lng": 103.86825913,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>M.R.O. Aviation Pte Ltd</p> </div> <div class=\"address small\"> <p> 80 Seletar Aerospace View<br /> 797563 <br /> Singapore </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@aviationhub.asia\">info@aviationhub.asia</a><br /> <strong>Phone</strong> +65-6980 3047<br /> <strong>Web</strong> <a href=\"http://www.aviationhub.asia\" target=\"_blank\" rel=\"noreferrer\">http://www.aviationhub.asia</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 726,
+      "name": "",
+      "lat": 51.55562842,
+      "lng": 4.55000793,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Mastenbroek Aeroskill</p> </div> <div class=\"address small\"> <p> Breda International Airport, Pastoor van Breugelstraat 93-3 <br /> 4744 RC Bosschenhoofd<br /> Netherlands <br>EHSE </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@aeroskill.nl\">info@aeroskill.nl</a><br /> <strong>Phone</strong> +31 165 332233<br /> <strong>Web</strong> <a href=\"http://www.aeroskill.nl\" target=\"_blank\" rel=\"noreferrer\">http://www.aeroskill.nl</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 766,
+      "name": "Max Air Service LLC",
+      "lat": 33.45303148,
+      "lng": -111.73242317,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Max Air Service LLC</p> </div> <div class=\"address small\"> <p> 4550 E McKellips Rd., STE 101<br /> 85215 Mesa<br /> United States <br>KFFZ </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@maxairservice.com\">info@maxairservice.com</a><br /> <strong>Phone</strong> 480-584-9500<br /> <strong>Web</strong> <a href=\"https://www.maxairservice.com/\" target=\"_blank\" rel=\"noreferrer\">https://www.maxairservice.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 126,
+      "name": "MDS Aviation",
+      "lat": 33.593767,
+      "lng": -7.466548,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>MDS Aviation</p> </div> <div class=\"address small\"> <p> Aéroport de Tit Mellil Hangar no°8<br /> 28630 Aïn Harrouda<br /> Morocco </p> </div> </div> <div class=\"contact small\"> <p><strong>Contact</strong></p> <div class=\"name\"> <p> Mr. Didier Cornut </p> </div> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:mds@mdsaviation.com\">mds@mdsaviation.com</a><br /> <strong>Phone</strong> +212 522 329 101<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 177,
+      "name": "Mecanair",
+      "lat": 47.182393,
+      "lng": 7.41033,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Mecanair S.A.</p> </div> <div class=\"address small\"> <p> Flughafenstrasse 59<br /> 2540 Grenchen<br /> Switzerland </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:PA.Rossier@mecanair.ch\">PA.Rossier@mecanair.ch</a><br /> <strong>Phone</strong> +41 32 654 8111<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 542,
+      "name": "Midwest AvTech",
+      "lat": 41.3546999,
+      "lng": -89.1447481,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Midwest AvTech</p> </div> <div class=\"address small\"> <p> 4241 Ed Urban Drive<br /> 61354 Peru<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 815-223-2003<br /> <strong>Web</strong> <a href=\"http://www.midwestavtech.com\" target=\"_blank\" rel=\"noreferrer\">http://www.midwestavtech.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 543,
+      "name": "Midwest Corporate Air",
+      "lat": 40.3611643,
+      "lng": -83.7596557,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Midwest Corporate Air</p> </div> <div class=\"address small\"> <p> 3100 SR 37 W., P.O. Box 87<br /> 43311 Bellefontaine<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 937-593-8210<br /> <strong>Web</strong> <a href=\"http://www.midwestcorporateair.com/\" target=\"_blank\" rel=\"noreferrer\">http://www.midwestcorporateair.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 95,
+      "name": "Michael Bundey",
+      "lat": 53.865289,
+      "lng": -1.663258,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Multiflight Limited</p> </div> <div class=\"address small\"> <p> Leeds Bradford International Airport<br /> LS 19 7UG Leeds<br /> United Kingdom </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:michael.bundey@multiflight.com\">michael.bundey@multiflight.com</a><br /> <strong>Phone</strong> +44 113 2387 100<br /> <strong>Web</strong> <a href=\"http://www.multiflight.com\" target=\"_blank\" rel=\"noreferrer\">http://www.multiflight.com</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7; +44 113 2387100</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 706,
+      "name": "Patrick Abel",
+      "lat": 28.70432833,
+      "lng": -81.58331035,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>MyFlight</p> </div> <div class=\"address small\"> <p> 1321 Apopka Airport Rd. Unit 45<br /> 32712 Apopka<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:mxsupport@flymyflight.com\">mxsupport@flymyflight.com</a><br /> <strong>Phone</strong> +1 407-436-7395<br /> <strong>Web</strong> <a href=\"http://www.flymyflight.com\" target=\"_blank\" rel=\"noreferrer\">http://www.flymyflight.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 723,
+      "name": "Norrønafly Rakkestad AS",
+      "lat": 59.39937807,
+      "lng": 11.34253826,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Norrønafly Rakkestad AS</p> </div> <div class=\"address small\"> <p> Astorpveien 62<br /> N1894 Rakkestand<br /> Norway <br>ENRK </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:valestrand@norronafly.no\">valestrand@norronafly.no</a><br /> <strong>Phone</strong> +4799456865<br /> <strong>Web</strong> <a href=\"http://www.norronafly.no\" target=\"_blank\" rel=\"noreferrer\">http://www.norronafly.no</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7: +4769226000</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 701,
+      "name": "Antonio Mastrangelo (DOM)",
+      "lat": 45.52841797,
+      "lng": -73.40846753,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>O.G. Aviation International</p> </div> <div class=\"address small\"> <p> 6575 Chemin de la Savane, H18<br /> J3Y 0Z3 Saint Hubert<br /> Canada <br>CYHU </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> +1 514 512-3101<br /> <strong>Web</strong> <a href=\"https://www.ogainternational.com/\" target=\"_blank\" rel=\"noreferrer\">https://www.ogainternational.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 714,
+      "name": "Oman Aviation Academy SAOC",
+      "lat": 24.39751388,
+      "lng": 56.61138509,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Oman Aviation Academy SAOC</p> </div> <div class=\"address small\"> <p> Hangar 1, Suhar Airport<br /> 322 Suhar<br /> Oman </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:mro@omanaviation.com\">mro@omanaviation.com</a><br /> <strong>Phone</strong> +968 90610611<br /> <strong>Web</strong> <a href=\"https://omanaviation.com\" target=\"_blank\" rel=\"noreferrer\">https://omanaviation.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 222,
+      "name": "Pegasus Flight Center Ltd.",
+      "lat": 34.8724157,
+      "lng": 33.60774258,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Pegasus Flight Center Ltd.</p> </div> <div class=\"address small\"> <p> Larnaca International Airport Apron 2, Stand G11<br /> 7130 Larnaca<br /> Cyprus <br>LCLK </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:admin@pegasus-flight.com\">admin@pegasus-flight.com</a><br /> <strong>Phone</strong> +35796097697 +35799404338<br /> <strong>Web</strong> <a href=\"http://www.pegasus-flight.com\" target=\"_blank\" rel=\"noreferrer\">http://www.pegasus-flight.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 436,
+      "name": "",
+      "lat": -25.93778,
+      "lng": 27.926395,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Plane Maintenance Facility CC</p> </div> <div class=\"address small\"> <p> Hangar 44, Lanseria Int.Airport, Gate 6<br /> 1748 Lanseria<br /> South Africa </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:pmf@myconnection.co.za\">pmf@myconnection.co.za</a><br /> <strong>Phone</strong> +27 0 82 576 8853<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 471,
+      "name": "Laurant Gauthier",
+      "lat": 52.220531,
+      "lng": 8.861377,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Porta Air Service GmbH &amp; Co KG</p> </div> <div class=\"address small\"> <p> Flughafen 9<br /> 32457 Porta Westfalica<br /> Germany </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@porta-air-service.de\">info@porta-air-service.de</a><br /> <strong>Phone</strong> +49 5731 7673 0<br /> <strong>Web</strong> <a href=\"http://www.porta-air-service.de\" target=\"_blank\" rel=\"noreferrer\">http://www.porta-air-service.de</a><br /> </p> </div> <div class=\"description\"> <p><p>AOG Hotline 24/7; +0800 727 1965</p></p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 715,
+      "name": "Preflight / 08 Aerosystem",
+      "lat": 58.78725873,
+      "lng": 16.92931728,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Preflight / 08 Aerosystem</p> </div> <div class=\"address small\"> <p> Flygspanarvägen 5 Skavsta Airport<br /> 611 92 Nyköping<br /> Sweden </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@preflightab.se\">info@preflightab.se</a><br /> <strong>Phone</strong> +46 155 24 00 00<br /> <strong>Web</strong> <a href=\"http://www.preflightab.se\" target=\"_blank\" rel=\"noreferrer\">http://www.preflightab.se</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 548,
+      "name": "Premier Aircraft Sales",
+      "lat": 26.1951732,
+      "lng": -80.1735099,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Premier Aircraft Sales</p> </div> <div class=\"address small\"> <p> 5544 NW 23rd Ave.<br /> 33309 Fort Lauderdale<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 954-334-2393<br /> <strong>Web</strong> <a href=\"http://www.flypas.com\" target=\"_blank\" rel=\"noreferrer\">http://www.flypas.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 635,
+      "name": "Premier Aircraft Sales",
+      "lat": 32.81312,
+      "lng": -97.352906,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Premier Aircraft Sales</p> </div> <div class=\"address small\"> <p> 3804 Falcon Way West<br /> 76106 Fort Worth<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 817-945-9191<br /> <strong>Web</strong> <a href=\"https://premieraircraftservice.com/texas/\" target=\"_blank\" rel=\"noreferrer\">https://premieraircraftservice.com/texas/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 722,
+      "name": "Professione Volare - Airways Aviation",
+      "lat": 44.19891361,
+      "lng": 12.07077604,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Professione Volare - Airways Aviation</p> </div> <div class=\"address small\"> <p> Via Carlo Seganti, 103<br /> 47121 Forli (FC)<br /> Italy <br>LIPK </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:cao.italy@airwaysaviation.com\">cao.italy@airwaysaviation.com</a><br /> <strong>Phone</strong> +390543781281<br /> <strong>Web</strong> <a href=\"http://www.professionevolare.it\" target=\"_blank\" rel=\"noreferrer\">http://www.professionevolare.it</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 145,
+      "name": "Qatar Aeronautical Academy",
+      "lat": 25.279131,
+      "lng": 51.568986,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Qatar Aeronautical Academy</p> </div> <div class=\"address small\"> <p> Ras AbuAbboud EXPY,Al Khulaifat,<br /> P.O Box 4050 Doha<br /> Qatar </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Web</strong> <a href=\"http://www.qaa.edu.qa\" target=\"_blank\" rel=\"noreferrer\">http://www.qaa.edu.qa</a><br /> </p> </div> <div class=\"description\"> <p><p><strong>Aircraft Maintenance</strong> <br /> <a href=\"mailto:npunton@qaa.edu.qa\">npunton@qaa.edu.qa</a><br /> <strong>Phone  </strong>+974 4405622</p> <p><strong>Aircraft Spares</strong> <br /> <a href=\"mailto:nnaveen@qaa.edu.qa\">nnaveen@qaa.edu.qa</a> <br /> <strong>Phone </strong>+974 44405623           </p> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 147,
+      "name": "Adrian Vasilache",
+      "lat": 43.986733,
+      "lng": 28.612679,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Regional Air Services</p> </div> <div class=\"address small\"> <p> Aerodrom Tuzla, Communa Tuzla <br /> 907295 Constanta<br /> Romania </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:maintenance@regional.air.ro\">maintenance@regional.air.ro</a><br /> <strong>Phone</strong> +40 375 390 390<br /> <strong>Web</strong> <a href=\"http://www.regional-air.ro\" target=\"_blank\" rel=\"noreferrer\">http://www.regional-air.ro</a><br /> </p> </div> <div class=\"description\"> <p>AOG Hotline 24/7; +40 754 070 555</p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 653,
+      "name": "Roeder",
+      "lat": 40.36658446,
+      "lng": -3.77146276,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Roeder Iberica, S.L.U</p> </div> <div class=\"address small\"> <p> Carretera del Barrio de la Fortuna 10, hangar 2<br /> 28054 Madrid<br /> Spain </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:s.rodriguez@aviatec.com\">s.rodriguez@aviatec.com</a><br /> <strong>Web</strong> <a href=\"http://www.roederiberica.com\" target=\"_blank\" rel=\"noreferrer\">http://www.roederiberica.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 70,
+      "name": "Alfonso Martínez",
+      "lat": 41.147222,
+      "lng": 1.166944,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Rosique Aircraft sl</p> </div> <div class=\"address small\"> <p> Aeropuerto de Reus <br /> 43206 Reus (Tarragona)<br /> Spain </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@rosiqueaircraft.com\">info@rosiqueaircraft.com</a><br /> <strong>Phone</strong> +34 977271075<br /> <strong>Mobile</strong> +34 606341722<br /> <strong>Web</strong> <a href=\"http://www.rosiqueaircraft.com\" target=\"_blank\" rel=\"noreferrer\">http://www.rosiqueaircraft.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 750,
+      "name": "",
+      "lat": 28.48931247,
+      "lng": 77.12426473,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Sakthi Aircarft Industry</p> </div> <div class=\"address small\"> <p> 07th Floor, Mehrauli-Gurgaon Rd, opposite Metro Pillar 29, Garden Estate, DLF Phase 3, Sector 24<br /> 122010 Gurugram, Haryana<br /> India </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:sales@sakthiaircraft.com\">sales@sakthiaircraft.com</a><br /> <strong>Phone</strong> +91 124 404 7136<br /> <strong>Web</strong> <a href=\"http://www.sakthiaircraft.com\" target=\"_blank\" rel=\"noreferrer\">http://www.sakthiaircraft.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 764,
+      "name": "Signature Aviation EGE",
+      "lat": 39.64116656,
+      "lng": -106.90962499,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Signature Aviation EGE</p> </div> <div class=\"address small\"> <p> 871 Cooley Mesa Rd. <br /> 81637 Gypsum<br /> United States <br>KEGE </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:Amxege@signatureaviation.com\">Amxege@signatureaviation.com</a><br /> <strong>Phone</strong> 970-524-4003<br /> <strong>Web</strong> <a href=\"https://www.signatureaviation.com/locations/EGE\" target=\"_blank\" rel=\"noreferrer\">https://www.signatureaviation.com/locations/EGE</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 641,
+      "name": "Sky KG",
+      "lat": 43.057389,
+      "lng": 74.478917,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Sky KG Airlines</p> </div> <div class=\"address small\"> <p> <br /> Manas International Airport, Bishkek<br /> Kyrgyzstan </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:techdep@skykgairlines.com\">techdep@skykgairlines.com</a><br /> <strong>Phone</strong> +996 312 560762<br /> <strong>Web</strong> <a href=\"http://www.skykgairlines.com\" target=\"_blank\" rel=\"noreferrer\">http://www.skykgairlines.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 578,
+      "name": "Skyservice",
+      "lat": 44.093342,
+      "lng": -121.202537,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Skyservice</p> </div> <div class=\"address small\"> <p> 63132 Powell Butte Road<br /> 97701 Bend<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 541-504-3848<br /> <strong>Web</strong> <a href=\"https://www.skyservice.com/\" target=\"_blank\" rel=\"noreferrer\">https://www.skyservice.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 554,
+      "name": "Southern Maine Aviation",
+      "lat": 43.4010845,
+      "lng": -70.7106018,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Southern Maine Aviation</p> </div> <div class=\"address small\"> <p> 199 Airport Road<br /> 04073 Sanford<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 207-324-8919<br /> <strong>Web</strong> <a href=\"http://www.flyingsma.com/\" target=\"_blank\" rel=\"noreferrer\">http://www.flyingsma.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 94,
+      "name": "",
+      "lat": 51.4773,
+      "lng": -1.551295,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Southern Sailplanes</p> </div> <div class=\"address small\"> <p> Membury Airfield<br /> RG 17 7TJ Hungerford / Berkshire<br /> United Kingdom </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:technical@southernsailplanes.com\">technical@southernsailplanes.com</a><br /> <strong>Phone</strong> +44 1488 71774<br /> <strong>Web</strong> <a href=\"http://www.flightcomposites.co.uk\" target=\"_blank\" rel=\"noreferrer\">http://www.flightcomposites.co.uk</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 661,
+      "name": "Southtec Aviation",
+      "lat": 35.6886093,
+      "lng": -80.5135024,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Southtec Aviation</p> </div> <div class=\"address small\"> <p> 3330 Airport Loop<br /> 28147 Salisbury<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@southtecaviation.com\">info@southtecaviation.com</a><br /> <strong>Phone</strong> 704-431-6862<br /> <strong>Web</strong> <a href=\"https://www.southtecaviation.com/\" target=\"_blank\" rel=\"noreferrer\">https://www.southtecaviation.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 552,
+      "name": "Special Services Corp",
+      "lat": 34.8528774,
+      "lng": -82.3517668,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Special Services Corp</p> </div> <div class=\"address small\"> <p> 54 Watson Aviation Road<br /> 29607 Greenville<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 864-242-3383<br /> <strong>Web</strong> <a href=\"https://www.flyssc.com/aircraft-maintenance/\" target=\"_blank\" rel=\"noreferrer\">https://www.flyssc.com/aircraft-maintenance/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 488,
+      "name": "Star Aviation",
+      "lat": 31.681398,
+      "lng": 6.145017,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Star Aviation</p> </div> <div class=\"address small\"> <p> BP509 Route In Amenas<br /> Hassi Messaoud<br /> Algeria </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> +213 29 74 94 00<br /> <strong>Mobile</strong> +213 770 27 80 10<br /> <strong>Web</strong> <a href=\"http://www.redmed-group.com/en\" target=\"_blank\" rel=\"noreferrer\">http://www.redmed-group.com/en</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 682,
+      "name": "Jaime Steel-Potter",
+      "lat": 39.91131365,
+      "lng": -84.40138335,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Steel Aviation</p> </div> <div class=\"address small\"> <p> 53 North Street Extension <br /> 27615 Phillipsburg<br /> United States </p> </div> </div> <div class=\"contact small\"> <p><strong>Contact</strong></p> <div class=\"name\"> <p> Jaime Steel-Potter </p> </div> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:jaime@steelaviation.com\">jaime@steelaviation.com</a><br /> <strong>Phone</strong> 937-332-7587<br /> <strong>Web</strong> <a href=\"https://www.steelaviation.com/\" target=\"_blank\" rel=\"noreferrer\">https://www.steelaviation.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 221,
+      "name": "Rudi Beyltiens",
+      "lat": 51.188746,
+      "lng": 4.4608734,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Styl Aviation</p> </div> <div class=\"address small\"> <p> Antwerp Airport Belgium, Luchthavenlei 1/34 <br /> 2100 Deurne (Antwerpen)<br /> Belgium </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@stylaviation.com\">info@stylaviation.com</a><br /> <strong>Phone</strong> +32-3-322 75 22<br /> <strong>Web</strong> <a href=\"http://www.stylaviation.com\" target=\"_blank\" rel=\"noreferrer\">http://www.stylaviation.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 562,
+      "name": "Sweet Aviation",
+      "lat": 41.140575,
+      "lng": -85.152641,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Sweet Aviation</p> </div> <div class=\"address small\"> <p> 902 W Ludwig Rd<br /> 46825 Fort Wayne<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 260-267-5505<br /> <strong>Web</strong> <a href=\"http://www.sweetaviation.com/\" target=\"_blank\" rel=\"noreferrer\">http://www.sweetaviation.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 716,
+      "name": "Täby Air Maintenance AB",
+      "lat": 59.22596876,
+      "lng": 15.04647434,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Täby Air Maintenance AB</p> </div> <div class=\"address small\"> <p> Örebro Airport<br /> 70594 Örebrö<br /> Sweden </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:request@tam.se\">request@tam.se</a><br /> <strong>Phone</strong> +46 19 24 10 88<br /> <strong>Fax</strong> +46 19 24 11 15<br /> <strong>Web</strong> <a href=\"http://www.tam.se\" target=\"_blank\" rel=\"noreferrer\">http://www.tam.se</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 645,
+      "name": "Take Flight Aviation",
+      "lat": 41.514324,
+      "lng": -74.260056,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Take Flight Aviation</p> </div> <div class=\"address small\"> <p> 49 Hangar Road, Hangar D<br /> 12549 Montgomery<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 854-457-4188<br /> <strong>Web</strong> <a href=\"http://www.takeflightoc.com\" target=\"_blank\" rel=\"noreferrer\">http://www.takeflightoc.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 563,
+      "name": "Texas Flight Maintenance",
+      "lat": 30.0701768,
+      "lng": -95.551163,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Texas Flight Maintenance</p> </div> <div class=\"address small\"> <p> 20803 Stuebner Airline 29<br /> 77379 Spring<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 832-717-0766<br /> <strong>Web</strong> <a href=\"http://www.txflight.com\" target=\"_blank\" rel=\"noreferrer\">http://www.txflight.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 640,
+      "name": "Thoroughbred Aviation",
+      "lat": 38.032671,
+      "lng": -84.600591,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Thoroughbred Aviation</p> </div> <div class=\"address small\"> <p> 4316 Hangar Drive<br /> 40510 Lexington<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 859-255-1902<br /> <strong>Web</strong> <a href=\"https://thoroughbredaviationmaintenance.com/\" target=\"_blank\" rel=\"noreferrer\">https://thoroughbredaviationmaintenance.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 565,
+      "name": "Three Wing Flying Services",
+      "lat": 41.1632356,
+      "lng": -73.1280588,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Three Wing Flying Services</p> </div> <div class=\"address small\"> <p> Igor I Sikorsky Memorial Airport, 400 Great Meadow Rd<br /> 06615 Stratford<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 203-375-5795<br /> <strong>Web</strong> <a href=\"http://threewing.com\" target=\"_blank\" rel=\"noreferrer\">http://threewing.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 702,
+      "name": "",
+      "lat": 43.45367663,
+      "lng": -80.38351486,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Tri-City Aero</p> </div> <div class=\"address small\"> <p> 4881 Fountain Street N, Unit 15<br /> N0B 1M0 Breslau<br /> Canada <br>CYKF </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:service@tricityaero.com\">service@tricityaero.com</a><br /> <strong>Phone</strong> +1 519 648 2044<br /> <strong>Web</strong> <a href=\"https://tricityaero.com/\" target=\"_blank\" rel=\"noreferrer\">https://tricityaero.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 710,
+      "name": "Triple J Aviation Engineering Ltd",
+      "lat": 51.83348934,
+      "lng": -1.30850369,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Triple J Aviation Engineering Ltd</p> </div> <div class=\"address small\"> <p> Hangar 3, London Oxford Airport, Langford Lane <br /> OX5 1RA Kidlington<br /> United Kingdom </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@triplejae.com\">info@triplejae.com</a><br /> <strong>Phone</strong> +44 0 186 559 9140<br /> <strong>Web</strong> <a href=\"https://www.triplejae.com/\" target=\"_blank\" rel=\"noreferrer\">https://www.triplejae.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 9,
+      "name": "Urbe Aero",
+      "lat": 47.84213,
+      "lng": 16.258048,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Urbe Aero GmbH</p> </div> <div class=\"address small\"> <p> Ferdinand Graf von Zeppelin-Str. 9 Flugplatz Wiener Neustadt Ost (LOAN) <br /> 2700 Wr.Neustadt<br /> Austria </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:maintenance@urbe.aero\">maintenance@urbe.aero</a><br /> <strong>Phone</strong> +432622351230<br /> <strong>Mobile</strong> +4369916704010<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 735,
+      "name": "Wanfeng Aircraft Industry Co., Ltd",
+      "lat": 29.447813,
+      "lng": 121.013959,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Wanfeng Aircraft Industry Co., Ltd</p> </div> <div class=\"address small\"> <p> No. 1 Aofeng road Dashiju Industrial park Xinchang, Zhejiang province <br /> <br /> China </p> </div> </div> <div class=\"contact small\"> <p><strong>Contact</strong></p> <div class=\"name\"> <p> Wanfeng Aircraft Industry Co., Ltd </p> </div> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:support-china@wfjt.com\">support-china@wfjt.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 683,
+      "name": "Waterford Aviation",
+      "lat": 42.66255666,
+      "lng": -83.42109996,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Waterford Aviation</p> </div> <div class=\"address small\"> <p> 6548 Highland Road <br /> 48327 Waterford<br /> United States </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:MX@WaterfordAviationInc.com\">MX@WaterfordAviationInc.com</a><br /> <strong>Phone</strong> 248 724-2400<br /> <strong>Web</strong> <a href=\"https://www.waterfordaviation.com/\" target=\"_blank\" rel=\"noreferrer\">https://www.waterfordaviation.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 666,
+      "name": "Wilhelm Tank GmbH&CO. Mariensiel KG",
+      "lat": 53.50753625,
+      "lng": 8.05070435,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Wilhelm Tank GmbH &amp; Co. Mariensiel KG</p> </div> <div class=\"address small\"> <p> Flugplatz 1<br /> 26452 Sande<br /> Germany </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:info@Wilhelm-Tank.de\">info@Wilhelm-Tank.de</a><br /> <strong>Phone</strong> +49 4421 201010<br /> <strong>Web</strong> <a href=\"http://www.wilhelm-tank.de\" target=\"_blank\" rel=\"noreferrer\">http://www.wilhelm-tank.de</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 138,
+      "name": "Eelco Wagner",
+      "lat": 52.454502,
+      "lng": 5.517088,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Wings Over Holland B.V.</p> </div> <div class=\"address small\"> <p> Emoeweg 28<br /> 8218 PC Leylestad<br /> Netherlands </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:sales@wingsoverholland.nl\">sales@wingsoverholland.nl</a><br /> <strong>Phone</strong> +31 320 28 82 60<br /> <strong>Fax</strong> +31 320 28 83 74<br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 495,
+      "name": "M Stryczynski",
+      "lat": 53.1127745,
+      "lng": 17.9554354,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Wojskowe Zakłady Lotnicze Nr 2 S.A.</p> </div> <div class=\"address small\"> <p> ul. Szubińska 107<br /> 85-915 Bydgoszcz<br /> Poland </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:m.stryczynski@wzl2.mil.pl\">m.stryczynski@wzl2.mil.pl</a><br /> <strong>Phone</strong> +48 52 36 28 667<br /> <strong>Web</strong> <a href=\"http://www.wzl2.mil.pl\" target=\"_blank\" rel=\"noreferrer\">http://www.wzl2.mil.pl</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 573,
+      "name": "XU Aviation",
+      "lat": 43.0347986,
+      "lng": -81.162283,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>XU Aviation</p> </div> <div class=\"address small\"> <p> 2537 Huron Street<br /> N5V 5J1 London<br /> Canada </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Phone</strong> 519-452-7999<br /> <strong>Web</strong> <a href=\"http://www.xu-aviation.com\" target=\"_blank\" rel=\"noreferrer\">http://www.xu-aviation.com</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    },
+    {
+      "uid": 719,
+      "name": "Brett Zefting",
+      "lat": 48.79270598,
+      "lng": -122.53136072,
+      "category": 102,
+      "infoWindow": "<div class=\"info-window media service-center\"> <div class=\"media-left image\"> <img src=\"/_assets/06ab17aae0014200297530021de46085/Legacy/DistributorSelector/images/preview.gif\" width=\"120\" height=\"80\" alt=\"\" /> </div> <div class=\"media-body\"> <div class=\"media\"> <div class=\"media-left\"> <span class=\"icon icon-category icon-service-center\"></span> </div> <div class=\"media-body\"> <div class=\"short\"> <div class=\"category\"> Service Center </div> <div class=\"company small\"> <p>Zefting Aviation LLC</p> </div> <div class=\"address small\"> <p> 4165 Mitchell Way<br /> 98226 Bellingham<br /> United States <br>KBLI </p> </div> </div> <div class=\"contact small\"> <div class=\"details\"> <p> <strong>Email</strong> <a href=\"mailto:mx@zeftingaviation.com\">mx@zeftingaviation.com</a><br /> <strong>Phone</strong> +1 360 282 6289<br /> <strong>Web</strong> <a href=\"https://www.zeftingaviation.com/\" target=\"_blank\" rel=\"noreferrer\">https://www.zeftingaviation.com/</a><br /> </p> </div> </div> </div> </div> </div> </div>"
+    }
+  ]
+}
