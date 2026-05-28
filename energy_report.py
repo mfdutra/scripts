@@ -5,7 +5,7 @@ import sqlite3
 from datetime import datetime, timedelta
 from pathlib import Path
 
-DB_PATH = Path(__file__).parent / "home-assistant_v2.db"
+DB_PATH = "home-assistant_v2.db"
 
 
 def get_weekly_data():
