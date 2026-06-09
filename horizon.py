@@ -7,7 +7,8 @@ FEET_PER_NM = 6076.115
 
 
 def horizon_distance_nm(altitude_ft: float) -> float:
-    return math.sqrt(2 * EARTH_RADIUS_NM * altitude_ft / FEET_PER_NM)
+    altitude_nm = altitude_ft / FEET_PER_NM
+    return EARTH_RADIUS_NM * math.acos(EARTH_RADIUS_NM / (EARTH_RADIUS_NM + altitude_nm))
 
 
 def main():
