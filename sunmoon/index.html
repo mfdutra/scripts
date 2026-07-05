@@ -132,6 +132,11 @@
     color: #ff8080;
   }
 
+  .azimuth-arrow {
+    display: inline-block;
+    margin-left: 6px;
+  }
+
   #moonIcon {
     display: block;
     width: 88px;
@@ -238,7 +243,7 @@
   </svg>
   <div class="data-grid">
     <div class="data-item"><div class="label">Elevation</div><div class="value" id="sunElevation">&mdash;</div></div>
-    <div class="data-item"><div class="label">Azimuth</div><div class="value" id="sunAzimuth">&mdash;</div></div>
+    <div class="data-item"><div class="label">Azimuth</div><div class="value"><span id="sunAzimuth">&mdash;</span><span class="azimuth-arrow" id="sunAzimuthArrow">&#11014;</span></div></div>
     <div class="data-item"><div class="label">Sunrise</div><div class="value" id="sunrise">&mdash;</div></div>
     <div class="data-item"><div class="label">Sunset</div><div class="value" id="sunset">&mdash;</div></div>
     <div class="data-item"><div class="label">Solar noon</div><div class="value" id="solarNoon">&mdash;</div></div>
@@ -256,7 +261,7 @@
   </svg>
   <div class="data-grid">
     <div class="data-item"><div class="label">Elevation</div><div class="value" id="moonElevation">&mdash;</div></div>
-    <div class="data-item"><div class="label">Azimuth</div><div class="value" id="moonAzimuth">&mdash;</div></div>
+    <div class="data-item"><div class="label">Azimuth</div><div class="value"><span id="moonAzimuth">&mdash;</span><span class="azimuth-arrow" id="moonAzimuthArrow">&#11014;</span></div></div>
     <div class="data-item"><div class="label">Moonrise</div><div class="value" id="moonrise">&mdash;</div></div>
     <div class="data-item"><div class="label">Moonset</div><div class="value" id="moonset">&mdash;</div></div>
     <div class="data-item"><div class="label">Illumination</div><div class="value" id="moonIllumination">&mdash;</div></div>
