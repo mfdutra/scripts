@@ -216,7 +216,7 @@ $(function () {
     const times = SunCalc.getTimes(date, lat, lon);
     const dayLengthMs = times.sunset - times.sunrise;
 
-    $("#sunElevation").text(formatDegrees(position.altitude));
+    $("#sunElevation").text(formatDegrees(position.altitude)).toggleClass("negative", position.altitude < 0);
     $("#sunAzimuth").text(formatDegrees(position.azimuth + Math.PI));
     $("#sunrise").text(formatTime(times.sunrise));
     $("#sunset").text(formatTime(times.sunset));
@@ -235,7 +235,7 @@ $(function () {
     // relative to the observer's local zenith ("up"), matching what's actually seen.
     const localLimbAngle = normalizeAngle(illumination.angle - position.parallacticAngle);
 
-    $("#moonElevation").text(formatDegrees(position.altitude));
+    $("#moonElevation").text(formatDegrees(position.altitude)).toggleClass("negative", position.altitude < 0);
     $("#moonAzimuth").text(formatDegrees(position.azimuth + Math.PI));
     $("#moonrise").text(times.rise ? formatTime(times.rise) : "None today");
     $("#moonset").text(times.set ? formatTime(times.set) : "None today");
