@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0f1626"/>
+  <line x1="414.0" y1="176.0" x2="448.0" y2="176.0" stroke="#ffd166" stroke-width="16" stroke-linecap="round"/>
+  <line x1="391.2" y1="231.2" x2="415.2" y2="255.2" stroke="#ffd166" stroke-width="16" stroke-linecap="round"/>
+  <line x1="336.0" y1="254.0" x2="336.0" y2="288.0" stroke="#ffd166" stroke-width="16" stroke-linecap="round"/>
+  <line x1="280.8" y1="231.2" x2="256.8" y2="255.2" stroke="#ffd166" stroke-width="16" stroke-linecap="round"/>
+  <line x1="258.0" y1="176.0" x2="224.0" y2="176.0" stroke="#ffd166" stroke-width="16" stroke-linecap="round"/>
+  <line x1="280.8" y1="120.8" x2="256.8" y2="96.8" stroke="#ffd166" stroke-width="16" stroke-linecap="round"/>
+  <line x1="336.0" y1="98.0" x2="336.0" y2="64.0" stroke="#ffd166" stroke-width="16" stroke-linecap="round"/>
+  <line x1="391.2" y1="120.8" x2="415.2" y2="96.8" stroke="#ffd166" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="336" cy="176" r="64" fill="#ffd166"/>
+  <mask id="moonMask">
+    <rect width="512" height="512" fill="white"/>
+    <circle cx="208" cy="298" r="80" fill="black"/>
+  </mask>
+  <circle cx="172" cy="322" r="92" fill="#eef1f8" mask="url(#moonMask)"/>
+</svg>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Sun &amp; Moon</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f1626">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 16px;
+    background: #0f1626;
+    color: #eef1f8;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin: 0 0 12px 0;
+    text-align: center;
+  }
+
+  .card {
+    background: #1b2440;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+
+  .card h2 {
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+    color: #9fb3ff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  label {
+    display: block;
+    font-size: 0.85rem;
+    color: #b7c0d8;
+    margin-bottom: 4px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3a4570;
+    border-radius: 8px;
+    background: #0f1626;
+    color: #eef1f8;
+    font-size: 16px;
+  }
+
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .row > div {
+    flex: 1;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #4361ee;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  button.secondary {
+    background: #2c3560;
+  }
+
+  #locationStatus, #calcNote {
+    font-size: 0.85rem;
+    color: #b7c0d8;
+    margin: 0 0 10px 0;
+  }
+
+  #manualLocation {
+    display: none;
+  }
+
+  .data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .data-item {
+    background: #131b34;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .data-item .label {
+    font-size: 0.75rem;
+    color: #8ea0d0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .data-item .value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2px;
+  }
+
+  #moonIcon {
+    display: block;
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 6px auto;
+  }
+
+  #sunPath {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .error {
+    color: #ff8080;
+    font-size: 0.85rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* jQuery UI datepicker: keep it usable on small screens */
+  .ui-datepicker {
+    font-size: 0.9rem;
+    background: #1b2440;
+    color: #eef1f8;
+    border: 1px solid #3a4570;
+  }
+  .ui-datepicker .ui-datepicker-header {
+    background: #2c3560;
+    color: #eef1f8;
+  }
+  .ui-datepicker td a {
+    color: #eef1f8;
+  }
+  .ui-datepicker-calendar .ui-state-default {
+    background: #131b34;
+  }
+  .ui-datepicker-calendar .ui-state-active {
+    background: #4361ee !important;
+  }
+</style>
+</head>
+<body>
+
+<h1>Sun &amp; Moon</h1>
+
+<div class="card">
+  <h2>Location</h2>
+  <p id="locationStatus">Requesting your location&hellip;</p>
+  <button id="useLocationBtn" class="secondary">Automatic location</button>
+  <button id="enterManualBtn" class="secondary">Enter latitude / longitude</button>
+
+  <div id="manualLocation">
+    <div class="row">
+      <div>
+        <label for="latInput">Latitude</label>
+        <input type="number" id="latInput" step="any" min="-90" max="90" placeholder="e.g. 37.7749">
+      </div>
+      <div>
+        <label for="lonInput">Longitude</label>
+        <input type="number" id="lonInput" step="any" min="-180" max="180" placeholder="e.g. -122.4194">
+      </div>
+    </div>
+    <button id="useManualBtn">Use these coordinates</button>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Date &amp; Time</h2>
+  <div class="row">
+    <div>
+      <label for="dateInput">Date</label>
+      <input type="text" id="dateInput" readonly>
+    </div>
+    <div>
+      <label for="timeInput">Time</label>
+      <input type="time" id="timeInput" step="60">
+    </div>
+  </div>
+  <button id="nowBtn" class="secondary">Use current date &amp; time</button>
+</div>
+
+<p id="calcNote" class="hidden"></p>
+
+<div class="card">
+  <h2>Sun</h2>
+  <svg id="sunPath" viewBox="0 0 300 140">
+    <defs>
+      <filter id="sunGlow" x="-60%" y="-60%" width="220%" height="220%">
+        <feGaussianBlur stdDeviation="4" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <line id="sunHorizon" x1="0" y1="100" x2="300" y2="100" stroke="#3a4570" stroke-width="2"/>
+    <path id="sunArc" fill="none" stroke="#5a6a9a" stroke-width="2"/>
+    <circle id="sunDotRiseFar" r="3" fill="#ffd166" opacity="0"/>
+    <circle id="sunDotSetFar" r="3" fill="#ffd166" opacity="0"/>
+    <circle id="sunDotRise" r="3.5" fill="#ffd166" opacity="0"/>
+    <circle id="sunDotSet" r="3.5" fill="#ffd166" opacity="0"/>
+    <circle id="sunMarker" r="7" fill="#ffd166" filter="url(#sunGlow)" opacity="0"/>
+  </svg>
+  <div class="data-grid">
+    <div class="data-item"><div class="label">Elevation</div><div class="value" id="sunElevation">&mdash;</div></div>
+    <div class="data-item"><div class="label">Azimuth</div><div class="value" id="sunAzimuth">&mdash;</div></div>
+    <div class="data-item"><div class="label">Sunrise</div><div class="value" id="sunrise">&mdash;</div></div>
+    <div class="data-item"><div class="label">Sunset</div><div class="value" id="sunset">&mdash;</div></div>
+    <div class="data-item"><div class="label">Solar noon</div><div class="value" id="solarNoon">&mdash;</div></div>
+    <div class="data-item"><div class="label">Day length</div><div class="value" id="dayLength">&mdash;</div></div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Moon</h2>
+  <svg id="moonIcon" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="40" fill="#2c3560"/>
+    <g id="moonIconBulge">
+      <path id="moonIconBright" fill="#eef1f8"/>
+    </g>
+  </svg>
+  <div class="data-grid">
+    <div class="data-item"><div class="label">Elevation</div><div class="value" id="moonElevation">&mdash;</div></div>
+    <div class="data-item"><div class="label">Azimuth</div><div class="value" id="moonAzimuth">&mdash;</div></div>
+    <div class="data-item"><div class="label">Moonrise</div><div class="value" id="moonrise">&mdash;</div></div>
+    <div class="data-item"><div class="label">Moonset</div><div class="value" id="moonset">&mdash;</div></div>
+    <div class="data-item"><div class="label">Illumination</div><div class="value" id="moonIllumination">&mdash;</div></div>
+    <div class="data-item"><div class="label">Phase</div><div class="value" id="moonPhase">&mdash;</div></div>
+    <div class="data-item"><div class="label">Bright limb angle</div><div class="value" id="moonAngle">&mdash;</div></div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/suncalc@1.9.0/suncalc.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
