@@ -1,8 +1,6 @@
 $(function () {
   "use strict";
 
-  const DATE_FORMAT = "yy-mm-dd";
-
   const MOON_PHASES = [
     { max: 0.02, name: "New Moon" },
     { max: 0.25, name: "Waxing Crescent" },
@@ -40,13 +38,8 @@ $(function () {
 
   const setNow = () => {
     const now = new Date();
-    $("#dateInput").datepicker("setDate", now);
+    $("#dateInput").val(toDateInputValue(now));
     $("#timeInput").val(toTimeInputValue(now));
-  };
-
-  const initDatePicker = () => {
-    $("#dateInput").datepicker({ dateFormat: DATE_FORMAT });
-    setNow();
   };
 
   const degrees = (radians) => (radians * 180) / Math.PI;
@@ -271,7 +264,7 @@ $(function () {
   $("#dateInput").on("change", recalculate);
   $("#timeInput").on("change", recalculate);
 
-  initDatePicker();
+  setNow();
   requestGeolocation();
 
   if ("serviceWorker" in navigator) {

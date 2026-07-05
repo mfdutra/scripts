@@ -10,8 +10,6 @@
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-
 <style>
   * { box-sizing: border-box; }
 
@@ -55,6 +53,7 @@
   }
 
   input[type="text"],
+  input[type="date"],
   input[type="number"],
   input[type="time"] {
     width: 100%;
@@ -160,26 +159,6 @@
     display: none;
   }
 
-  /* jQuery UI datepicker: keep it usable on small screens */
-  .ui-datepicker {
-    font-size: 0.9rem;
-    background: #1b2440;
-    color: #eef1f8;
-    border: 1px solid #3a4570;
-  }
-  .ui-datepicker .ui-datepicker-header {
-    background: #2c3560;
-    color: #eef1f8;
-  }
-  .ui-datepicker td a {
-    color: #eef1f8;
-  }
-  .ui-datepicker-calendar .ui-state-default {
-    background: #131b34;
-  }
-  .ui-datepicker-calendar .ui-state-active {
-    background: #4361ee !important;
-  }
 </style>
 </head>
 <body>
@@ -212,7 +191,7 @@
   <div class="row">
     <div>
       <label for="dateInput">Date</label>
-      <input type="text" id="dateInput" readonly>
+      <input type="date" id="dateInput">
     </div>
     <div>
       <label for="timeInput">Time</label>
@@ -271,7 +250,6 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/suncalc@1.9.0/suncalc.js"></script>
 <script src="app.js"></script>
 </body>

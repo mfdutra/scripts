@@ -1,4 +1,4 @@
-const CACHE_NAME = "sunmoon-v7";
+const CACHE_NAME = "sunmoon-v8";
 
 const PRECACHE_URLS = [
   "./",

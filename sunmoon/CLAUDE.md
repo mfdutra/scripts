@@ -20,7 +20,7 @@ There are no lint or test commands/frameworks in this repo.
 
 ## Architecture
 
-- **`index.html`** — all markup and CSS (inline `<style>` block) for the three cards: Location, Date & Time, Sun, Moon. Loads jQuery, jQuery UI (datepicker CSS/JS), and [SunCalc](https://github.com/mourner/suncalc) from CDNs, then `app.js`.
+- **`index.html`** — all markup and CSS (inline `<style>` block) for the three cards: Location, Date & Time, Sun, Moon. Loads jQuery and [SunCalc](https://github.com/mourner/suncalc) from CDNs, then `app.js`. Date input is a native `<input type="date">` (no datepicker library).
 - **`app.js`** — a single jQuery-driven IIFE with no modules/build step. All astronomy math is delegated to the global `SunCalc` object (`SunCalc.getPosition`, `getTimes`, `getMoonPosition`, `getMoonIllumination`, `getMoonTimes`); `app.js` only formats results and drives two hand-rolled SVG visualizations:
   - The moon icon (`#moonIcon`) draws the illuminated limb as an SVG arc path whose vertical radius encodes the illumination fraction, rotated to show the correct bright-limb angle as seen by the observer (illumination angle minus parallactic angle).
   - The sun path (`#sunPath`) samples altitude across the day (sunrise → sunset, padded by an hour on each side) and renders it as an SVG polyline, with a marker for the current sun position.
