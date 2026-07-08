@@ -20,12 +20,13 @@ There are no lint or test commands/frameworks in this repo.
 
 ## Architecture
 
-- **`index.html`** — all markup and CSS (inline `<style>` block) for the three cards: Location, Date & Time, Sun, Moon. Loads jQuery and [SunCalc](https://github.com/mourner/suncalc) from CDNs, then `app.js`. Date input is a native `<input type="date">` (no datepicker library).
+- **`index.html`** — all markup and CSS (inline `<style>` block) for the three cards: Location, Date & Time, Sun, Moon. Loads jQuery and [SunCalc](https://github.com/mourner/suncalc) from local vendored copies in `vendor/` (not a CDN — cross-origin CDN scripts produce opaque fetch responses that the service worker can't reliably cache, which breaks offline use), then `app.js`. Date input is a native `<input type="date">` (no datepicker library).
 - **`app.js`** — a single jQuery-driven IIFE with no modules/build step. All astronomy math is delegated to the global `SunCalc` object (`SunCalc.getPosition`, `getTimes`, `getMoonPosition`, `getMoonIllumination`, `getMoonTimes`); `app.js` only formats results and drives two hand-rolled SVG visualizations:
   - The moon icon (`#moonIcon`) draws the illuminated limb as an SVG arc path whose vertical radius encodes the illumination fraction, rotated to show the correct bright-limb angle as seen by the observer (illumination angle minus parallactic angle).
   - The sun path (`#sunPath`) samples altitude across the day (sunrise → sunset, padded by an hour on each side) and renders it as an SVG polyline, with a marker for the current sun position.
   - `state.lat` / `state.lon` hold the current location; every location or date/time change funnels through `recalculate()`, which re-renders both the Sun and Moon cards. Nothing recalculates until a location is set.
-- **`sw.js`** — service worker with a stale-while-revalidate strategy (serves cached response immediately, updates cache from network in the background). Precaches the core app shell under `CACHE_NAME`. **Bump `CACHE_NAME` (e.g. `sunmoon-v6`) whenever precached files change**, so the old cache is evicted on activate.
+- **`sw.js`** — service worker with a stale-while-revalidate strategy (serves cached response immediately, updates cache from network in the background). Precaches the core app shell — including the vendored `vendor/jquery-*.js` and `vendor/suncalc-*.js` — under `CACHE_NAME`. **Bump `CACHE_NAME` (e.g. `sunmoon-v6`) whenever precached files change**, so the old cache is evicted on activate.
+- **`vendor/`** — local copies of third-party libraries (jQuery, SunCalc), pinned to specific versions and checked in so the app has no runtime CDN dependency. Loading these from a CDN instead would break offline use, since cross-origin `<script>` fetches (opaque responses) can't be cached by the service worker's `response.ok` check.
 - **`manifest.json`** — PWA manifest (name, icons, standalone display, theme colors). Icon sources live in `icons/` (`icon-source.svg` / `icon-maskable-source.svg` are the editable sources; the PNGs are generated from them).
 
 ## Conventions in this codebase
