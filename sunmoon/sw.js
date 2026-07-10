@@ -73,3 +73,9 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   event.respondWith(respond(event));
 });
+
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "GET_VERSION" && event.ports[0]) {
+    event.ports[0].postMessage({ version: CACHE_NAME });
+  }
+});

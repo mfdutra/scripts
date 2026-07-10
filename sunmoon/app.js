@@ -286,5 +286,18 @@ $(function () {
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js");
+
+    // Ask the active service worker for its CACHE_NAME (the single source of
+    // truth for the app version) rather than duplicating it in this file.
+    navigator.serviceWorker.ready.then((registration) => {
+      if (!registration.active) return;
+      const channel = new MessageChannel();
+      channel.port1.onmessage = (event) => {
+        if (event.data && event.data.version) {
+          $("#appFooter").text(event.data.version);
+        }
+      };
+      registration.active.postMessage({ type: "GET_VERSION" }, [channel.port2]);
+    });
   }
 });
