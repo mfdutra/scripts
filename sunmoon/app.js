@@ -223,7 +223,7 @@ $(function () {
   const renderMoon = (date, lat, lon) => {
     const position = SunCalc.getMoonPosition(date, lat, lon);
     const illumination = SunCalc.getMoonIllumination(date);
-    const times = SunCalc.getMoonTimes(date, lat, lon, true);
+    const times = SunCalc.getMoonTimes(date, lat, lon);
     const phase = moonPhaseInfo(illumination.phase);
     // illumination.angle is the bright limb's position angle from celestial north,
     // independent of the observer; subtracting the parallactic angle expresses it
