@@ -36,20 +36,39 @@ $(function () {
     return new Date(year, month - 1, day, hours, minutes, 0, 0);
   };
 
+  // SunCalc.getMoonTimes always scans the UTC calendar day (00:00-24:00 UTC) of whatever
+  // Date it's given — it can't be shifted by a fractional-hour timezone offset. So the
+  // local civil day (e.g. 00:00-24:00 PDT) generally straddles two different UTC days;
+  // an event near either end of the local day can land in either bucket. Probe both UTC
+  // days the local window can overlap, then keep only the rise/set that actually falls
+  // inside the local window.
+  const moonTimesForLocalDay = (date, lat, lon) => {
+    const start = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    const end = new Date(start.getTime() + 24 * 60 * 60 * 1000);
+    const inWindow = (d) => d instanceof Date && d >= start && d < end;
+
+    const candidates = [
+      SunCalc.getMoonTimes(start, lat, lon),
+      SunCalc.getMoonTimes(new Date(end.getTime() - 1), lat, lon),
+    ];
+
+    return {
+      rise: candidates.map((t) => t.rise).find(inWindow),
+      set: candidates.map((t) => t.set).find(inWindow),
+    };
+  };
+
   const setNow = () => {
     const now = new Date();
     $("#dateInput").val(toDateInputValue(now));
     $("#timeInput").val(toTimeInputValue(now));
   };
 
-  const degrees = (radians) => (radians * 180) / Math.PI;
+  const formatDegrees = (deg) => `${deg.toFixed(1)}°`;
 
-  const formatDegrees = (radians) => `${degrees(radians).toFixed(1)}°`;
-
-  const TWO_PI = 2 * Math.PI;
-  const normalizeAngle = (radians) => {
-    const wrapped = ((radians + Math.PI) % TWO_PI + TWO_PI) % TWO_PI;
-    return wrapped - Math.PI;
+  const normalizeAngle = (deg) => {
+    const wrapped = ((deg + 180) % 360 + 360) % 360;
+    return wrapped - 180;
   };
 
   const formatTime = (date) =>
@@ -120,7 +139,7 @@ $(function () {
   const MOON_ICON_CENTER = 50;
   const MOON_ICON_RADIUS = 40;
 
-  const updateMoonIcon = (fraction, localLimbAngleRad) => {
+  const updateMoonIcon = (fraction, localLimbAngleDeg) => {
     const R = MOON_ICON_RADIUS;
     const left = MOON_ICON_CENTER - R;
     const right = MOON_ICON_CENTER + R;
@@ -134,7 +153,7 @@ $(function () {
     // Astronomical position angles run eastward from north, which renders to the
     // viewer's left (you're looking up at the sky, not down at a map), so the
     // angle is negated here to get the correct on-screen rotation direction.
-    const svgRotationDeg = -degrees(localLimbAngleRad);
+    const svgRotationDeg = -localLimbAngleDeg;
     $("#moonIconBulge").attr("transform", `rotate(${svgRotationDeg} ${MOON_ICON_CENTER} ${MOON_ICON_CENTER})`);
   };
 
@@ -149,7 +168,7 @@ $(function () {
     $("#sunMarker, #sunDotRise, #sunDotSet, #sunDotRiseFar, #sunDotSetFar").attr("opacity", 0);
   };
 
-  const renderSunPath = (date, lat, lon, times, currentAltitudeRad) => {
+  const renderSunPath = (date, lat, lon, times, currentAltitudeDeg) => {
     const hasValidWindow =
       times.sunrise instanceof Date && !isNaN(times.sunrise) &&
       times.sunset instanceof Date && !isNaN(times.sunset);
@@ -163,7 +182,7 @@ $(function () {
     const endTime = times.sunset.getTime() + SUN_PATH_BUFFER_MS;
     const span = endTime - startTime;
 
-    const altitudeDegAt = (t) => degrees(SunCalc.getPosition(new Date(t), lat, lon).altitude);
+    const altitudeDegAt = (t) => SunCalc.getPosition(new Date(t), lat, lon).altitude;
 
     const samples = Array.from({ length: SUN_PATH_SAMPLE_COUNT + 1 }, (_, i) => {
       const t = startTime + (span * i) / SUN_PATH_SAMPLE_COUNT;
@@ -199,7 +218,7 @@ $(function () {
     const isWithinWindow = now >= startTime && now <= endTime;
     $("#sunMarker").attr({
       cx: xForTime(Math.min(Math.max(now, startTime), endTime)),
-      cy: yForAltitude(degrees(currentAltitudeRad)),
+      cy: yForAltitude(currentAltitudeDeg),
       opacity: isWithinWindow ? 1 : 0,
     });
   };
@@ -209,10 +228,9 @@ $(function () {
     const times = SunCalc.getTimes(date, lat, lon);
     const dayLengthMs = times.sunset - times.sunrise;
 
-    const sunAzimuthRad = position.azimuth + Math.PI;
     $("#sunElevation").text(formatDegrees(position.altitude)).toggleClass("negative", position.altitude < 0);
-    $("#sunAzimuth").text(formatDegrees(sunAzimuthRad));
-    $("#sunAzimuthArrow").css("transform", `rotate(${degrees(sunAzimuthRad)}deg)`);
+    $("#sunAzimuth").text(formatDegrees(position.azimuth));
+    $("#sunAzimuthArrow").css("transform", `rotate(${position.azimuth}deg)`);
     $("#sunrise").text(formatTime(times.sunrise));
     $("#sunset").text(formatTime(times.sunset));
     $("#solarNoon").text(formatTime(times.solarNoon));
@@ -223,17 +241,16 @@ $(function () {
   const renderMoon = (date, lat, lon) => {
     const position = SunCalc.getMoonPosition(date, lat, lon);
     const illumination = SunCalc.getMoonIllumination(date);
-    const times = SunCalc.getMoonTimes(date, lat, lon);
+    const times = moonTimesForLocalDay(date, lat, lon);
     const phase = moonPhaseInfo(illumination.phase);
     // illumination.angle is the bright limb's position angle from celestial north,
     // independent of the observer; subtracting the parallactic angle expresses it
     // relative to the observer's local zenith ("up"), matching what's actually seen.
     const localLimbAngle = normalizeAngle(illumination.angle - position.parallacticAngle);
 
-    const moonAzimuthRad = position.azimuth + Math.PI;
     $("#moonElevation").text(formatDegrees(position.altitude)).toggleClass("negative", position.altitude < 0);
-    $("#moonAzimuth").text(formatDegrees(moonAzimuthRad));
-    $("#moonAzimuthArrow").css("transform", `rotate(${degrees(moonAzimuthRad)}deg)`);
+    $("#moonAzimuth").text(formatDegrees(position.azimuth));
+    $("#moonAzimuthArrow").css("transform", `rotate(${position.azimuth}deg)`);
     $("#moonrise").text(times.rise ? formatTime(times.rise) : "None today");
     $("#moonset").text(times.set ? formatTime(times.set) : "None today");
     $("#moonIllumination").text(`${(illumination.fraction * 100).toFixed(0)}%`);

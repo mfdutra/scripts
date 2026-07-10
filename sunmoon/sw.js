@@ -1,4 +1,4 @@
-const CACHE_NAME = "sunmoon-v11";
+const CACHE_NAME = "sunmoon-v13";
 
 const PRECACHE_URLS = [
   "./",
@@ -6,7 +6,7 @@ const PRECACHE_URLS = [
   "./app.js",
   "./manifest.json",
   "./vendor/jquery-4.0.0.min.js",
-  "./vendor/suncalc-1.9.0.js",
+  "./vendor/suncalc-2.0.0.js",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./icons/icon-512-maskable.png",
