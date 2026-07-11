@@ -173,13 +173,19 @@ $(function () {
       times.sunrise instanceof Date && !isNaN(times.sunrise) &&
       times.sunset instanceof Date && !isNaN(times.sunset);
 
-    if (!hasValidWindow) {
+    // At high latitudes SunCalc.getTimes has no sunrise/sunset to report and sets
+    // alwaysUp/alwaysDown instead. During polar night there's nothing to plot, but
+    // during polar day the sun is up the whole time — fall back to the full local
+    // calendar day instead of hiding the path.
+    if (!hasValidWindow && !times.alwaysUp) {
       hideSunPath();
       return;
     }
 
-    const startTime = times.sunrise.getTime() - SUN_PATH_BUFFER_MS;
-    const endTime = times.sunset.getTime() + SUN_PATH_BUFFER_MS;
+    const startTime = hasValidWindow
+      ? times.sunrise.getTime() - SUN_PATH_BUFFER_MS
+      : new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+    const endTime = hasValidWindow ? times.sunset.getTime() + SUN_PATH_BUFFER_MS : startTime + 24 * 60 * 60 * 1000;
     const span = endTime - startTime;
 
     const altitudeDegAt = (t) => SunCalc.getPosition(new Date(t), lat, lon).altitude;
@@ -200,19 +206,24 @@ $(function () {
       .join(" ");
     $("#sunArc").attr("d", pathData);
 
-    const farOffsetMs = SUN_PATH_BUFFER_MS * 0.7;
-    $("#sunDotRise").attr({ cx: xForTime(times.sunrise.getTime()), cy: SUN_PATH_HORIZON_Y, opacity: 0.6 });
-    $("#sunDotSet").attr({ cx: xForTime(times.sunset.getTime()), cy: SUN_PATH_HORIZON_Y, opacity: 0.6 });
-    $("#sunDotRiseFar").attr({
-      cx: xForTime(times.sunrise.getTime() - farOffsetMs),
-      cy: yForAltitude(altitudeDegAt(times.sunrise.getTime() - farOffsetMs)),
-      opacity: 0.3,
-    });
-    $("#sunDotSetFar").attr({
-      cx: xForTime(times.sunset.getTime() + farOffsetMs),
-      cy: yForAltitude(altitudeDegAt(times.sunset.getTime() + farOffsetMs)),
-      opacity: 0.3,
-    });
+    if (hasValidWindow) {
+      const farOffsetMs = SUN_PATH_BUFFER_MS * 0.7;
+      $("#sunDotRise").attr({ cx: xForTime(times.sunrise.getTime()), cy: SUN_PATH_HORIZON_Y, opacity: 0.6 });
+      $("#sunDotSet").attr({ cx: xForTime(times.sunset.getTime()), cy: SUN_PATH_HORIZON_Y, opacity: 0.6 });
+      $("#sunDotRiseFar").attr({
+        cx: xForTime(times.sunrise.getTime() - farOffsetMs),
+        cy: yForAltitude(altitudeDegAt(times.sunrise.getTime() - farOffsetMs)),
+        opacity: 0.3,
+      });
+      $("#sunDotSetFar").attr({
+        cx: xForTime(times.sunset.getTime() + farOffsetMs),
+        cy: yForAltitude(altitudeDegAt(times.sunset.getTime() + farOffsetMs)),
+        opacity: 0.3,
+      });
+    } else {
+      // Polar day: there's no rise/set event to mark.
+      $("#sunDotRise, #sunDotSet, #sunDotRiseFar, #sunDotSetFar").attr("opacity", 0);
+    }
 
     const now = date.getTime();
     const isWithinWindow = now >= startTime && now <= endTime;
@@ -225,7 +236,14 @@ $(function () {
 
   const renderSun = (date, lat, lon) => {
     const position = SunCalc.getPosition(date, lat, lon);
-    const times = SunCalc.getTimes(date, lat, lon);
+    // SunCalc.getTimes picks its sunrise/sunset day from the UTC calendar day of the
+    // instant it's given, not the local one — passing the exact selected time means
+    // that once local time-of-day has rolled past the UTC day boundary (e.g. after
+    // 17:00 in Pacific time), it silently returns tomorrow's sunrise/sunset. Anchor to
+    // local noon of the selected day so the correct calendar day is picked regardless
+    // of what time was selected.
+    const localNoon = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 12);
+    const times = SunCalc.getTimes(localNoon, lat, lon);
     const dayLengthMs = times.sunset - times.sunrise;
 
     $("#sunElevation").text(formatDegrees(position.altitude)).toggleClass("negative", position.altitude < 0);
