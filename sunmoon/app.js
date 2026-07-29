@@ -88,38 +88,80 @@ $(function () {
     MOON_PHASES.find((phase) => fraction <= phase.max) ||
     MOON_PHASES[MOON_PHASES.length - 1];
 
-  const setLocationStatus = (text, isError) => {
+  const LOCATION_STORAGE_KEY = "sunmoon.lastLocation";
+
+  // localStorage can throw (private browsing, quota, disabled storage) — a cache
+  // miss just means we fall back to the normal "requesting your location" flow.
+  const loadCachedLocation = () => {
+    try {
+      const { lat, lon } = JSON.parse(localStorage.getItem(LOCATION_STORAGE_KEY));
+      return typeof lat === "number" && typeof lon === "number" ? { lat, lon } : null;
+    } catch (e) {
+      return null;
+    }
+  };
+
+  const saveCachedLocation = (lat, lon) => {
+    try {
+      localStorage.setItem(LOCATION_STORAGE_KEY, JSON.stringify({ lat, lon }));
+    } catch (e) {
+      // ignore — nothing to fall back to next launch, but this launch is unaffected
+    }
+  };
+
+  // kind: undefined (normal), "error", or "pending" (background refresh in progress)
+  const setLocationStatus = (text, kind) => {
     $("#locationStatus")
       .text(text)
-      .toggleClass("error", Boolean(isError));
+      .toggleClass("error", kind === "error")
+      .toggleClass("pending", kind === "pending");
   };
 
   const showManualLocation = () => {
     $("#manualLocation").show();
   };
 
-  const setLocation = (lat, lon, statusText) => {
+  const setLocation = (lat, lon, statusText, statusKind) => {
     state.lat = lat;
     state.lon = lon;
     $("#latInput").val(lat.toFixed(6));
     $("#lonInput").val(lon.toFixed(6));
-    setLocationStatus(statusText || `Location: ${lat.toFixed(4)}, ${lon.toFixed(4)}`);
+    saveCachedLocation(lat, lon);
+    setLocationStatus(statusText || `Location: ${lat.toFixed(4)}, ${lon.toFixed(4)}`, statusKind);
     recalculate();
   };
 
-  const requestGeolocation = () => {
+  // isBackground: true when refreshing a location that's already cached/displayed —
+  // failures then keep showing the cached position instead of blocking on an error.
+  const requestGeolocation = (isBackground) => {
     if (!navigator.geolocation) {
-      setLocationStatus("Geolocation not supported by this browser. Enter coordinates manually.", true);
-      showManualLocation();
+      if (!isBackground) {
+        setLocationStatus("Geolocation not supported by this browser. Enter coordinates manually.", "error");
+        showManualLocation();
+      }
       return;
     }
-    setLocationStatus("Requesting your location…");
+    if (isBackground) {
+      setLocationStatus(
+        `Using last known location: ${state.lat.toFixed(4)}, ${state.lon.toFixed(4)} — refreshing…`,
+        "pending"
+      );
+    } else {
+      setLocationStatus("Requesting your location…");
+    }
     navigator.geolocation.getCurrentPosition(
       (position) => {
         setLocation(position.coords.latitude, position.coords.longitude);
       },
       () => {
-        setLocationStatus("Location permission denied or unavailable. Enter coordinates manually.", true);
+        if (isBackground) {
+          setLocationStatus(
+            `Using last known location: ${state.lat.toFixed(4)}, ${state.lon.toFixed(4)}. Could not refresh — enter coordinates manually if this is wrong.`,
+            "error"
+          );
+        } else {
+          setLocationStatus("Location permission denied or unavailable. Enter coordinates manually.", "error");
+        }
         showManualLocation();
       },
       { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 }
@@ -289,7 +331,7 @@ $(function () {
       .text(`Calculated for ${dateLabel} ${timeLabel}`);
   };
 
-  $("#useLocationBtn").on("click", requestGeolocation);
+  $("#useLocationBtn").on("click", () => requestGeolocation(false));
   $("#enterManualBtn").on("click", showManualLocation);
   $("#useManualBtn").on("click", useManualLocation);
   $("#nowBtn").on("click", () => {
@@ -300,7 +342,19 @@ $(function () {
   $("#timeInput").on("change", recalculate);
 
   setNow();
-  requestGeolocation();
+
+  const cachedLocation = loadCachedLocation();
+  if (cachedLocation) {
+    setLocation(
+      cachedLocation.lat,
+      cachedLocation.lon,
+      `Using last known location: ${cachedLocation.lat.toFixed(4)}, ${cachedLocation.lon.toFixed(4)} — refreshing…`,
+      "pending"
+    );
+    requestGeolocation(true);
+  } else {
+    requestGeolocation(false);
+  }
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js");
