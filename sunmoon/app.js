@@ -341,6 +341,14 @@ $(function () {
   $("#dateInput").on("change", recalculate);
   $("#timeInput").on("change", recalculate);
 
+  // Refresh to the current date/time whenever the app returns to the foreground
+  // (e.g. after being backgrounded on mobile), so a stale time isn't left showing.
+  $(document).on("visibilitychange", () => {
+    if (document.visibilityState !== "visible") return;
+    setNow();
+    recalculate();
+  });
+
   setNow();
 
   const cachedLocation = loadCachedLocation();
