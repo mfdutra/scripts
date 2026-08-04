@@ -315,7 +315,6 @@ $(function () {
     $("#moonset").text(times.set ? formatTime(times.set) : "None today");
     $("#moonIllumination").text(`${(illumination.fraction * 100).toFixed(0)}%`);
     $("#moonPhase").text(phase.name);
-    $("#moonAngle").text(formatDegrees(localLimbAngle));
     updateMoonIcon(illumination.fraction, localLimbAngle);
   };
 
