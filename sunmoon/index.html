@@ -150,6 +150,83 @@
     margin-bottom: 10px;
   }
 
+  .card-action {
+    margin: 12px 0 0 0;
+  }
+
+  #skyOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: #0f1626;
+    padding: 16px;
+    overflow-y: auto;
+  }
+
+  .sky-body {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+
+  .sky-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .sky-header h2 {
+    font-size: 1rem;
+    margin: 0;
+    color: #9fb3ff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .sky-icon-btn {
+    flex: none;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    background: #2c3560;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  #skyCloseBtn {
+    font-size: 1.3rem;
+  }
+
+  .sky-date-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0 10px 0;
+  }
+
+  #skySubtitle {
+    flex: 1;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #b7c0d8;
+    margin: 0;
+  }
+
+  #skyChart {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  #skyNote {
+    font-size: 0.85rem;
+    color: #b7c0d8;
+    margin: 12px 0 0 0;
+  }
+
   .error {
     color: #ff8080;
     font-size: 0.85rem;
@@ -245,6 +322,7 @@
     <div class="data-item"><div class="label">Solar noon</div><div class="value" id="solarNoon">&mdash;</div></div>
     <div class="data-item"><div class="label">Day length</div><div class="value" id="dayLength">&mdash;</div></div>
   </div>
+  <button class="secondary card-action" data-sky="sun">Sky track</button>
 </div>
 
 <div class="card">
@@ -262,6 +340,56 @@
     <div class="data-item"><div class="label">Moonset</div><div class="value" id="moonset">&mdash;</div></div>
     <div class="data-item"><div class="label">Illumination</div><div class="value" id="moonIllumination">&mdash;</div></div>
     <div class="data-item"><div class="label">Phase</div><div class="value" id="moonPhase">&mdash;</div></div>
+  </div>
+  <button class="secondary card-action" data-sky="moon">Sky track</button>
+</div>
+
+<div id="skyOverlay" class="hidden">
+  <div class="sky-body">
+    <div class="sky-header">
+      <h2 id="skyTitle">Sky track</h2>
+      <button id="skyCloseBtn" class="sky-icon-btn" aria-label="Close">&times;</button>
+    </div>
+
+    <div class="sky-date-nav">
+      <button id="skyPrevDay" class="sky-icon-btn" aria-label="Previous day">&#11013;&#65039;</button>
+      <p id="skySubtitle"></p>
+      <button id="skyNextDay" class="sky-icon-btn" aria-label="Next day">&#10145;&#65039;</button>
+      <button id="skyTodayBtn" class="sky-icon-btn" aria-label="Current date and time">&#128197;</button>
+    </div>
+
+    <!-- Whole-sky view looking straight up: zenith at the centre, horizon at the rim,
+         north up and east right (map orientation). Static rings/spokes/labels live here;
+         app.js fills #skyDynamic with the track, hour ticks and markers. -->
+    <svg id="skyChart" viewBox="0 0 320 320">
+      <defs>
+        <filter id="skyGlow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="4" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <circle cx="160" cy="160" r="132" fill="#131b34" stroke="#3a4570" stroke-width="2"/>
+      <!-- altitude rings, r = 132 * (90 - altitude) / 90: 88 = 30°, 44 = 60° -->
+      <circle cx="160" cy="160" r="88" fill="none" stroke="#2c3560" stroke-width="1"/>
+      <circle cx="160" cy="160" r="44" fill="none" stroke="#2c3560" stroke-width="1"/>
+      <line x1="160" y1="28" x2="160" y2="292" stroke="#2c3560" stroke-width="1"/>
+      <line x1="28" y1="160" x2="292" y2="160" stroke="#2c3560" stroke-width="1"/>
+      <g font-size="13" font-weight="600" fill="#9fb3ff" text-anchor="middle" dominant-baseline="middle">
+        <text x="160" y="14">N</text>
+        <text x="306" y="160">E</text>
+        <text x="160" y="306">S</text>
+        <text x="14" y="160">W</text>
+      </g>
+      <g id="skyDynamic"></g>
+    </svg>
+
+    <div class="data-grid">
+      <div class="data-item"><div class="label">Rise</div><div class="value" id="skyRise">&mdash;</div></div>
+      <div class="data-item"><div class="label">Set</div><div class="value" id="skySet">&mdash;</div></div>
+      <div class="data-item"><div class="label">Max elevation</div><div class="value" id="skyPeak">&mdash;</div></div>
+      <div class="data-item"><div class="label">Highest at</div><div class="value" id="skyPeakTime">&mdash;</div></div>
+    </div>
+    <p id="skyNote"></p>
   </div>
 </div>
 

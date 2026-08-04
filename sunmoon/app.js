@@ -36,6 +36,26 @@ $(function () {
     return new Date(year, month - 1, day, hours, minutes, 0, 0);
   };
 
+  const localMidnightOf = (date) =>
+    new Date(date.getFullYear(), date.getMonth(), date.getDate());
+
+  const isSameLocalDay = (a, b) =>
+    a.getFullYear() === b.getFullYear() &&
+    a.getMonth() === b.getMonth() &&
+    a.getDate() === b.getDate();
+
+  // SunCalc.getTimes picks its sunrise/sunset day from the UTC calendar day of the
+  // instant it's given, not the local one — passing the exact selected time means that
+  // once local time-of-day has rolled past the UTC day boundary (e.g. after 17:00 in
+  // Pacific time), it silently returns tomorrow's sunrise/sunset. Anchoring to local
+  // noon picks the right calendar day for any realistic timezone offset.
+  const sunTimesForLocalDay = (date, lat, lon) =>
+    SunCalc.getTimes(
+      new Date(date.getFullYear(), date.getMonth(), date.getDate(), 12),
+      lat,
+      lon
+    );
+
   // SunCalc.getMoonTimes always scans the UTC calendar day (00:00-24:00 UTC) of whatever
   // Date it's given — it can't be shifted by a fractional-hour timezone offset. So the
   // local civil day (e.g. 00:00-24:00 PDT) generally straddles two different UTC days;
@@ -43,7 +63,7 @@ $(function () {
   // days the local window can overlap, then keep only the rise/set that actually falls
   // inside the local window.
   const moonTimesForLocalDay = (date, lat, lon) => {
-    const start = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    const start = localMidnightOf(date);
     const end = new Date(start.getTime() + 24 * 60 * 60 * 1000);
     const inWindow = (d) => d instanceof Date && d >= start && d < end;
 
@@ -278,14 +298,7 @@ $(function () {
 
   const renderSun = (date, lat, lon) => {
     const position = SunCalc.getPosition(date, lat, lon);
-    // SunCalc.getTimes picks its sunrise/sunset day from the UTC calendar day of the
-    // instant it's given, not the local one — passing the exact selected time means
-    // that once local time-of-day has rolled past the UTC day boundary (e.g. after
-    // 17:00 in Pacific time), it silently returns tomorrow's sunrise/sunset. Anchor to
-    // local noon of the selected day so the correct calendar day is picked regardless
-    // of what time was selected.
-    const localNoon = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 12);
-    const times = SunCalc.getTimes(localNoon, lat, lon);
+    const times = sunTimesForLocalDay(date, lat, lon);
     const dayLengthMs = times.sunset - times.sunrise;
 
     $("#sunElevation").text(formatDegrees(position.altitude)).toggleClass("negative", position.altitude < 0);
@@ -318,11 +331,279 @@ $(function () {
     updateMoonIcon(illumination.fraction, localLimbAngle);
   };
 
+  // ---- Sky track overlay -------------------------------------------------
+  // Whole-sky plot as seen looking straight up: zenith at the centre of the disc,
+  // horizon at the rim.
+
+  const SKY_CENTER = 160;
+  const SKY_RADIUS = 132;
+  const SKY_SAMPLE_MINUTES = 2;
+  const SKY_BISECT_STEPS = 20;
+  const SKY_HOUR_LABEL_LIMIT = 10;
+  const DAY_MS = 24 * 60 * 60 * 1000;
+
+  // Altitude maps linearly to radius, so the zenith collapses to the centre and
+  // the horizon lands exactly on the rim.
+  const skyRadiusForAltitude = (altitudeDeg) => (SKY_RADIUS * (90 - altitudeDeg)) / 90;
+
+  // North up, east right — the map/compass orientation, which is the mirror of the
+  // star-chart view you'd get lying on your back (there east falls to the left). It
+  // makes the track run clockwise. SunCalc azimuth is already north-based clockwise,
+  // which is also the screen's clockwise direction, so it needs no adjustment here.
+  const skyPolar = (radius, azimuthDeg) => {
+    const rad = (azimuthDeg * Math.PI) / 180;
+    return {
+      x: SKY_CENTER + radius * Math.sin(rad),
+      y: SKY_CENTER - radius * Math.cos(rad),
+    };
+  };
+
+  const skyPoint = (altitudeDeg, azimuthDeg) =>
+    skyPolar(skyRadiusForAltitude(altitudeDeg), azimuthDeg);
+
+  const SKY_BODIES = {
+    sun: {
+      label: "Sun",
+      color: "#ffd166",
+      position: (date, lat, lon) => SunCalc.getPosition(date, lat, lon),
+      times: (date, lat, lon) => {
+        const times = sunTimesForLocalDay(date, lat, lon);
+        return { rise: times.sunrise, set: times.sunset };
+      },
+    },
+    moon: {
+      label: "Moon",
+      color: "#eef1f8",
+      position: (date, lat, lon) => SunCalc.getMoonPosition(date, lat, lon),
+      times: moonTimesForLocalDay,
+    },
+  };
+
+  // Refine a horizon crossing bracketed by two samples down to sub-second precision,
+  // so a drawn segment ends exactly on the rim instead of one sample short of it.
+  const skyHorizonCrossing = (positionAt, belowTime, aboveTime) => {
+    const bounds = Array.from({ length: SKY_BISECT_STEPS }).reduce(
+      (b) => {
+        const mid = (b.below + b.above) / 2;
+        return positionAt(mid).altitude < 0
+          ? { below: mid, above: b.above }
+          : { below: b.below, above: mid };
+      },
+      { below: belowTime, above: aboveTime }
+    );
+    const t = (bounds.below + bounds.above) / 2;
+    // Pin altitude to 0 rather than using the sampled value, which is only near-zero.
+    return { t, altitude: 0, azimuth: positionAt(t).azimuth, isCrossing: true };
+  };
+
+  const sampleSkyTrack = (date, lat, lon, body) => {
+    const start = localMidnightOf(date).getTime();
+    const stepMs = SKY_SAMPLE_MINUTES * 60000;
+    const positionAt = (t) => {
+      const position = body.position(new Date(t), lat, lon);
+      return { t, altitude: position.altitude, azimuth: position.azimuth };
+    };
+
+    const samples = Array.from({ length: DAY_MS / stepMs + 1 }, (_, i) =>
+      positionAt(start + i * stepMs)
+    );
+
+    // Insert a refined crossing wherever consecutive samples straddle the horizon.
+    const points = samples.flatMap((sample, i) => {
+      const prev = samples[i - 1];
+      if (!prev || prev.altitude < 0 === sample.altitude < 0) return [sample];
+      const rising = prev.altitude < 0;
+      return [
+        skyHorizonCrossing(
+          positionAt,
+          rising ? prev.t : sample.t,
+          rising ? sample.t : prev.t
+        ),
+        sample,
+      ];
+    });
+
+    // Split into above-horizon runs: the moon can rise and set twice in one local day.
+    const segments = points
+      .reduce(
+        (acc, point) => {
+          const current = acc[acc.length - 1];
+          if (point.altitude < 0) {
+            if (current.length) acc.push([]);
+            return acc;
+          }
+          current.push(point);
+          return acc;
+        },
+        [[]]
+      )
+      .filter((segment) => segment.length > 1);
+
+    return {
+      segments,
+      crossings: points.filter((point) => point.isCrossing),
+      peak: samples.reduce((best, s) => (s.altitude > best.altitude ? s : best)),
+    };
+  };
+
+  const skyTrackMarkup = (segments, color) =>
+    segments
+      .map((segment) => {
+        const d = segment
+          .map((point, i) => {
+            const { x, y } = skyPoint(point.altitude, point.azimuth);
+            return `${i === 0 ? "M" : "L"} ${x.toFixed(1)} ${y.toFixed(1)}`;
+          })
+          .join(" ");
+        return `<path d="${d}" fill="none" stroke="${color}" stroke-width="2.5" stroke-opacity="0.7" stroke-linecap="round"/>`;
+      })
+      .join("");
+
+  const skyHoursMarkup = (date, lat, lon, body) => {
+    const midnight = localMidnightOf(date);
+    const hours = Array.from({ length: 24 }, (_, hour) => {
+      const at = new Date(midnight.getTime() + hour * 60 * 60 * 1000);
+      const position = body.position(at, lat, lon);
+      return { hour, altitude: position.altitude, azimuth: position.azimuth };
+    }).filter((h) => h.altitude >= 0);
+
+    // A long summer day would smear into an unreadable strip of labels.
+    const step = hours.length > SKY_HOUR_LABEL_LIMIT ? 2 : 1;
+
+    return hours
+      .filter((h) => h.hour % step === 0)
+      .map((h) => {
+        const tick = skyPoint(h.altitude, h.azimuth);
+        const radius = skyRadiusForAltitude(h.altitude);
+        // Offset the label away from the rim so it never spills outside the disc.
+        const labelRadius = radius < SKY_RADIUS - 26 ? radius + 15 : radius - 15;
+        const label = skyPolar(labelRadius, h.azimuth);
+        return (
+          `<circle cx="${tick.x.toFixed(1)}" cy="${tick.y.toFixed(1)}" r="2.5" fill="#9fb3ff"/>` +
+          `<text x="${label.x.toFixed(1)}" y="${label.y.toFixed(1)}" font-size="11" fill="#8ea0d0" text-anchor="middle" dominant-baseline="middle">${pad2(h.hour)}</text>`
+        );
+      })
+      .join("");
+  };
+
+  // Label the altitude rings on the side opposite the track's high point — that's
+  // where the track is furthest away, so the labels can't end up underneath it.
+  const skyRingLabelsMarkup = (peakAzimuthDeg) =>
+    [30, 60]
+      .map((altitude) => {
+        const { x, y } = skyPoint(altitude, peakAzimuthDeg + 180);
+        return `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="10" fill="#5a6a9a" text-anchor="middle" dominant-baseline="middle">${altitude}&#176;</text>`;
+      })
+      .join("");
+
+  const skyCrossingsMarkup = (crossings, color) =>
+    crossings
+      .map((crossing) => {
+        const { x, y } = skyPoint(crossing.altitude, crossing.azimuth);
+        return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4.5" fill="${color}" stroke="#0f1626" stroke-width="1.5"/>`;
+      })
+      .join("");
+
+  const skyMarkerMarkup = (position, color) => {
+    if (position.altitude < 0) return "";
+    const { x, y } = skyPoint(position.altitude, position.azimuth);
+    return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="7" fill="${color}" filter="url(#skyGlow)"/>`;
+  };
+
+  // Which body the overlay is showing, or null when it's closed.
+  let skyBody = null;
+
+  const renderSkyTrack = () => {
+    if (!skyBody || state.lat === null || state.lon === null) return;
+    const body = SKY_BODIES[skyBody];
+    const lat = state.lat;
+    const lon = state.lon;
+    const date = currentSelectedDate();
+    const track = sampleSkyTrack(date, lat, lon, body);
+    const times = body.times(date, lat, lon);
+    const position = body.position(date, lat, lon);
+    // The marker means "where it is right now", so it only makes sense on today's
+    // track — on any other day there is no current position to point at.
+    const showMarker = isSameLocalDay(date, new Date());
+
+    $("#skyTitle").text(`${body.label} track`);
+    $("#skySubtitle").text(
+      `${date.toLocaleDateString()} · ${lat.toFixed(4)}, ${lon.toFixed(4)}`
+    );
+
+    // innerHTML on an SVG element parses in the SVG namespace; jQuery's .html()
+    // routes through an HTML parser, which would strip these shapes.
+    $("#skyDynamic")[0].innerHTML = [
+      skyRingLabelsMarkup(track.peak.azimuth),
+      skyTrackMarkup(track.segments, body.color),
+      skyHoursMarkup(date, lat, lon, body),
+      skyCrossingsMarkup(track.crossings, body.color),
+      showMarker ? skyMarkerMarkup(position, body.color) : "",
+    ].join("");
+
+    // Rise/set text comes from SunCalc (which allows for refraction and, for the sun,
+    // the upper limb) while the rim dots sit on the geometric altitude = 0 crossing —
+    // the two differ by a couple of minutes.
+    $("#skyRise").text(times.rise ? formatTime(times.rise) : "None");
+    $("#skySet").text(times.set ? formatTime(times.set) : "None");
+    $("#skyPeak")
+      .text(formatDegrees(track.peak.altitude))
+      .toggleClass("negative", track.peak.altitude < 0);
+    $("#skyPeakTime").text(formatTime(new Date(track.peak.t)));
+
+    // The second note explains a missing marker, so it's only relevant when a marker
+    // would have been drawn at all.
+    const note = !track.segments.length
+      ? `The ${body.label.toLowerCase()} stays below the horizon all day.`
+      : showMarker && position.altitude < 0
+      ? `The ${body.label.toLowerCase()} is below the horizon at the selected time.`
+      : "";
+    $("#skyNote").text(note);
+  };
+
+  // Day arithmetic via the Date constructor's overflow handling, so month/year
+  // boundaries and DST-shortened days take care of themselves.
+  const shiftSelectedDay = (days) => {
+    const date = currentSelectedDate();
+    const shifted = new Date(
+      date.getFullYear(),
+      date.getMonth(),
+      date.getDate() + days
+    );
+    $("#dateInput").val(toDateInputValue(shifted));
+    recalculate();
+  };
+
+  const openSkyTrack = (bodyKey) => {
+    const wasOpen = skyBody !== null;
+    skyBody = bodyKey;
+    $("#skyOverlay").removeClass("hidden");
+    // A history entry makes the Android back button close the overlay instead of
+    // leaving the app, which is the only way out in standalone PWA mode. Only one
+    // entry per opening, so a single back always unwinds it exactly.
+    if (!wasOpen) history.pushState({ skyOverlay: true }, "");
+    renderSkyTrack();
+  };
+
+  const closeSkyTrack = () => {
+    if (!skyBody) return;
+    skyBody = null;
+    $("#skyOverlay").addClass("hidden");
+  };
+
+  // Unwind our own history entry so back/close leave the stack as we found it;
+  // popstate then does the actual closing.
+  const dismissSkyTrack = () => {
+    if (history.state && history.state.skyOverlay) history.back();
+    else closeSkyTrack();
+  };
+
   const recalculate = () => {
     if (state.lat === null || state.lon === null) return;
     const date = currentSelectedDate();
     renderSun(date, state.lat, state.lon);
     renderMoon(date, state.lat, state.lon);
+    renderSkyTrack();
     const dateLabel = date.toLocaleDateString();
     const timeLabel = date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false });
     $("#calcNote")
@@ -333,12 +614,22 @@ $(function () {
   $("#useLocationBtn").on("click", () => requestGeolocation(false));
   $("#enterManualBtn").on("click", showManualLocation);
   $("#useManualBtn").on("click", useManualLocation);
-  $("#nowBtn").on("click", () => {
+  $("#nowBtn, #skyTodayBtn").on("click", () => {
     setNow();
     recalculate();
   });
   $("#dateInput").on("change", recalculate);
   $("#timeInput").on("change", recalculate);
+  $("[data-sky]").on("click", function () {
+    openSkyTrack($(this).data("sky"));
+  });
+  $("#skyCloseBtn").on("click", dismissSkyTrack);
+  $("#skyPrevDay").on("click", () => shiftSelectedDay(-1));
+  $("#skyNextDay").on("click", () => shiftSelectedDay(1));
+  $(window).on("popstate", closeSkyTrack);
+  $(document).on("keydown", (event) => {
+    if (event.key === "Escape") dismissSkyTrack();
+  });
 
   // Refresh to the current date/time whenever the app returns to the foreground
   // (e.g. after being backgrounded on mobile), so a stale time isn't left showing.
