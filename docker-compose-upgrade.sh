@@ -6,6 +6,12 @@ if [ "$#" -eq 0 ]; then
   exit 1
 fi
 
+image_state() {
+  docker-compose config --images 2>/dev/null | xargs -I{} sh -c \
+    'printf "%s %s\n" "{}" "$(docker image inspect --format "{{.Id}}" "{}" 2>/dev/null || echo missing)"' \
+    | sort
+}
+
 for dir in "$@"; do
   if [ ! -d "$dir" ]; then
     echo "Skipping $dir: not a directory" >&2
@@ -15,12 +21,6 @@ for dir in "$@"; do
   echo "==> $dir"
   (
     cd "$dir"
-
-    image_state() {
-      docker-compose config --images 2>/dev/null | xargs -I{} sh -c \
-        'printf "%s %s\n" "{}" "$(docker image inspect --format "{{.Id}}" "{}" 2>/dev/null || echo missing)"' \
-        | sort
-    }
 
     before="$(image_state)"
     docker-compose pull
