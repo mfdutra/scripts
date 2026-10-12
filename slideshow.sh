@@ -23,6 +23,14 @@ FADE_DURATION=0.5  # Cross-fade duration in seconds
 OUTPUT="slideshow_$(date +%Y%m%d_%H%M%S).mp4"
 TEMP_DIR="slideshow_temp_$$"
 RESOLUTION="1920:1080"  # Output resolution
+FPS=30  # Output frame rate
+ZOOM_END=1.1875  # Zoom level reached at the end of each photo (1.0 = no zoom)
+SUPERSAMPLE=4  # Zoom is computed on a frame this many times larger than the output
+
+FRAMES=$((DURATION * FPS))  # Frames per photo
+OUT_W=${RESOLUTION%:*}
+OUT_H=${RESOLUTION#*:}
+SS_RESOLUTION="$((OUT_W * SUPERSAMPLE)):$((OUT_H * SUPERSAMPLE))"  # Working resolution
 
 # Create temporary directory
 mkdir -p "$TEMP_DIR"
@@ -49,8 +57,9 @@ for photo in "$@"; do
     # blurred background to fill the frame.
     #
     # Input options:
-    #   -loop 1          : Loop the input image (required for still images)
-    #   -i "$photo"      : Input photo file
+    #   -i "$photo"      : Input photo file (a single frame; zoompan generates
+    #                      all the output frames from it, so the scale/blur
+    #                      chain below only runs once per photo)
     #
     # Video filter (-vf) breakdown:
     #   The filter chain processes the image through multiple stages:
@@ -73,35 +82,42 @@ for photo in "$@"; do
     #      - Applies Gaussian blur with sigma=20 (heavy blur)
     #      - Creates an artistic blurred background effect
     #
-    #   5. eq=brightness=-0.3[blurred]
+    #   5. eq=brightness=-0.3
     #      - Darkens the blurred image by 30% using equalizer filter
     #      - Prevents background from competing with foreground
+    #
+    #   6. scale=${SS_RESOLUTION}[blurred]
+    #      - Enlarges the background to the working resolution (7680x4320)
+    #      - Done after the blur, which is much cheaper at 1920x1080
     #      - Saves result as [blurred] stream
     #
-    #   6. [original]scale=${RESOLUTION}:force_original_aspect_ratio=decrease
-    #      - Scales original to fit WITHIN the 1920x1080 frame
+    #   7. [original]scale=${SS_RESOLUTION}:force_original_aspect_ratio=decrease:flags=lanczos
+    #      - Scales original to fit WITHIN the 7680x4320 working frame
     #      - force_original_aspect_ratio=decrease: ensures entire image is visible
     #      - Landscape photos will have space above/below
     #      - Portrait photos will have space left/right
     #      - Saves result as [scaled] stream
     #
-    #   7. [blurred][scaled]overlay=(W-w)/2:(H-h)/2
+    #   8. [blurred][scaled]overlay=(W-w)/2:(H-h)/2
     #      - Overlays the [scaled] image centered on the [blurred] background
     #      - (W-w)/2 : horizontal centering (Width-width)/2
     #      - (H-h)/2 : vertical centering (Height-height)/2
-    #      - W,H = background dimensions (1920x1080)
+    #      - W,H = background dimensions (7680x4320)
     #      - w,h = foreground dimensions (varies by photo)
     #
-    #   8. zoompan=z='min(zoom+0.0015,1.5)':d=${DURATION}*25:s=${RESOLUTION/:/x}:fps=25
+    #   9. zoompan=z='1+(${ZOOM_END}-1)*on/${FRAMES}':d=${FRAMES}:s=${RESOLUTION/:/x}:fps=${FPS}
     #      - Applies smooth zoom-in effect to the composed image
-    #      - z='min(zoom+0.0015,1.5)' : zoom formula
-    #        * Starts at zoom=1.0 (100%)
-    #        * Increases by 0.0015 per frame
-    #        * Caps at 1.5 (150% zoom)
-    #        * Over 125 frames (5 sec * 25fps), zooms from 100% to ~118.75%
-    #      - d=${DURATION}*25 : duration in frames (5 seconds * 25 fps = 125 frames)
+    #      - zoompan picks its crop window in whole pixels of its INPUT, so
+    #        feeding it a 1920x1080 frame makes the zoom advance in visible
+    #        1-2 pixel steps (judder). Feeding it the 4x larger working frame
+    #        makes those steps a fraction of an output pixel.
+    #      - z='1+(${ZOOM_END}-1)*on/${FRAMES}' : zoom formula
+    #        * on = output frame number, so zoom is a function of time and
+    #          does not depend on the frame rate
+    #        * Goes linearly from 1.0 (100%) to ZOOM_END (118.75%)
+    #      - d=${FRAMES} : duration in frames (5 seconds * 30 fps = 150 frames)
     #      - s=${RESOLUTION/:/x} : output size 1920x1080 (converts : to x)
-    #      - fps=25 : output frame rate (25 frames per second)
+    #      - fps=${FPS} : output frame rate (30 frames per second)
     #
     # Output options:
     #   -t $DURATION         : Duration of output video (5 seconds)
@@ -110,8 +126,8 @@ for photo in "$@"; do
     #   -y                   : Overwrite output file if it exists
     #   -loglevel error      : Only show errors (suppress informational output)
     #
-    ffmpeg -loop 1 -i "$photo" \
-        -vf "split[original][copy];[copy]scale=${RESOLUTION}:force_original_aspect_ratio=increase,crop=${RESOLUTION},gblur=sigma=20,eq=brightness=-0.3[blurred];[original]scale=${RESOLUTION}:force_original_aspect_ratio=decrease[scaled];[blurred][scaled]overlay=(W-w)/2:(H-h)/2,zoompan=z='min(zoom+0.0015,1.5)':d=${DURATION}*25:s=${RESOLUTION/:/x}:fps=25" \
+    ffmpeg -i "$photo" \
+        -vf "split[original][copy];[copy]scale=${RESOLUTION}:force_original_aspect_ratio=increase,crop=${RESOLUTION},gblur=sigma=20,eq=brightness=-0.3,scale=${SS_RESOLUTION}[blurred];[original]scale=${SS_RESOLUTION}:force_original_aspect_ratio=decrease:flags=lanczos[scaled];[blurred][scaled]overlay=(W-w)/2:(H-h)/2,zoompan=z='1+(${ZOOM_END}-1)*on/${FRAMES}':d=${FRAMES}:s=${RESOLUTION/:/x}:fps=${FPS}" \
         -t $DURATION \
         -c:v libx264 -pix_fmt yuv420p \
         "${TEMP_DIR}/clip_$(printf "%03d" $counter).mp4" \
