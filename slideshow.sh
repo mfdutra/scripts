@@ -115,6 +115,12 @@ for photo in "$@"; do
     #        * on = output frame number, so zoom is a function of time and
     #          does not depend on the frame rate
     #        * Goes linearly from 1.0 (100%) to ZOOM_END (118.75%)
+    #      - x='${pan_x}':y='${pan_y}' : top-left corner of the visible window
+    #        * 0:0 keeps the top-left corner fixed, so the photo drifts
+    #          towards the lower right as it zooms
+    #        * iw-iw/zoom:ih-ih/zoom keeps the bottom-right corner fixed, so
+    #          the photo drifts towards the upper left
+    #        * Alternates between the two on every photo (see below)
     #      - d=${FRAMES} : duration in frames (5 seconds * 30 fps = 150 frames)
     #      - s=${RESOLUTION/:/x} : output size 1920x1080 (converts : to x)
     #      - fps=${FPS} : output frame rate (30 frames per second)
@@ -126,8 +132,18 @@ for photo in "$@"; do
     #   -y                   : Overwrite output file if it exists
     #   -loglevel error      : Only show errors (suppress informational output)
     #
+    # Alternate the zoom anchor: even photos drift towards the lower right,
+    # odd photos towards the upper left
+    if [ $((counter % 2)) -eq 0 ]; then
+        pan_x="0"
+        pan_y="0"
+    else
+        pan_x="iw-iw/zoom"
+        pan_y="ih-ih/zoom"
+    fi
+
     ffmpeg -i "$photo" \
-        -vf "split[original][copy];[copy]scale=${RESOLUTION}:force_original_aspect_ratio=increase,crop=${RESOLUTION},gblur=sigma=20,eq=brightness=-0.3,scale=${SS_RESOLUTION}[blurred];[original]scale=${SS_RESOLUTION}:force_original_aspect_ratio=decrease:flags=lanczos[scaled];[blurred][scaled]overlay=(W-w)/2:(H-h)/2,zoompan=z='1+(${ZOOM_END}-1)*on/${FRAMES}':d=${FRAMES}:s=${RESOLUTION/:/x}:fps=${FPS}" \
+        -vf "split[original][copy];[copy]scale=${RESOLUTION}:force_original_aspect_ratio=increase,crop=${RESOLUTION},gblur=sigma=20,eq=brightness=-0.3,scale=${SS_RESOLUTION}[blurred];[original]scale=${SS_RESOLUTION}:force_original_aspect_ratio=decrease:flags=lanczos[scaled];[blurred][scaled]overlay=(W-w)/2:(H-h)/2,zoompan=z='1+(${ZOOM_END}-1)*on/${FRAMES}':x='${pan_x}':y='${pan_y}':d=${FRAMES}:s=${RESOLUTION/:/x}:fps=${FPS}" \
         -t $DURATION \
         -c:v libx264 -pix_fmt yuv420p \
         "${TEMP_DIR}/clip_$(printf "%03d" $counter).mp4" \
