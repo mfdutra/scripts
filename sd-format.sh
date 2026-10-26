@@ -72,3 +72,5 @@ fi
 # keep Spotlight from indexing the volume
 touch "$mnt/.metadata_never_index"
 mdutil -i off "$mnt"
+
+diskutil eject "$device"
