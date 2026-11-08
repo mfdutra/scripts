@@ -24,8 +24,11 @@
 import argparse
 import json
 import os
+import shutil
 import subprocess
 import sys
+import tempfile
+import threading
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -45,12 +48,60 @@ LOSSLESS_CODECS = {
 }
 
 
-def run(cmd):
-    """Run a command, returning stderr. Raises with stderr on failure."""
-    proc = subprocess.run(cmd, capture_output=True, text=True)
+class Status:
+    """Log lines plus, on a terminal, a self-updating line with each file's
+    progress, e.g. "host.wav 42% | guest.wav 17%". Thread-safe."""
+
+    def __init__(self):
+        self.tty = sys.stdout.isatty()
+        self.percent = {}
+        self.lock = threading.Lock()
+
+    def _draw(self):
+        if self.tty:
+            width = shutil.get_terminal_size().columns - 1
+            line = " | ".join(f"{n} {p}%" for n, p in self.percent.items())
+            sys.stdout.write("\r\033[K" + line[:width])
+            sys.stdout.flush()
+
+    def log(self, msg):
+        with self.lock:
+            if self.tty:
+                sys.stdout.write("\r\033[K")
+            print(msg, flush=True)
+            self._draw()
+
+    def update(self, name, percent):
+        with self.lock:
+            if self.percent.get(name) != percent:
+                self.percent[name] = percent
+                self._draw()
+
+    def done(self, name):
+        with self.lock:
+            self.percent.pop(name, None)
+            self._draw()
+
+
+status = Status()
+
+
+def run_ffmpeg(cmd, duration, on_progress):
+    """Run ffmpeg, reporting progress (0.0-1.0) and returning its stderr.
+    Raises with the last stderr line on failure."""
+    cmd = cmd[:1] + ["-nostats", "-progress", "pipe:1"] + cmd[1:]
+    with tempfile.TemporaryFile("w+") as err:
+        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=err, text=True)
+        for line in proc.stdout:
+            key, _, value = line.strip().partition("=")
+            if key == "out_time_us" and value.isdigit() and duration:
+                on_progress(min(1.0, int(value) / 1e6 / duration))
+        proc.wait()
+        err.seek(0)
+        stderr = err.read()
     if proc.returncode != 0:
-        raise RuntimeError(proc.stderr.strip().splitlines()[-1])
-    return proc.stderr
+        raise RuntimeError(stderr.strip().splitlines()[-1])
+    return stderr
 
 
 def last_json(text):
@@ -58,15 +109,19 @@ def last_json(text):
     return json.loads(text[text.rindex("{") : text.rindex("}") + 1])
 
 
-def sample_rate(path):
-    out = subprocess.run(
-        [
-            "ffprobe", "-v", "error", "-select_streams", "a:0",
-            "-show_entries", "stream=sample_rate", "-of", "csv=p=0", str(path),
-        ],
-        capture_output=True, text=True, check=True,
-    ).stdout
-    return out.strip()
+def probe(path):
+    """Return (duration in seconds, sample rate) of the first audio stream."""
+    info = json.loads(
+        subprocess.run(
+            [
+                "ffprobe", "-v", "error", "-select_streams", "a:0",
+                "-show_entries", "format=duration:stream=sample_rate",
+                "-of", "json", str(path),
+            ],
+            capture_output=True, text=True, check=True,
+        ).stdout
+    )
+    return float(info["format"].get("duration", 0)), info["streams"][0]["sample_rate"]
 
 
 def output_path(path):
@@ -77,10 +132,20 @@ def normalize(path, args):
     pre = [COMPRESSOR] if args.compress else []
     target = f"I={args.target}:TP={args.true_peak}"
     ffmpeg = ["ffmpeg", "-hide_banner", "-nostdin", "-i", str(path)]
+    duration, rate = probe(path)
+
+    # Each pass is half of the file's progress
+    def progress(start):
+        return lambda f: status.update(path.name, int(start + f * 50))
 
     # Pass 1: measure loudness (after the compressor, if enabled)
+    status.log(f"{path.name}: measuring loudness...")
     measure_filter = ",".join(pre + [f"loudnorm={target}:print_format=json"])
-    m = last_json(run(ffmpeg + ["-af", measure_filter, "-f", "null", "-"]))
+    m = last_json(
+        run_ffmpeg(
+            ffmpeg + ["-af", measure_filter, "-f", "null", "-"], duration, progress(0)
+        )
+    )
 
     # Pass 2: apply. LRA target >= measured LRA keeps loudnorm in linear
     # (pure gain) mode instead of its dynamic compressor. loudnorm treats a
@@ -96,13 +161,16 @@ def normalize(path, args):
     out = output_path(path)
     if out.exists() and not args.force:
         raise RuntimeError(f"{out.name} already exists (use -f to overwrite)")
+    status.log(f"{path.name}: measured {m['input_i']} LUFS, writing {out.name}...")
     result = last_json(
-        run(
+        run_ffmpeg(
             ffmpeg
             + ["-af", ",".join(pre + [apply])]
-            + ["-ar", sample_rate(path)]  # loudnorm upsamples to 192 kHz
+            + ["-ar", rate]  # loudnorm upsamples to 192 kHz
             + LOSSLESS_CODECS.get(path.suffix.lower(), [])
-            + ["-y", str(out)]
+            + ["-y", str(out)],
+            duration,
+            progress(50),
         )
     )
 
@@ -115,10 +183,14 @@ def normalize(path, args):
 
 
 def process(path, args):
+    """Normalize one file, printing the outcome. Returns True on success."""
     try:
-        return True, normalize(path, args)
+        msg, ok = normalize(path, args), True
     except (RuntimeError, ValueError, KeyError, subprocess.CalledProcessError) as e:
-        return False, f"{path.name}: ERROR: {e}"
+        msg, ok = f"{path.name}: ERROR: {e}", False
+    status.done(path.name)
+    status.log(msg)
+    return ok
 
 
 def main():
@@ -155,8 +227,9 @@ def main():
     with ThreadPoolExecutor(max_workers=args.jobs) as pool:
         results = list(pool.map(lambda f: process(f, args), args.files))
 
-    print("\n".join(msg for _, msg in results))
-    sys.exit(0 if all(ok for ok, _ in results) else 1)
+    failed = results.count(False)
+    status.log(f"Done: {len(results) - failed} normalized, {failed} failed.")
+    sys.exit(0 if failed == 0 else 1)
 
 
 if __name__ == "__main__":
